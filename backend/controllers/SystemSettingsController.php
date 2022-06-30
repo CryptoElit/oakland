@@ -8,10 +8,10 @@ use common\models\ContactDetails;
 use common\models\Product;
 use common\models\ProductFeeType;
 use common\models\UserType;
-use internal\controllers\ServsolController;
+use internal\controllers\ServeController;
 use yii\base\BaseObject;
 
-class SystemSettingsController extends ServsolController
+class SystemSettingsController extends ServeController
 {
 
 

@@ -4,11 +4,11 @@ namespace internal\modules\v1\controllers;
 
 
 use common\models\Quote;
-use internal\controllers\ServsolController;
+use internal\controllers\ServeController;
 use Yii;
 
 
-class QuoteController extends ServsolController
+class QuoteController extends ServeController
 {
 
 	public function actionSearch()

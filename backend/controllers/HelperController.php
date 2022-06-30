@@ -30,14 +30,14 @@ use common\models\SystemUserCompany;
 use common\models\Template;
 use common\models\TemplateType;
 use common\models\UserType;
-use internal\controllers\ServsolController;
+use internal\controllers\ServeController;
 use kartik\alert\Alert;
 use Yii;
 use yii\helpers\StringHelper;
 use yii\web\UploadedFile;
 
 
-class HelperController extends ServsolController
+class HelperController extends ServeController
 {
 
 

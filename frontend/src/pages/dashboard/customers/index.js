@@ -13,7 +13,7 @@ import {
   TextField,
   Typography
 } from '@mui/material';
-import { customerApi } from '../../../__fake-api__/customer-api';
+import { customerApi } from '../../../api/customer-api';
 import { AuthGuard } from '../../../components/authentication/auth-guard';
 import { DashboardLayout } from '../../../components/dashboard/dashboard-layout';
 import { CustomerListTable } from '../../../components/dashboard/customer/customer-list-table';

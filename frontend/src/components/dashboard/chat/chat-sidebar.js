@@ -4,7 +4,7 @@ import NextLink from 'next/link';
 import PropTypes from 'prop-types';
 import { Box, Button, Drawer, IconButton, List, Typography, useMediaQuery } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import { chatApi } from '../../../__fake-api__/chat-api';
+import { chatApi } from '../../../api/chat-api';
 import { Plus as PlusIcon } from '../../../icons/plus';
 import { X as XIcon } from '../../../icons/x';
 import { useSelector } from '../../../store';

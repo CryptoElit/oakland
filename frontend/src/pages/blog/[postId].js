@@ -5,7 +5,7 @@ import { format, subHours } from 'date-fns';
 import Markdown from 'react-markdown';
 import { Avatar, Box, Button, Card, Chip, Container, Divider, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import { blogApi } from '../../__fake-api__/blog-api';
+import { blogApi } from '../../api/blog-api';
 import { BlogNewsletter } from '../../components/blog/blog-newsletter';
 import { BlogComment } from '../../components/blog/blog-comment';
 import { BlogCommentAdd } from '../../components/blog/blog-comment-add';

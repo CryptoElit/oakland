@@ -13,7 +13,7 @@ import {
   TablePagination,
   TableRow
 } from '@mui/material';
-import { customerApi } from '../../../__fake-api__/customer-api';
+import { customerApi } from '../../../api/customer-api';
 import { useMounted } from '../../../hooks/use-mounted';
 import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
 import { MoreMenu } from '../../more-menu';

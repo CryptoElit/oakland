@@ -19,10 +19,10 @@ use Yii;
 use yii\filters\auth\HttpBasicAuth;
 use yii\rest\Controller;
 use yii\filters\auth\HttpBearerAuth;
-use internal\controllers\ServsolController;
+use internal\controllers\ServeController;
 
 
-class PolicyController extends ServsolController
+class PolicyController extends ServeController
 {
 
     public function actionSearch()

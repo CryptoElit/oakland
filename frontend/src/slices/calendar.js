@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { calendarApi } from '../__fake-api__/calendar-api';
+import { calendarApi } from '../api/calendar-api';
 
 const initialState = {
     events: []

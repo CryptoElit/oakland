@@ -7,11 +7,11 @@ use common\models\ContactDetails;
 use common\models\ContactType;
 use common\models\Creditor;
 use common\models\User;
-use internal\controllers\ServsolController;
+use internal\controllers\ServeController;
 use yii\helpers\StringHelper;
 
 
-class CreditorsController extends ServsolController
+class CreditorsController extends ServeController
 {
 
     public function actionSearch()

@@ -4,7 +4,7 @@ import NextLink from 'next/link';
 import { Box, Button, Card, Container, Divider, Typography } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import { blogApi } from '../../__fake-api__/blog-api';
+import { blogApi } from '../../api/blog-api';
 import { BlogNewsletter } from '../../components/blog/blog-newsletter';
 import { BlogPostCard } from '../../components/blog/blog-post-card';
 import { useMounted } from '../../hooks/use-mounted';

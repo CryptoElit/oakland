@@ -12,7 +12,7 @@ import {
   Typography
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import { orderApi } from '../../../__fake-api__/order-api';
+import { orderApi } from '../../../api/order-api';
 import { AuthGuard } from '../../../components/authentication/auth-guard';
 import { DashboardLayout } from '../../../components/dashboard/dashboard-layout';
 import { OrderDrawer } from '../../../components/dashboard/order/order-drawer';

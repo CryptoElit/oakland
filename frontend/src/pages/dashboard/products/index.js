@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react';
 import Head from 'next/head';
 import NextLink from 'next/link';
 import { Box, Button, Card, Container, Grid, Typography } from '@mui/material';
-import { productApi } from '../../../__fake-api__/product-api';
+import { productApi } from '../../../api/product-api';
 import { AuthGuard } from '../../../components/authentication/auth-guard';
 import { DashboardLayout } from '../../../components/dashboard/dashboard-layout';
 import { ProjectListFilters } from '../../../components/dashboard/product/product-list-filters';

@@ -10,7 +10,7 @@ import {
   TableRow,
   Typography
 } from '@mui/material';
-import { customerApi } from '../../../__fake-api__/customer-api';
+import { customerApi } from '../../../api/customer-api';
 import { useMounted } from '../../../hooks/use-mounted';
 import { MoreMenu } from '../../more-menu';
 import { Scrollbar } from '../../scrollbar';

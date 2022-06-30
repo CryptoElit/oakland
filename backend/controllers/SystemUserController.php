@@ -1,6 +1,7 @@
 <?php
 
-namespace internal\modules\v1\controllers;
+namespace app\controllers;
+
 
 
 use common\models\ChangePassword;
@@ -15,46 +16,16 @@ use common\models\User;
 use common\models\UserType;
 use Yii;
 use yii\helpers\ArrayHelper;
-use internal\controllers\ServsolController;
+use controllers\ServeController
 use common\models\ForgotPasswordForm;
 
 
 
-class SystemUserController extends ServsolController
+class SystemUserController extends ServeController
 {
-    
-    const SETTINGS = [
-        'layout' => [
-            'style' => 'layout1',
-            'config' => [
-                'scroll' => 'content',
-                'navbar' => [
-                    'display' => true,
-                    'folded' => true,
-                    'position' => 'left'
-                ],
-                'toolbar' => [
-                    'display' => true,
-                    'style' => 'fixed',
-                    'position' => 'below'
-                ],
-                'footer' => [
-                    'display' => true,
-                    'style' => 'fixed',
-                    'position' => 'below'
-                ],
-                'mode' => 'fullwidth'
-            ]
-        ],
-        'customScrollbars' => true,
-        'theme' => [
-            'main' => 'default',
-            'navbar' => 'defaultDark',
-            'toolbar' => 'default',
-            'footer' => 'default'
-        ]
-    ];
-    
+  
+
+
     public function actionLogin()
     {
 
@@ -65,33 +36,17 @@ class SystemUserController extends ServsolController
 
         $model->username = $requestDataRes->username;
         $model->password = $requestDataRes->password;
-        
+
         \Yii::info("Username: ". $model->username , __METHOD__);
-        
+
         if ($model->login()) {
             $user = $model->getUser();
             $accT = \Yii::$app->getUser()->getIdentity(false)->getAccessToken();
             \Yii::$app->cache->set($accT, $user, 36600);
-            
-            $data['user'] = [
-                'uuid' => $user->user_id,
-                'from' => 'finsafe',
-                'role' => $user->getRole(),
-                'data' => [
-                    'access_token' => $accT,
-                    'titletype' => $user->titleType->description,
-                    'displayName' => $user->name,
-                    'displaySurname' => $user->surname,
-                    'extension' => $user->extension,
-                    'company' => $user->company->trading_name,
-                    'photoURL' => 'assets/images/avatars/Abbott.jpg',
-                    'email' => $user->username,
-                    'settings' => $this::SETTINGS,
-                    'shortcuts' => ['calendar', 'mail', 'contacts']
-                ]
-            ];
 
-            return $data;
+
+
+            return json_encode($user);
         }
 
             foreach ($model->getErrors() as $key => $error) {
@@ -101,20 +56,20 @@ class SystemUserController extends ServsolController
             return $errorArray;
 
     }
-    
+
     public function actionForgot(){
         $requestData = \Yii::$app->request->rawBody;
         $requestDataRes = json_decode($requestData);
-        
+
         \Yii::info("Starting Console Controller", __METHOD__);
-        
-        
+
+
         $model = new ForgotPasswordForm();
-        
+
         $model->email = $requestDataRes->username;
-        
+
         \Yii::info("Email: ". $model->email , __METHOD__);
-        
+
         if ($model->validate()) {
             $model_system_user = SystemUser::findByUsername($model->email);
             if ($model_system_user != null) {
@@ -130,7 +85,7 @@ class SystemUserController extends ServsolController
                 return ['message' => "Email address does not exist"];
             }
         } else {
-            return ['message' => "Email address does not exist"];            
+            return ['message' => "Email address does not exist"];
         }
     }
 
@@ -142,7 +97,7 @@ class SystemUserController extends ServsolController
         $requestDataRes = json_decode($requestData);
 
 
-$query = "SELECT 
+$query = "SELECT
     system_user.user_id AS id,
     title_type_id,
     system_user.name,
@@ -161,7 +116,7 @@ FROM
         LEFT JOIN
     system_user_company ON system_user.user_id = system_user_company.system_user_id
         LEFT JOIN
-    company ON system_user.company_id = company.user_id 
+    company ON system_user.company_id = company.user_id
         LEFT JOIN
     auth_assignment aa ON system_user.user_id = aa.user_id
         LEFT JOIN
@@ -170,7 +125,7 @@ FROM
     `user` ON user.id = system_user.user_id
       LEFT JOIN
     `status` ON user.status_id = status.id
-   WHERE ai.type = 1 
+   WHERE ai.type = 1
     ";
 
         $ids = SystemUserCompany::getAllCompanyIDsForUser();
@@ -221,7 +176,7 @@ public function  actionView() {
         $requestDataRes = json_decode($requestData);
 
 
-        $query = "SELECT 
+        $query = "SELECT
     system_user_id AS user_id,
     company.name AS company_name,
     company_id,

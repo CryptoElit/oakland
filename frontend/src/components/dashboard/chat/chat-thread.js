@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
 import { Box, Divider } from '@mui/material';
-import { chatApi } from '../../../__fake-api__/chat-api';
+import { chatApi } from '../../../api/chat-api';
 import { addMessage, getThread, markThreadAsSeen, setActiveThread } from '../../../slices/chat';
 import { useDispatch, useSelector } from '../../../store';
 import { Scrollbar } from '../../scrollbar';

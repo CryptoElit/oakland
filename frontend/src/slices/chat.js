@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { chatApi } from '../__fake-api__/chat-api';
+import { chatApi } from '../api/chat-api';
 import { objFromArray } from '../utils/obj-from-array';
 
 const initialState = {

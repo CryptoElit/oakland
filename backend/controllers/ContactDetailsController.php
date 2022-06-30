@@ -4,10 +4,10 @@ namespace internal\modules\v1\controllers;
 
 
 use common\models\User;
-use internal\controllers\ServsolController;
+use internal\controllers\ServeController;
 
 
-class ContactDetailsController extends ServsolController
+class ContactDetailsController extends ServeController
 {
 
     public function actionGetContactDetails()
