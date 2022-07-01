@@ -4,42 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5199bfd-2985-4e6b-a6b3-a17917f2db50" name="Changes" comment="API fix">
-      <change beforePath="$PROJECT_DIR$/.idea/oakland-final.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/oakland-final.iml" afterDir="false" />
+    <list default="true" id="c5199bfd-2985-4e6b-a6b3-a17917f2db50" name="Changes" comment="Sanity">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/PolicyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/PolicyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/SystemUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Company.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/ContactDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/ContactDetails.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/Correspondence.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Correspondence.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/Departments.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Departments.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/models/LoginForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/LoginForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/Supplier.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Supplier.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/SystemUser.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/TitleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/TitleType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/api/auth-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/auth-api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/amplify-login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/amplify-password-recovery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/amplify-password-reset.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/amplify-register.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/amplify-verify-code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/auth0-login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/auth0-register.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/firebase-login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/firebase-register.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/jwt-login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/authentication/jwt-login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/blog/blog-comment-add.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/blog/blog-comment.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/blog/blog-newsletter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/blog/blog-post-card.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/checkout/checkout-billing.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/checkout/checkout-order-summary.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/authentication/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/authentication/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/authentication/password-recovery.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/authentication/password-recovery.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +146,7 @@
       <workItem from="1656465436307" duration="504000" />
       <workItem from="1656612314564" duration="895000" />
       <workItem from="1656630255744" duration="4581000" />
-      <workItem from="1656635554492" duration="3384000" />
+      <workItem from="1656635554492" duration="3713000" />
     </task>
     <task id="LOCAL-00001" summary="API fix">
       <created>1656635345358</created>
@@ -188,7 +155,21 @@
       <option name="project" value="LOCAL" />
       <updated>1656635345358</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Sanity">
+      <created>1656639735420</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656639735420</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Sanity">
+      <created>1656639808290</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656639808290</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,8 +223,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="add" />
     <MESSAGE value="API fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="API fix" />
+    <MESSAGE value="Sanity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sanity" />
   </component>
 </project>
