@@ -7,15 +7,12 @@
     <list default="true" id="c5199bfd-2985-4e6b-a6b3-a17917f2db50" name="Changes" comment="Password">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/LoginForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/LoginForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/api/auth-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/auth-api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/jwt-login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/authentication/jwt-login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/contexts/jwt-context.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/contexts/jwt-context.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/authentication/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/authentication/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/authentication/password-recovery.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/authentication/password-recovery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/authentication/password-reset.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/authentication/password-reset.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/authentication/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/authentication/register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/authentication/verify-code.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/authentication/verify-code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/slices/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/slices/user.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +20,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/backend/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -128,19 +125,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/apple/www/html/oakland/frontend/src/slices",
-    "nodejs_package_manager_path": "npm",
-    "php.override.implement.member.chooser.php.doc": "NONE",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/apple/www/html/oakland/frontend/node_modules/typescript/lib"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/apple/www/html/oakland/frontend/src/slices&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/apple/www/html/oakland/frontend/node_modules/typescript/lib&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frontend/src/slices" />
@@ -158,7 +155,8 @@
       <workItem from="1656465436307" duration="504000" />
       <workItem from="1656612314564" duration="895000" />
       <workItem from="1656630255744" duration="4581000" />
-      <workItem from="1656635554492" duration="20945000" />
+      <workItem from="1656635554492" duration="23817000" />
+      <workItem from="1656686208064" duration="4392000" />
     </task>
     <task id="LOCAL-00001" summary="API fix">
       <created>1656635345358</created>
@@ -195,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656648464142</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Password">
+      <created>1656671913766</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1656671913766</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

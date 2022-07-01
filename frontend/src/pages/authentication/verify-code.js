@@ -50,40 +50,6 @@ const VerifyCode = () => {
             }
           }}
         >
-          <Box
-            sx={{
-              alignItems: 'center',
-              backgroundColor: (theme) => theme.palette.mode === 'dark'
-                ? 'neutral.900'
-                : 'neutral.100',
-              borderColor: 'divider',
-              borderRadius: 1,
-              borderStyle: 'solid',
-              borderWidth: 1,
-              display: 'flex',
-              flexWrap: 'wrap',
-              justifyContent: 'space-between',
-              mb: 4,
-              p: 2,
-              '& > img': {
-                height: 32,
-                width: 'auto',
-                flexGrow: 0,
-                flexShrink: 0
-              }
-            }}
-          >
-            <Typography
-              color="textSecondary"
-              variant="caption"
-            >
-              The app authenticates via {platform}
-            </Typography>
-            <img
-              alt="Auth platform"
-              src={platformIcons[platform]}
-            />
-          </Box>
           <Card
             elevation={16}
             sx={{ p: 4 }}

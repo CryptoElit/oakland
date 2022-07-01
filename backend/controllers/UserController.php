@@ -16,46 +16,65 @@ class UserController extends ServeController
 
     public function actionLogin()
     {
-
-        $requestDataRes = json_decode(\Yii::$app->request->rawBody);
+        // {
+        //    id: '5e86809283e28b96d2d38537',
+        //    avatar: '/static/mock-images/avatars/avatar-anika_visser.png',
+        //    email: 'josephhart127001@gmail.com',
+        //    name: 'Anika Visser',
+        //    password: 'go',
+        //    plan: 'Premium'
+        //  }
+        $requestDataRes = json_decode(Yii::$app->request->rawBody);
 
         $model = new LoginForm();
 
         $model->username = $requestDataRes->username;
         $model->password = $requestDataRes->password;
 
-        \Yii::info("Username: ". $model->username , __METHOD__);
+        Yii::info("Username: ". $model->username , __METHOD__);
 
         if ($model->login()) {
             $user = $model->getUser();
-            $accT = \Yii::$app->getUser()->identity;
-            \Yii::$app->cache->set($accT, $user, 36600);
+            $user->auth_key = $requestDataRes->token;
+            $user->save(false);
 
 
+            Yii::$app->cache->set($user->auth_key, $user, 36600);
 
-            return json_encode(['user' => $user->name]);
+
+            return json_encode(
+                [
+                    'auth_token' => $user->auth_key,
+                    'id' => $user->id,
+                    'name' => $user->name,
+                    'surname' => $user->surname,
+                    'email' => $user->username,
+                    'password' => $user->password,
+                    'avatar' => '/',
+                ]
+            );
         }
 
             foreach ($model->getErrors() as $key => $error) {
                 $errorArray['errors'] = ['type' => $key, 'message' => $error];
             }
 
-            return 's';
+            return $errorArray;
 
     }
 
     public function actionForgot(){
-        $requestData = \Yii::$app->request->rawBody;
+        $requestData = Yii::$app->request->rawBody;
         $requestDataRes = json_decode($requestData);
 
-        \Yii::info("Starting Console Controller", __METHOD__);
+        Yii::info("Starting Console Controller", __METHOD__);
 
 
         $model = new ForgotPasswordForm();
 
         $model->email = $requestDataRes->username;
 
-        \Yii::info("Email: ". $model->email , __METHOD__);
+        Yii::info("Email: ". $model->email , __METHOD__);
 
         if ($model->validate()) {
             $model_system_user = User::findByUsername($model->email);
@@ -80,7 +99,7 @@ class UserController extends ServeController
     public function actionSearch()
     {
 
-        $requestData = \Yii::$app->request->rawBody;
+        $requestData = Yii::$app->request->rawBody;
         $requestDataRes = json_decode($requestData);
 
 
@@ -122,7 +141,7 @@ FROM
 
         $query .= " GROUP BY system_user.user_id";
 
-        $create =  \Yii::$app->getDb()->createCommand($query);
+        $create =  Yii::$app->getDb()->createCommand($query);
 
         if (!empty($requestData) && $requestDataRes->id != NULL) {
             return $create->queryOne();
@@ -132,7 +151,7 @@ FROM
 
 public function  actionView() {
 
-    $requestData = \Yii::$app->request->rawBody;
+    $requestData = Yii::$app->request->rawBody;
     $requestDataRes = json_decode($requestData);
 
     $user = User::findOne($requestDataRes->id)->systemUser;
@@ -159,7 +178,7 @@ public function  actionView() {
     public function actionSystemUserCompany()
     {
 
-        $requestData = \Yii::$app->request->rawBody;
+        $requestData = Yii::$app->request->rawBody;
         $requestDataRes = json_decode($requestData);
 
 
@@ -177,7 +196,7 @@ FROM
     `permission` ON `system_user_company`.`permission_id` = `permission`.`id`
      WHERE system_user.company =`system_user_id`= $requestDataRes->id";
 
-      return \Yii::$app->getDb()->createCommand($query)->queryAll();
+      return Yii::$app->getDb()->createCommand($query)->queryAll();
 
     }
 
@@ -185,17 +204,17 @@ FROM
     public function actionUpdate()
     {
 
-        $requestData = \Yii::$app->request->rawBody;
+        $requestData = Yii::$app->request->rawBody;
         $requestDataRes = json_decode($requestData);
         $id = isset($requestDataRes) ? $requestDataRes->id : NULL;
 
         $model = $this->findModel($id);
         $model_User = $model->users;
 
-        $auth = \Yii::$app->authManager;
+        $auth = Yii::$app->authManager;
         $model->roles = ArrayHelper::map($auth->getRoles(), 'name', 'name');
 
-        if (User::retrieveRole(\Yii::$app->user->id) != User::FINSAFE_SYSTEM_ADMIN){
+        if (User::retrieveRole(Yii::$app->user->id) != User::FINSAFE_SYSTEM_ADMIN){
             unset($model->roles[User::FINSAFE_SYSTEM_ADMIN]);
         }
         $existingCompany = $model->company_id;
@@ -257,7 +276,7 @@ FROM
     {
 
 
-        $requestData = \Yii::$app->request->rawBody;
+        $requestData = Yii::$app->request->rawBody;
         $requestDataRes = json_decode($requestData);
         $userRole = isset($requestDataRes) ? $requestDataRes->selected_role : NULL;
         $user_id = isset($requestDataRes) ? $requestDataRes->user_id : NULL;
@@ -267,7 +286,7 @@ FROM
         $model_User->user_type_id = UserType::SYSTEM_USER;
         $model_User->date_created = date('Y-m-d H:i:s');
 
-        $auth = \Yii::$app->authManager;
+        $auth = Yii::$app->authManager;
         $model->roles = ArrayHelper::map($auth->getRoles(), 'name', 'name');
 
         if (User::retrieveRole(Yii::$app->user->id) != User::FINSAFE_SYSTEM_ADMIN){
@@ -327,7 +346,7 @@ FROM
     {
         $model_changePassword = new ChangePassword();
 
-        $requestData = \Yii::$app->request->rawBody;
+        $requestData = Yii::$app->request->rawBody;
         $requestDataRes = json_decode($requestData);
         $model_changePassword->currentPassword = $requestDataRes->currentPassword;
         $model_changePassword->newPassword = $requestDataRes->newPassword;

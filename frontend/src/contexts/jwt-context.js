@@ -1,6 +1,7 @@
 import { createContext, useEffect, useReducer } from 'react';
 import PropTypes from 'prop-types';
 import { authApi } from '../api/auth-api';
+import {useSelector} from "../store";
 
 var ActionType;
 (function (ActionType) {
@@ -67,6 +68,7 @@ export const AuthContext = createContext({
 export const AuthProvider = (props) => {
   const { children } = props;
   const [state, dispatch] = useReducer(reducer, initialState);
+	const { user } = useSelector((state) => state.user);
 
   useEffect(() => {
     const initialize = async () => {
@@ -74,13 +76,13 @@ export const AuthProvider = (props) => {
         const accessToken = globalThis.localStorage.getItem('accessToken');
 
         if (accessToken) {
-          const user = await authApi.me(accessToken);
+          await authApi.me(accessToken, user);
 
           dispatch({
             type: ActionType.INITIALIZE,
             payload: {
               isAuthenticated: true,
-              user
+				user
             }
           });
         } else {
@@ -109,22 +111,15 @@ export const AuthProvider = (props) => {
 
   const login = async (email, password) => {
 
-    const userS = await authApi.login({ email, password });
+    const {user, token} = await authApi.login({ email, password });
+alert(JSON.stringify(user))
+     await authApi.me(token, user);
 
-    const user = await authApi.me(accessToken);
-
-    localStorage.setItem('accessToken', accessToken);
+    localStorage.setItem('accessToken', token);
 
     dispatch({
       type: ActionType.LOGIN,
-      payload:   {
-		  id: '5e86809283e28b96d2d38537',
-		  avatar: '/static/mock-images/avatars/avatar-anika_visser.png',
-		  email: 'demo@devias.io',
-		  name: 'Anika Visser',
-		  password: 'Password123!',
-		  plan: 'Premium'
-	  }
+      payload: user
     });
   };
 
