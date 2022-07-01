@@ -16,12 +16,12 @@ export const JWTLogin = (props) => {
   const { login } = useAuth();
   const user = useSelector((state) => state.user);
 
-  alert(JSON.stringify(user))
-	dispatch(createUser('ddd'));
+
+	//dispatch(createUser('ddd'));
   const formik = useFormik({
     initialValues: {
-      email: 'demo@devias.io',
-      password: 'Password123!',
+      email: 'josephhart127001@gmail.com',
+      password: 'go',
       submit: null
     },
     validationSchema: Yup.object({

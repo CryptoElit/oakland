@@ -16,7 +16,7 @@ const slice = createSlice({
 
 	},
     createUser(state, action) {
-      state.user.push(action.payload);
+      state.user = action.payload;
     },
     updateUser(state, action) {
       const user = action.payload;

@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5199bfd-2985-4e6b-a6b3-a17917f2db50" name="Changes" comment="Password">
-      <change afterPath="$PROJECT_DIR$/frontend/src/slices/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/models/LoginForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/LoginForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/api/auth-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/auth-api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/jwt-login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/authentication/jwt-login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/contexts/jwt-context.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/contexts/jwt-context.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/root-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/root-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/authentication/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/authentication/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/authentication/password-recovery.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/authentication/password-recovery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/authentication/password-reset.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/authentication/password-reset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/authentication/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/authentication/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/authentication/verify-code.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/authentication/verify-code.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/slices/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/slices/user.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,6 +136,7 @@
     "last_opened_file_path": "/Users/apple/www/html/oakland/frontend/src/slices",
     "nodejs_package_manager_path": "npm",
     "php.override.implement.member.chooser.php.doc": "NONE",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "/Users/apple/www/html/oakland/frontend/node_modules/typescript/lib"
   }
@@ -153,7 +158,7 @@
       <workItem from="1656465436307" duration="504000" />
       <workItem from="1656612314564" duration="895000" />
       <workItem from="1656630255744" duration="4581000" />
-      <workItem from="1656635554492" duration="11450000" />
+      <workItem from="1656635554492" duration="20945000" />
     </task>
     <task id="LOCAL-00001" summary="API fix">
       <created>1656635345358</created>
@@ -183,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656640179350</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Password">
+      <created>1656648464142</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1656648464142</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,5 +256,16 @@
     <MESSAGE value="Sanity" />
     <MESSAGE value="Password" />
     <option name="LAST_COMMIT_MESSAGE" value="Password" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/backend/controllers/UserController.php</url>
+          <line>12</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

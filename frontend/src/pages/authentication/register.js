@@ -4,7 +4,6 @@ import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import { Box, Card, Container, Divider, Link, Typography } from '@mui/material';
 import { GuestGuard } from '../../components/authentication/guest-guard';
-import { AuthBanner } from '../../components/authentication/auth-banner';
 import { AmplifyRegister } from '../../components/authentication/amplify-register';
 import { Auth0Register } from '../../components/authentication/auth0-register';
 import { FirebaseRegister } from '../../components/authentication/firebase-register';
@@ -45,7 +44,7 @@ const Register = () => {
           minHeight: '100vh'
         }}
       >
-        <AuthBanner />
+
         <Container
           maxWidth="sm"
           sx={{

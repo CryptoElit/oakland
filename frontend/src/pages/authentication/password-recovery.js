@@ -3,7 +3,7 @@ import Head from 'next/head';
 import NextLink from 'next/link';
 import { Box, Card, Container, Typography } from '@mui/material';
 import { GuestGuard } from '../../components/authentication/guest-guard';
-import { AuthBanner } from '../../components/authentication/auth-banner';
+
 import { AmplifyPasswordRecovery } from '../../components/authentication/amplify-password-recovery';
 import { Logo } from '../../components/logo';
 import { useAuth } from '../../hooks/use-auth';
@@ -36,7 +36,7 @@ const PasswordRecovery = () => {
           minHeight: '100vh'
         }}
       >
-        <AuthBanner />
+
         <Container
           maxWidth="sm"
           sx={{
