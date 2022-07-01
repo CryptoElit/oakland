@@ -1,43 +1,45 @@
 import { createResourceId } from '../utils/create-resource-id';
 import { decode, JWT_EXPIRES_IN, JWT_SECRET, sign } from '../utils/jwt';
+
 import { wait } from '../utils/wait';
 
 const users = [
   {
     id: '5e86809283e28b96d2d38537',
     avatar: '/static/mock-images/avatars/avatar-anika_visser.png',
-    email: 'demo@devias.io',
+    email: 'josephhart127001@gmail.com',
     name: 'Anika Visser',
-    password: 'Password123!',
+    password: 'go',
     plan: 'Premium'
   }
 ];
 
 class AuthApi {
+
+
   async login({ email, password }) {
 
-        // Find the user
-		  await fetch('http://localhost:7878/login', {
-			  method: 'POST', // *GET, POST, PUT, DELETE, etc.
-			  mode: 'cors', // no-cors, *cors, same-origin
-			  cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-			  credentials: 'same-origin', // include, *same-origin, omit
-			  headers: {
-				  'Content-Type': 'application/json'
-				  // 'Content-Type': 'application/x-www-form-urlencoded',
-			  },
-			  redirect: 'follow', // manual, *follow, error
-			  referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-			  body: {
-				  email, password
-			  }
-		  }).then((e) => {
-			  // Create the access token
-			  const accessToken = sign({ userId: e.id }, JWT_SECRET, { expiresIn: JWT_EXPIRES_IN });
-			  return accessToken;
-		  });
 
 
+	  return new Promise((resolve, reject) => {
+		  try {
+			  // Find the user
+			  fetch('http://localhost:7878/users/login', {
+				  method: 'POST', // *GET, POST, PUT, DELETE, etc.
+				  body: JSON.stringify({username: email, password})
+			  }).then((e) => {
+				  alert(JSON.stringify(e))
+				  if (e) {
+					  const accessToken = sign({userId: e}, JWT_SECRET, {expiresIn: JWT_EXPIRES_IN});
+
+					  resolve(e)
+				  } else {reject(e)}
+			  })
+		  } catch (err) {
+			  console.error('[Auth Api]: ', err);
+			  reject(new Error('Internal server error'));
+		  }
+	  })
   }
 
   async register({ email, name, password }) {
@@ -75,6 +77,7 @@ class AuthApi {
   }
 
   me(accessToken) {
+
     return new Promise((resolve, reject) => {
       try {
         // Decode access token
@@ -96,6 +99,7 @@ class AuthApi {
           plan: user.plan
         });
       } catch (err) {
+
         console.error('[Auth Api]: ', err);
         reject(new Error('Internal server error'));
       }

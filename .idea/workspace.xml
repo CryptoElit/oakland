@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5199bfd-2985-4e6b-a6b3-a17917f2db50" name="Changes" comment="Sanity">
+    <list default="true" id="c5199bfd-2985-4e6b-a6b3-a17917f2db50" name="Changes" comment="Password">
+      <change afterPath="$PROJECT_DIR$/frontend/src/slices/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/models/LoginForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/LoginForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/api/auth-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/auth-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/jwt-login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/authentication/jwt-login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/contexts/jwt-context.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/contexts/jwt-context.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/root-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/root-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +129,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/apple/www/html/oakland/backend/config",
+    "last_opened_file_path": "/Users/apple/www/html/oakland/frontend/src/slices",
     "nodejs_package_manager_path": "npm",
     "php.override.implement.member.chooser.php.doc": "NONE",
     "settings.editor.selected.configurable": "preferences.pluginManager",
@@ -132,6 +138,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/slices" />
       <recent name="$PROJECT_DIR$/backend/config" />
     </key>
   </component>
@@ -146,7 +153,7 @@
       <workItem from="1656465436307" duration="504000" />
       <workItem from="1656612314564" duration="895000" />
       <workItem from="1656630255744" duration="4581000" />
-      <workItem from="1656635554492" duration="3713000" />
+      <workItem from="1656635554492" duration="11450000" />
     </task>
     <task id="LOCAL-00001" summary="API fix">
       <created>1656635345358</created>
@@ -169,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656639808290</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Password">
+      <created>1656640179349</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1656640179350</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +242,7 @@
     <MESSAGE value="add" />
     <MESSAGE value="API fix" />
     <MESSAGE value="Sanity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sanity" />
+    <MESSAGE value="Password" />
+    <option name="LAST_COMMIT_MESSAGE" value="Password" />
   </component>
 </project>

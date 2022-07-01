@@ -3,12 +3,21 @@ import * as Yup from 'yup';
 import { useFormik } from 'formik';
 import { Alert, Box, Button, FormHelperText, TextField } from '@mui/material';
 import { useAuth } from '../../hooks/use-auth';
+
 import { useMounted } from '../../hooks/use-mounted';
+import { useDispatch, useSelector } from '../../store';
+import { createUser, getUser } from '../../slices/user';
 
 export const JWTLogin = (props) => {
+
   const isMounted = useMounted();
   const router = useRouter();
+  const dispatch = useDispatch()
   const { login } = useAuth();
+  const user = useSelector((state) => state.user);
+
+  alert(JSON.stringify(user))
+	dispatch(createUser('ddd'));
   const formik = useFormik({
     initialValues: {
       email: 'demo@devias.io',
@@ -27,6 +36,7 @@ export const JWTLogin = (props) => {
         .required('Password is required')
     }),
     onSubmit: async (values, helpers) => {
+
       try {
         await login(values.email, values.password);
 

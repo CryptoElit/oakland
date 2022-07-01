@@ -17,12 +17,12 @@ class UserController extends ServeController
     public function actionLogin()
     {
 
-        $requestDataRes = \Yii::$app->request->post();
+        $requestDataRes = json_decode(\Yii::$app->request->rawBody);
 
         $model = new LoginForm();
 
-        $model->username = $requestDataRes['username'];
-        $model->password = $requestDataRes['password'];
+        $model->username = $requestDataRes->username;
+        $model->password = $requestDataRes->password;
 
         \Yii::info("Username: ". $model->username , __METHOD__);
 
@@ -33,14 +33,14 @@ class UserController extends ServeController
 
 
 
-            return $user;
+            return json_encode(['user' => $user->name]);
         }
 
             foreach ($model->getErrors() as $key => $error) {
                 $errorArray['errors'] = ['type' => $key, 'message' => $error];
             }
 
-            return $errorArray;
+            return 's';
 
     }
 

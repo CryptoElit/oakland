@@ -108,16 +108,23 @@ export const AuthProvider = (props) => {
   }, []);
 
   const login = async (email, password) => {
-    const accessToken = await authApi.login({ email, password });
+
+    const userS = await authApi.login({ email, password });
+
     const user = await authApi.me(accessToken);
 
     localStorage.setItem('accessToken', accessToken);
 
     dispatch({
       type: ActionType.LOGIN,
-      payload: {
-        user
-      }
+      payload:   {
+		  id: '5e86809283e28b96d2d38537',
+		  avatar: '/static/mock-images/avatars/avatar-anika_visser.png',
+		  email: 'demo@devias.io',
+		  name: 'Anika Visser',
+		  password: 'Password123!',
+		  plan: 'Premium'
+	  }
     });
   };
 
