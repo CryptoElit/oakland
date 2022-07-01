@@ -13,7 +13,7 @@ use Yii;
  * @property int|null $budget_id
  *
  * @property Budget $budget
- * @property SystemUser $supervisor
+ * @property User $supervisor
  */
 class Departments extends \yii\db\ActiveRecord
 {
@@ -33,7 +33,7 @@ class Departments extends \yii\db\ActiveRecord
         return [
             [['supervisor_id', 'is_over', 'budget_id'], 'integer'],
             [['budget_id'], 'exist', 'skipOnError' => true, 'targetClass' => Budget::className(), 'targetAttribute' => ['budget_id' => 'id']],
-            [['supervisor_id'], 'exist', 'skipOnError' => true, 'targetClass' => SystemUser::className(), 'targetAttribute' => ['supervisor_id' => 'user_id']],
+            [['supervisor_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['supervisor_id' => 'user_id']],
         ];
     }
 
@@ -67,6 +67,6 @@ class Departments extends \yii\db\ActiveRecord
      */
     public function getSupervisor()
     {
-        return $this->hasOne(SystemUser::className(), ['user_id' => 'supervisor_id']);
+        return $this->hasOne(User::className(), ['user_id' => 'supervisor_id']);
     }
 }

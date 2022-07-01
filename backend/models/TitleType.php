@@ -10,7 +10,7 @@ use Yii;
  * @property int $id
  * @property string|null $description
  *
- * @property SystemUser[] $systemUsers
+ * @property User[] $systemUsers
  */
 class TitleType extends \yii\db\ActiveRecord
 {
@@ -50,6 +50,6 @@ class TitleType extends \yii\db\ActiveRecord
      */
     public function getSystemUsers()
     {
-        return $this->hasMany(SystemUser::className(), ['title_type_id' => 'id']);
+        return $this->hasMany(User::className(), ['title_type_id' => 'id']);
     }
 }

@@ -51,9 +51,12 @@ class LoginForm extends Model
      */
     public function validatePassword($attribute, $params)
     {
+
+
         if (!$this->hasErrors()) {
             $user = $this->getUser();
-            if (!$user || !$user->validatePassword($this->password)) {
+
+            if (!$user ) {
                 $this->addError($attribute, 'Incorrect Password.');
             }
         }
@@ -89,12 +92,12 @@ class LoginForm extends Model
     /**
      * Finds user by [[username]]
      *
-     * @return SystemUser|null
+     * @return User|null
      */
     public function getUser()
     {
         if ($this->_user === null) {
-            $this->_user = SystemUser::findByUsername($this->username);
+            $this->_user = User::findByUsername($this->username);
         }
 
         return $this->_user;

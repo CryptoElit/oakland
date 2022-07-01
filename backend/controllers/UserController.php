@@ -9,7 +9,7 @@ use app\models\LoginForm;
 
 
 
-class SystemUserController extends ServeController
+class UserController extends ServeController
 {
 
 
@@ -28,12 +28,12 @@ class SystemUserController extends ServeController
 
         if ($model->login()) {
             $user = $model->getUser();
-            $accT = \Yii::$app->getUser()->getIdentity(false)->getAccessToken();
+            $accT = \Yii::$app->getUser()->identity;
             \Yii::$app->cache->set($accT, $user, 36600);
 
 
 
-            return json_encode($user);
+            return $user;
         }
 
             foreach ($model->getErrors() as $key => $error) {
@@ -58,7 +58,7 @@ class SystemUserController extends ServeController
         \Yii::info("Email: ". $model->email , __METHOD__);
 
         if ($model->validate()) {
-            $model_system_user = SystemUser::findByUsername($model->email);
+            $model_system_user = User::findByUsername($model->email);
             if ($model_system_user != null) {
                 if (Yii::$app->mailcomponent->sendEmail(TemplateType::PASSWORD_RESET, $model_system_user->id)) {
                     $model_system_user->users->status_id = Status::STATUS_PASSWORD_RESET;
@@ -195,13 +195,13 @@ FROM
         $auth = \Yii::$app->authManager;
         $model->roles = ArrayHelper::map($auth->getRoles(), 'name', 'name');
 
-        if (SystemUser::retrieveRole(\Yii::$app->user->id) != SystemUser::FINSAFE_SYSTEM_ADMIN){
-            unset($model->roles[SystemUser::FINSAFE_SYSTEM_ADMIN]);
+        if (User::retrieveRole(\Yii::$app->user->id) != User::FINSAFE_SYSTEM_ADMIN){
+            unset($model->roles[User::FINSAFE_SYSTEM_ADMIN]);
         }
         $existingCompany = $model->company_id;
 
-            $model->selected_role = $_POST['SystemUser']['selected_role'];
-            $model->company_id = intval($_POST['SystemUser']['company_id']);
+            $model->selected_role = $_POST['User']['selected_role'];
+            $model->company_id = intval($_POST['User']['company_id']);
             if ($model_User->validate()){
                 $model_User->save();
                 if($model->validate()){
@@ -249,7 +249,7 @@ FROM
     }
 
     /**
-     * Creates a new SystemUser model.
+     * Creates a new User model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
@@ -261,7 +261,7 @@ FROM
         $requestDataRes = json_decode($requestData);
         $userRole = isset($requestDataRes) ? $requestDataRes->selected_role : NULL;
         $user_id = isset($requestDataRes) ? $requestDataRes->user_id : NULL;
-        $model = new SystemUser();
+        $model = new User();
         $model_User = new User();
         $model_User->status_id = Status::STATUS_NEW;
         $model_User->user_type_id = UserType::SYSTEM_USER;
@@ -270,17 +270,17 @@ FROM
         $auth = \Yii::$app->authManager;
         $model->roles = ArrayHelper::map($auth->getRoles(), 'name', 'name');
 
-        if (SystemUser::retrieveRole(Yii::$app->user->id) != SystemUser::FINSAFE_SYSTEM_ADMIN){
-            unset($model->roles[SystemUser::FINSAFE_SYSTEM_ADMIN]);
+        if (User::retrieveRole(Yii::$app->user->id) != User::FINSAFE_SYSTEM_ADMIN){
+            unset($model->roles[User::FINSAFE_SYSTEM_ADMIN]);
             $model->company_id = SystemUserCompany::getFirstCompanyForUser($user_id);
         }
 
         if ($model->load(Yii::$app->request->post())) {
             //If no system user was selected in the form, use the company of the logged in system user
-            if (!isset($_POST['SystemUser']['company_id'])){
-                $model->company_id = isset(SystemUser::findOne($user_id)->company_id) ? SystemUser::findOne($user_id)->company_id : null;
+            if (!isset($_POST['User']['company_id'])){
+                $model->company_id = isset(User::findOne($user_id)->company_id) ? User::findOne($user_id)->company_id : null;
             }
-            $model->selected_role = $_POST['SystemUser']['selected_role'];
+            $model->selected_role = $_POST['User']['selected_role'];
             if ($model_User->validate()){
                 if($model->validate()){
                     $model_User->save();

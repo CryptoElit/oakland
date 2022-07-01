@@ -15,27 +15,29 @@ const users = [
 
 class AuthApi {
   async login({ email, password }) {
-    await wait(500);
 
-    return new Promise((resolve, reject) => {
-      try {
         // Find the user
-        const user = users.find((_user) => _user.email === email);
+		  await fetch('http://localhost:7878/login', {
+			  method: 'POST', // *GET, POST, PUT, DELETE, etc.
+			  mode: 'cors', // no-cors, *cors, same-origin
+			  cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+			  credentials: 'same-origin', // include, *same-origin, omit
+			  headers: {
+				  'Content-Type': 'application/json'
+				  // 'Content-Type': 'application/x-www-form-urlencoded',
+			  },
+			  redirect: 'follow', // manual, *follow, error
+			  referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+			  body: {
+				  email, password
+			  }
+		  }).then((e) => {
+			  // Create the access token
+			  const accessToken = sign({ userId: e.id }, JWT_SECRET, { expiresIn: JWT_EXPIRES_IN });
+			  return accessToken;
+		  });
 
-        if (!user || (user.password !== password)) {
-          reject(new Error('Please check your email and password'));
-          return;
-        }
 
-        // Create the access token
-        const accessToken = sign({ userId: user.id }, JWT_SECRET, { expiresIn: JWT_EXPIRES_IN });
-
-        resolve(accessToken);
-      } catch (err) {
-        console.error('[Auth Api]: ', err);
-        reject(new Error('Internal server error'));
-      }
-    });
   }
 
   async register({ email, name, password }) {

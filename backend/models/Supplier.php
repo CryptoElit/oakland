@@ -11,7 +11,7 @@ use Yii;
  * @property string $name
  * @property int|null $is_active
  *
- * @property SystemUser $user
+ * @property User $user
  */
 class Supplier extends \yii\db\ActiveRecord
 {
@@ -32,7 +32,7 @@ class Supplier extends \yii\db\ActiveRecord
             [['user_id', 'name'], 'required'],
             [['user_id', 'is_active'], 'integer'],
             [['name'], 'string', 'max' => 100],
-            [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => SystemUser::className(), 'targetAttribute' => ['user_id' => 'user_id']],
+            [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'user_id']],
         ];
     }
 
@@ -55,6 +55,6 @@ class Supplier extends \yii\db\ActiveRecord
      */
     public function getUser()
     {
-        return $this->hasOne(SystemUser::className(), ['user_id' => 'user_id']);
+        return $this->hasOne(User::className(), ['user_id' => 'user_id']);
     }
 }

@@ -13,7 +13,7 @@ use Yii;
  * @property int $contact_type_id
  *
  * @property ContactType $contactType
- * @property SystemUser $user
+ * @property User $user
  */
 class ContactDetails extends \yii\db\ActiveRecord
 {
@@ -35,7 +35,7 @@ class ContactDetails extends \yii\db\ActiveRecord
             [['user_id', 'contact_type_id'], 'integer'],
             [['value'], 'string', 'max' => 200],
             [['contact_type_id'], 'exist', 'skipOnError' => true, 'targetClass' => ContactType::className(), 'targetAttribute' => ['contact_type_id' => 'id']],
-            [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => SystemUser::className(), 'targetAttribute' => ['user_id' => 'user_id']],
+            [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'user_id']],
         ];
     }
 
@@ -69,6 +69,6 @@ class ContactDetails extends \yii\db\ActiveRecord
      */
     public function getUser()
     {
-        return $this->hasOne(SystemUser::className(), ['user_id' => 'user_id']);
+        return $this->hasOne(User::className(), ['user_id' => 'user_id']);
     }
 }

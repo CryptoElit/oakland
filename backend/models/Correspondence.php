@@ -16,7 +16,7 @@ use Yii;
  * @property string|null $subject
  *
  * @property Order $order
- * @property SystemUser $user
+ * @property User $user
  */
 class Correspondence extends \yii\db\ActiveRecord
 {
@@ -38,7 +38,7 @@ class Correspondence extends \yii\db\ActiveRecord
             [['user_id', 'order_id'], 'integer'],
             [['content', 'subject'], 'string'],
             [['address', 'bcc_address'], 'string', 'max' => 100],
-            [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => SystemUser::className(), 'targetAttribute' => ['user_id' => 'user_id']],
+            [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'user_id']],
             [['order_id'], 'exist', 'skipOnError' => true, 'targetClass' => Order::className(), 'targetAttribute' => ['order_id' => 'id']],
         ];
     }
@@ -76,6 +76,6 @@ class Correspondence extends \yii\db\ActiveRecord
      */
     public function getUser()
     {
-        return $this->hasOne(SystemUser::className(), ['user_id' => 'user_id']);
+        return $this->hasOne(User::className(), ['user_id' => 'user_id']);
     }
 }

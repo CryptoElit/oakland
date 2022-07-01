@@ -2,43 +2,146 @@
 
 namespace app\models;
 
-class User extends \yii\base\BaseObject implements \yii\web\IdentityInterface
+use Yii;
+use yii\db\ActiveRecord;
+use yii\web\IdentityInterface;
+
+/**
+ * This is the model class for table "system_user".
+ *
+ * @property int $id
+ * @property string $name
+ * @property string $surname
+ * @property int $user_type
+ * @property string $username
+ * @property string|null $password
+ * @property string|null $last_login
+ * @property string|null $auth_key
+ *
+ * @property Comment[] $comments
+ * @property ContactDetails[] $contactDetails
+ * @property Correspondence[] $correspondences
+ * @property Departments[] $departments
+ * @property Order[] $orders
+ * @property Supplier[] $suppliers
+ */
+class User extends ActiveRecord implements \yii\web\IdentityInterface
 {
-    public $id;
-    public $username;
-    public $password;
-    public $authKey;
-    public $accessToken;
-
-    private static $users = [
-        '100' => [
-            'id' => '100',
-            'username' => 'admin',
-            'password' => 'admin',
-            'authKey' => 'test100key',
-            'accessToken' => '100-token',
-        ],
-        '101' => [
-            'id' => '101',
-            'username' => 'demo',
-            'password' => 'demo',
-            'authKey' => 'test101key',
-            'accessToken' => '101-token',
-        ],
-    ];
-
-
     /**
      * {@inheritdoc}
      */
-    public static function findIdentity($id)
+    public static function tableName()
     {
-        return isset(self::$users[$id]) ? new static(self::$users[$id]) : null;
+        return 'user';
     }
 
     /**
      * {@inheritdoc}
      */
+    public function rules()
+    {
+        return [
+            [['id', 'name', 'surname', 'user_type', 'username'], 'required'],
+            [['id', 'user_type'], 'integer'],
+            [['last_login'], 'safe'],
+            [['name', 'surname', 'username', 'password', 'auth_key'], 'string', 'max' => 100],
+            [['id'], 'unique'],
+        ];
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function attributeLabels()
+    {
+        return [
+            'id' => 'User ID',
+            'name' => 'Name',
+            'surname' => 'Surname',
+            'user_type' => 'User Type',
+            'username' => 'Username',
+            'password' => 'Password',
+            'last_login' => 'Last Login',
+            'auth_key' => 'Auth Key',
+        ];
+    }
+
+    /**
+     * Gets query for [[Comments]].
+     *
+     * @return \yii\db\ActiveQuery
+     */
+    public function getComments()
+    {
+        return $this->hasMany(Comment::className(), ['user_id' => 'id']);
+    }
+
+    /**
+     * Gets query for [[ContactDetails]].
+     *
+     * @return \yii\db\ActiveQuery
+     */
+    public function getContactDetails()
+    {
+        return $this->hasMany(ContactDetails::className(), ['user_id' => 'id']);
+    }
+
+    /**
+     * Gets query for [[Correspondences]].
+     *
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCorrespondences()
+    {
+        return $this->hasMany(Correspondence::className(), ['user_id' => 'id']);
+    }
+
+    /**
+     * Gets query for [[Departments]].
+     *
+     * @return \yii\db\ActiveQuery
+     */
+    public function getDepartments()
+    {
+        return $this->hasMany(Departments::className(), ['supervisor_id' => 'id']);
+    }
+
+    /**
+     * Gets query for [[Orders]].
+     *
+     * @return \yii\db\ActiveQuery
+     */
+    public function getOrders()
+    {
+        return $this->hasMany(Order::className(), ['user_authorised' => 'id']);
+    }
+
+    /**
+     * Gets query for [[Suppliers]].
+     *
+     * @return \yii\db\ActiveQuery
+     */
+    public function getSuppliers()
+    {
+        return $this->hasMany(Supplier::className(), ['user_id' => 'id']);
+    }
+
+
+    /**
+     * Gets query for [[Suppliers]].
+     *
+     * @return \yii\db\ActiveQuery
+     */
+    public static function findByUsername($username)
+    {
+        return User::find()->where(['username' => $username])->one();
+    }
+
+    public static function findIdentity($id)
+    {
+        // TODO: Implement findIdentity() method.
+    }
+
     public static function findIdentityByAccessToken($token, $type = null)
     {
         foreach (self::$users as $user) {
@@ -50,55 +153,18 @@ class User extends \yii\base\BaseObject implements \yii\web\IdentityInterface
         return null;
     }
 
-    /**
-     * Finds user by username
-     *
-     * @param string $username
-     * @return static|null
-     */
-    public static function findByUsername($username)
-    {
-        foreach (self::$users as $user) {
-            if (strcasecmp($user['username'], $username) === 0) {
-                return new static($user);
-            }
-        }
-
-        return null;
-    }
-
-    /**
-     * {@inheritdoc}
-     */
     public function getId()
     {
-        return $this->id;
+        // TODO: Implement getId() method.
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function getAuthKey()
     {
-        return $this->authKey;
+        // TODO: Implement getAuthKey() method.
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function validateAuthKey($authKey)
     {
-        return $this->authKey === $authKey;
-    }
-
-    /**
-     * Validates password
-     *
-     * @param string $password password to validate
-     * @return bool if password provided is valid for current user
-     */
-    public function validatePassword($password)
-    {
-        return $this->password === $password;
+        // TODO: Implement validateAuthKey() method.
     }
 }

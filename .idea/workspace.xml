@@ -4,13 +4,50 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5199bfd-2985-4e6b-a6b3-a17917f2db50" name="Changes" comment="API fix" />
+    <list default="true" id="c5199bfd-2985-4e6b-a6b3-a17917f2db50" name="Changes" comment="API fix">
+      <change beforePath="$PROJECT_DIR$/.idea/oakland-final.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/oakland-final.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/PolicyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/PolicyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/SystemUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Company.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/ContactDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/ContactDetails.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/Correspondence.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Correspondence.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/Departments.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Departments.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/LoginForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/LoginForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/Supplier.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Supplier.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/SystemUser.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/TitleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/TitleType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/api/auth-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/auth-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/amplify-login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/amplify-password-recovery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/amplify-password-reset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/amplify-register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/amplify-verify-code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/auth0-login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/auth0-register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/firebase-login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/firebase-register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/jwt-login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/authentication/jwt-login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/blog/blog-comment-add.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/blog/blog-comment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/blog/blog-newsletter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/blog/blog-post-card.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/checkout/checkout-billing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/checkout/checkout-order-summary.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/authentication/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/authentication/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/authentication/password-recovery.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/authentication/password-recovery.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/backend/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
@@ -18,6 +55,96 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/backend/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/backend/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/backend/vendor/behat/gherkin" />
+      <path value="$PROJECT_DIR$/backend/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/backend/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/backend/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/backend/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/backend/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/backend/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/backend/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/backend/vendor/yiisoft/yii2-swiftmailer" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/backend/vendor/yiisoft/yii2" />
+      <path value="$PROJECT_DIR$/backend/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpspec/php-diff" />
+      <path value="$PROJECT_DIR$/backend/vendor/yiisoft/yii2-gii" />
+      <path value="$PROJECT_DIR$/backend/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/backend/vendor/yiisoft/yii2-bootstrap4" />
+      <path value="$PROJECT_DIR$/backend/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/backend/vendor/yiisoft/yii2-debug" />
+      <path value="$PROJECT_DIR$/backend/vendor/yiisoft/yii2-composer" />
+      <path value="$PROJECT_DIR$/backend/vendor/yiisoft/yii2-faker" />
+      <path value="$PROJECT_DIR$/backend/vendor/codeception/lib-asserts" />
+      <path value="$PROJECT_DIR$/backend/vendor/codeception/codeception" />
+      <path value="$PROJECT_DIR$/backend/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/backend/vendor/codeception/stub" />
+      <path value="$PROJECT_DIR$/backend/vendor/bower-asset/jquery" />
+      <path value="$PROJECT_DIR$/backend/vendor/codeception/lib-innerbrowser" />
+      <path value="$PROJECT_DIR$/backend/vendor/codeception/verify" />
+      <path value="$PROJECT_DIR$/backend/vendor/codeception/module-filesystem" />
+      <path value="$PROJECT_DIR$/backend/vendor/codeception/phpunit-wrapper" />
+      <path value="$PROJECT_DIR$/backend/vendor/codeception/specify" />
+      <path value="$PROJECT_DIR$/backend/vendor/bower-asset/inputmask" />
+      <path value="$PROJECT_DIR$/backend/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/backend/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/backend/vendor/bower-asset/yii2-pjax" />
+      <path value="$PROJECT_DIR$/backend/vendor/codeception/module-yii2" />
+      <path value="$PROJECT_DIR$/backend/vendor/codeception/module-asserts" />
+      <path value="$PROJECT_DIR$/backend/vendor/bower-asset/punycode" />
+      <path value="$PROJECT_DIR$/backend/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/backend/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/backend/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/backend/vendor/composer" />
+      <path value="$PROJECT_DIR$/backend/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/backend/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/backend/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/backend/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/backend/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/backend/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/backend/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/backend/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/backend/vendor/cebe/markdown" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/backend/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/backend/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/backend/vendor/npm-asset/bootstrap" />
+      <path value="$PROJECT_DIR$/backend/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/backend/vendor/webmozart/assert" />
+    </include_path>
   </component>
   <component name="ProjectId" id="2BEJi83MGXpIKpFgOZnDAC5UZTV" />
   <component name="ProjectViewState">
@@ -30,7 +157,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/apple/www/html/oakland/backend/config",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "nodejs_package_manager_path": "npm",
+    "php.override.implement.member.chooser.php.doc": "NONE",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/Users/apple/www/html/oakland/frontend/node_modules/typescript/lib"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -49,6 +179,7 @@
       <workItem from="1656465436307" duration="504000" />
       <workItem from="1656612314564" duration="895000" />
       <workItem from="1656630255744" duration="4581000" />
+      <workItem from="1656635554492" duration="3384000" />
     </task>
     <task id="LOCAL-00001" summary="API fix">
       <created>1656635345358</created>

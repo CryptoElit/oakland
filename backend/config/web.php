@@ -24,7 +24,7 @@ $config = [
         ],
         'user' => [
             'identityClass' => 'app\models\User',
-            'enableAutoLogin' => true,
+            'enableAutoLogin' => false,
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
@@ -53,7 +53,7 @@ $config = [
             'rules' => [
             [
                 'class' => 'yii\rest\UrlRule',
-                'controller' => 'system-user',
+                'controller' => 'user',
                 'extraPatterns' => [
                     'POST login' => 'login',
                 ],

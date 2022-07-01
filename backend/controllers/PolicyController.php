@@ -11,7 +11,7 @@ use common\models\Policy;
 use common\models\PolicyMailer;
 use common\models\PolicyNominatedBenificiary;
 use common\models\PolicyStatus;
-use common\models\SystemUser;
+use common\models\User;
 use common\models\Template;
 use common\models\TemplateDeliveryChannel;
 use common\models\TransactionType;
@@ -138,7 +138,7 @@ WHERE
         $requestData = \Yii::$app->request->rawBody;
         $requestDataRes = json_decode($requestData);
 
-        $sysUserNew = new SystemUser();
+        $sysUserNew = new User();
         if ($sysUserNew->load($requestDataRes)) {
             return $sysUserNew;
         }

@@ -15,7 +15,7 @@ use Yii;
  * @property int|null $comment_type_id
  *
  * @property Order $order
- * @property SystemUser $user
+ * @property User $user
  */
 class Comment extends \yii\db\ActiveRecord
 {
@@ -38,7 +38,7 @@ class Comment extends \yii\db\ActiveRecord
             [['comment_date'], 'safe'],
             [['order_id', 'user_id', 'comment_type_id'], 'integer'],
             [['order_id'], 'exist', 'skipOnError' => true, 'targetClass' => Order::className(), 'targetAttribute' => ['order_id' => 'id']],
-            [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => SystemUser::className(), 'targetAttribute' => ['user_id' => 'user_id']],
+            [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'user_id']],
         ];
     }
 
@@ -74,6 +74,6 @@ class Comment extends \yii\db\ActiveRecord
      */
     public function getUser()
     {
-        return $this->hasOne(SystemUser::className(), ['user_id' => 'user_id']);
+        return $this->hasOne(User::className(), ['user_id' => 'user_id']);
     }
 }

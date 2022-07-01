@@ -21,7 +21,7 @@ use Yii;
  * @property Departments $deparment
  * @property OrderItem[] $orderItems
  * @property Status $status
- * @property SystemUser $userAuthorised
+ * @property User $userAuthorised
  */
 class Order extends \yii\db\ActiveRecord
 {
@@ -45,7 +45,7 @@ class Order extends \yii\db\ActiveRecord
             [['order_number'], 'string', 'max' => 45],
             [['status_id'], 'exist', 'skipOnError' => true, 'targetClass' => Status::className(), 'targetAttribute' => ['status_id' => 'id']],
             [['deparment_id'], 'exist', 'skipOnError' => true, 'targetClass' => Departments::className(), 'targetAttribute' => ['deparment_id' => 'id']],
-            [['user_authorised'], 'exist', 'skipOnError' => true, 'targetClass' => SystemUser::className(), 'targetAttribute' => ['user_authorised' => 'user_id']],
+            [['user_authorised'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_authorised' => 'user_id']],
         ];
     }
 
@@ -123,6 +123,6 @@ class Order extends \yii\db\ActiveRecord
      */
     public function getUserAuthorised()
     {
-        return $this->hasOne(SystemUser::className(), ['user_id' => 'user_authorised']);
+        return $this->hasOne(User::className(), ['user_id' => 'user_authorised']);
     }
 }

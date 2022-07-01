@@ -29,7 +29,7 @@ use Yii;
  * @property Product[] $products1
  * @property Quote[] $quotes
  * @property SystemUserCompany[] $systemUserCompanies
- * @property SystemUser[] $systemUsers
+ * @property User[] $systemUsers
  * @property User $user
  */
 class Company extends \yii\db\ActiveRecord
@@ -195,7 +195,7 @@ class Company extends \yii\db\ActiveRecord
      */
     public function getSystemUsers()
     {
-        return $this->hasMany(SystemUser::className(), ['company_id' => 'user_id']);
+        return $this->hasMany(User::className(), ['company_id' => 'user_id']);
     }
 
     /**
