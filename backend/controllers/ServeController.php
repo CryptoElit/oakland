@@ -1,9 +1,11 @@
 <?php
 
-use yii\filters\Cors;
-use yii\rest\ActiveController;
+namespace app\controllers;
 
-class ServeController extends ActiveController
+use yii\filters\Cors;
+use yii\rest\Controller;
+
+class ServeController extends Controller
 {
 
     public function beforeAction($action)

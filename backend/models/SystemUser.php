@@ -123,4 +123,15 @@ class SystemUser extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Supplier::className(), ['user_id' => 'user_id']);
     }
+
+
+    /**
+     * Gets query for [[Suppliers]].
+     *
+     * @return \yii\db\ActiveQuery
+     */
+    public static function findByUsername($username)
+    {
+        return SystemUser::find()->where(['username' => $username])->one();
+    }
 }

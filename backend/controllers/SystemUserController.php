@@ -2,40 +2,27 @@
 
 namespace app\controllers;
 
-
-
-use common\models\ChangePassword;
-use common\models\ChangePasswordForm;
-use common\models\LoginForm;
-use common\models\Permission;
-use common\models\Status;
-use common\models\SystemUser;
-use common\models\SystemUserCompany;
-use common\models\TemplateType;
-use common\models\User;
-use common\models\UserType;
 use Yii;
 use yii\helpers\ArrayHelper;
-use controllers\ServeController
-use common\models\ForgotPasswordForm;
+use app\controllers\ServeController;
+use app\models\LoginForm;
 
 
 
 class SystemUserController extends ServeController
 {
-  
+
 
 
     public function actionLogin()
     {
 
-        $requestData = \Yii::$app->request->rawBody;
-        $requestDataRes = json_decode($requestData);
+        $requestDataRes = \Yii::$app->request->post();
 
         $model = new LoginForm();
 
-        $model->username = $requestDataRes->username;
-        $model->password = $requestDataRes->password;
+        $model->username = $requestDataRes['username'];
+        $model->password = $requestDataRes['password'];
 
         \Yii::info("Username: ". $model->username , __METHOD__);
 
