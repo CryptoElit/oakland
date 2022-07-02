@@ -5,15 +5,606 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5199bfd-2985-4e6b-a6b3-a17917f2db50" name="Changes" comment="Password">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.bowerrc" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.bowerrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Vagrantfile" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Vagrantfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/assets/AppAsset.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/assets/AppAsset.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/codeception.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/codeception.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/commands/HelloController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/commands/HelloController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/console.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/console.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/params.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/params.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/test_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/test_db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/ContactDetailsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/ContactDetailsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/CreditorsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/CreditorsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/HelperController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/HelperController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/PolicyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/PolicyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/QuoteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/QuoteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/SystemSettingsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/SystemSettingsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/mail/layouts/html.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/mail/layouts/html.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Company.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/ContactDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/ContactDetails.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/ContactForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/ContactForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/ContactType.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/ContactType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/Correspondence.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Correspondence.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/Departments.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Departments.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/File.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/File.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/FileType.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/FileType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/LoginForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/LoginForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/OrderItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/OrderItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/Status.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Status.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/Supplier.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Supplier.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/TitleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/TitleType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/UserType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/requirements.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/requirements.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/runtime/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/_bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/_bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/_data/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/_data/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/_output/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/_output/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/_support/AcceptanceTester.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/_support/AcceptanceTester.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/_support/FunctionalTester.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/_support/FunctionalTester.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/_support/UnitTester.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/_support/UnitTester.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/acceptance.suite.yml.example" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/acceptance.suite.yml.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/acceptance/AboutCest.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/acceptance/AboutCest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/acceptance/ContactCest.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/acceptance/ContactCest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/acceptance/HomeCest.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/acceptance/HomeCest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/acceptance/LoginCest.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/acceptance/LoginCest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/acceptance/_bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/acceptance/_bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/bin/yii" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/bin/yii" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/bin/yii.bat" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/bin/yii.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/functional.suite.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/functional.suite.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/functional/ContactFormCest.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/functional/ContactFormCest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/functional/LoginFormCest.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/functional/LoginFormCest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/functional/_bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/functional/_bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/unit.suite.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/unit.suite.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/unit/_bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/unit/_bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/unit/models/ContactFormTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/unit/models/ContactFormTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/unit/models/LoginFormTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/unit/models/LoginFormTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/unit/models/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/unit/models/UserTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/unit/widgets/AlertTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/unit/widgets/AlertTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/vagrant/config/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/vagrant/config/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/vagrant/config/vagrant-local.example.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/vagrant/config/vagrant-local.example.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/vagrant/nginx/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/backend/vagrant/nginx/app.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/vagrant/nginx/log/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/vagrant/nginx/log/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/vagrant/provision/always-as-root.sh" beforeDir="false" afterPath="$PROJECT_DIR$/backend/vagrant/provision/always-as-root.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/vagrant/provision/once-as-root.sh" beforeDir="false" afterPath="$PROJECT_DIR$/backend/vagrant/provision/once-as-root.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/vagrant/provision/once-as-vagrant.sh" beforeDir="false" afterPath="$PROJECT_DIR$/backend/vagrant/provision/once-as-vagrant.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/vagrant/provision/provision.awk" beforeDir="false" afterPath="$PROJECT_DIR$/backend/vagrant/provision/provision.awk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/views/layouts/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/layouts/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/views/site/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/site/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/views/site/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/site/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/views/site/error.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/site/error.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/views/site/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/site/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/views/site/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/site/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/web/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/backend/web/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/web/assets/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/web/assets/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/web/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/web/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/web/index-test.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/web/index-test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/web/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/web/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/web/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/web/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/widgets/Alert.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/widgets/Alert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yii" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yii" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yii.bat" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yii.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/blog/blog_dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/blog/blog_dark.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/blog/blog_light.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/blog/blog_light.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/browse/hero.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/browse/hero.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/contact/contact_logos.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/contact/contact_logos.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/document_text.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/document_text.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/error/error401_dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/error/error401_dark.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/error/error401_light.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/error/error401_light.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/error/error404_dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/error/error404_dark.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/error/error404_light.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/error/error404_light.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/error/error500_dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/error/error500_dark.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/error/error500_light.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/error/error500_light.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/icons/amplify.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/icons/amplify.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/icons/angular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/icons/angular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/icons/ca_flag.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/icons/ca_flag.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/icons/de_flag.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/icons/de_flag.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/icons/es_flag.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/icons/es_flag.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/icons/firebase.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/icons/firebase.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/icons/google.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/icons/google.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/icons/html.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/icons/html.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/icons/javascript.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/icons/javascript.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/icons/jwt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/icons/jwt.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/icons/logoipsum_1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/icons/logoipsum_1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/icons/logoipsum_2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/icons/logoipsum_2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/icons/logoipsum_3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/icons/logoipsum_3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/icons/react-js.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/icons/react-js.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/icons/ru_flag.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/icons/ru_flag.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/icons/sketch.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/icons/sketch.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/icons/uk_flag.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/icons/uk_flag.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/icons/us_flag.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/icons/us_flag.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/icons/vue-js.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/icons/vue-js.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/mock-images/jobs/company-logo_1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/mock-images/jobs/company-logo_1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/mock-images/jobs/company-logo_2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/mock-images/jobs/company-logo_2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/mock-images/jobs/company-logo_3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/mock-images/jobs/company-logo_3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/mock-images/jobs/company-logo_4.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/mock-images/jobs/company-logo_4.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/mock-images/jobs/job_browse_header.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/mock-images/jobs/job_browse_header.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/photograph.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/photograph.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/pricing/plan1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/pricing/plan1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/pricing/plan2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/pricing/plan2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/pricing/plan3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/pricing/plan3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/pricing/pricing_dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/pricing/pricing_dark.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/pricing/pricing_light.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/pricing/pricing_light.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/static/undraw_add_file2_gvbb.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/static/undraw_add_file2_gvbb.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/api/auth-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/auth-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/api/calendar-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/calendar-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/api/chat-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/chat-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/api/customer-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/customer-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/api/invoice-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/invoice-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/api/job-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/job-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/api/kanban-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/kanban-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/api/mail-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/mail-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/api/order-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/order-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/api/product-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/product-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/api/social-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/social-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/auth-banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/authentication/auth-banner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/auth-guard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/authentication/auth-guard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/guest-guard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/authentication/guest-guard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/jwt-login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/authentication/jwt-login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/authentication/jwt-register.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/authentication/jwt-register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/browse-layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/browse-layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/chart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/circular-progress.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/circular-progress.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/contact/contact-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/contact/contact-form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dark-theme.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dark-theme.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/account-popover.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/account-popover.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/account/account-billing-settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/account/account-billing-settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/account/account-general-settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/account/account-general-settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/account/account-notifications-settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/account/account-notifications-settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/account/account-security-settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/account/account-security-settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/account/account-team-settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/account/account-team-settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/account/countries.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/account/countries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/analytics/analytics-general-overview.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/analytics/analytics-general-overview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/analytics/analytics-most-visited.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/analytics/analytics-most-visited.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/analytics/analytics-social-sources.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/analytics/analytics-social-sources.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/analytics/analytics-traffic-sources.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/analytics/analytics-traffic-sources.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/analytics/analytics-visits-by-country.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/analytics/analytics-visits-by-country.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/calendar/calendar-event-dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/calendar/calendar-event-dialog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/calendar/calendar-toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/calendar/calendar-toolbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/chat/chat-composer-toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/chat/chat-composer-toolbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/chat/chat-composer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/chat/chat-composer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/chat/chat-contact-search.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/chat/chat-contact-search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/chat/chat-message-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/chat/chat-message-add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/chat/chat-message.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/chat/chat-message.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/chat/chat-messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/chat/chat-messages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/chat/chat-sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/chat/chat-sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/chat/chat-thread-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/chat/chat-thread-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/chat/chat-thread-toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/chat/chat-thread-toolbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/chat/chat-thread.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/chat/chat-thread.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/contacts-popover.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/contacts-popover.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/content-search-dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/content-search-dialog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/customer/customer-basic-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/customer/customer-basic-details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/customer/customer-data-management.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/customer/customer-data-management.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/customer/customer-edit-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/customer/customer-edit-form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/customer/customer-emails-summary.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/customer/customer-emails-summary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/customer/customer-invoices.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/customer/customer-invoices.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/customer/customer-list-table.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/customer/customer-list-table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/customer/customer-logs.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/customer/customer-logs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/customer/customer-payment.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/customer/customer-payment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/dashboard-layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/dashboard-layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/dashboard-navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/dashboard-navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/dashboard-sidebar-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/dashboard-sidebar-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/dashboard-sidebar-section.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/dashboard-sidebar-section.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/dashboard-sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/dashboard-sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/finance/finance-cost-breakdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/finance/finance-cost-breakdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/finance/finance-incremental-sales.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/finance/finance-incremental-sales.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/finance/finance-overview.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/finance/finance-overview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/finance/finance-profitable-products.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/finance/finance-profitable-products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/finance/finance-sales-by-continent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/finance/finance-sales-by-continent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/finance/finance-sales-revenue.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/finance/finance-sales-revenue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/finance/world-map.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/finance/world-map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/invoice/invoice-list-filters.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/invoice/invoice-list-filters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/invoice/invoice-list-table.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/invoice/invoice-list-table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/invoice/invoice-pdf.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/invoice/invoice-pdf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/invoice/invoice-preview.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/invoice/invoice-preview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/jobs/company-activity.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/jobs/company-activity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/jobs/company-assets.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/jobs/company-assets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/jobs/company-jobs.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/jobs/company-jobs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/jobs/company-overview.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/jobs/company-overview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/jobs/company-reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/jobs/company-reviews.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/jobs/company-summary.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/jobs/company-summary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/jobs/company-team.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/jobs/company-team.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/jobs/job-category-step.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/jobs/job-category-step.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/jobs/job-description-step.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/jobs/job-description-step.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/jobs/job-details-step.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/jobs/job-details-step.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/jobs/jobs-browse-filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/jobs/jobs-browse-filter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/kanban/kanban-card-action.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/kanban/kanban-card-action.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/kanban/kanban-card-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/kanban/kanban-card-add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/kanban/kanban-card-modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/kanban/kanban-card-modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/kanban/kanban-card.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/kanban/kanban-card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/kanban/kanban-check-item-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/kanban/kanban-check-item-add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/kanban/kanban-check-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/kanban/kanban-check-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/kanban/kanban-checklist.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/kanban/kanban-checklist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/kanban/kanban-column-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/kanban/kanban-column-add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/kanban/kanban-column.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/kanban/kanban-column.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/kanban/kanban-comment-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/kanban/kanban-comment-add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/kanban/kanban-comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/kanban/kanban-comment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/language-popover.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/language-popover.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/logistics/logistics-on-route-vehicles.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/logistics/logistics-on-route-vehicles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/logistics/logistics-overview.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/logistics/logistics-overview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/logistics/logistics-total-vehicles.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/logistics/logistics-total-vehicles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/logistics/logistics-vehicles-condition.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/logistics/logistics-vehicles-condition.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/mail/mail-composer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/mail/mail-composer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/mail/mail-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/mail/mail-details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/mail/mail-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/mail/mail-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/mail/mail-label.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/mail/mail-label.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/mail/mail-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/mail/mail-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/mail/mail-reply.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/mail/mail-reply.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/mail/mail-sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/mail/mail-sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/notifications-popover.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/notifications-popover.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/order/order-drawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/order/order-drawer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/order/order-items.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/order/order-items.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/order/order-list-table.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/order/order-list-table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/order/order-logs.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/order/order-logs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/order/order-summary.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/order/order-summary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/organization-popover.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/organization-popover.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/overview/overview-banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/overview/overview-banner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/overview/overview-crypto-wallet.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/overview/overview-crypto-wallet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/overview/overview-inbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/overview/overview-inbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/overview/overview-latest-transactions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/overview/overview-latest-transactions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/overview/overview-private-wallet.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/overview/overview-private-wallet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/overview/overview-total-balance.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/overview/overview-total-balance.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/overview/overview-total-transactions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/overview/overview-total-transactions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/product/product-create-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/product/product-create-form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/product/product-list-filters.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/product/product-list-filters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/product/product-list-table.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/product/product-list-table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/social/social-about.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/social/social-about.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/social/social-comment-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/social/social-comment-add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/social/social-comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/social/social-comment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/social/social-connections.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/social/social-connections.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/social/social-post-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/social/social-post-add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/social/social-post-card.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/social/social-post-card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/social/social-timeline.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/social/social-timeline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/docs/docs-content.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/docs/docs-content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/docs/docs-layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/docs/docs-layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/docs/docs-navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/docs/docs-navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/docs/docs-sidebar-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/docs/docs-sidebar-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/docs/docs-sidebar-section.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/docs/docs-sidebar-section.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/docs/docs-sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/docs/docs-sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/draft-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/draft-editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/file-dropzone.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/file-dropzone.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/home/home-clients.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/home/home-clients.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/home/home-designers.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/home/home-designers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/home/home-developers.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/home/home-developers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/home/home-features.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/home/home-features.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/home/home-hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/home/home-hero.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/home/home-testimonials.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/home/home-testimonials.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/light-theme.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/light-theme.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/logo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/main-layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/main-layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/main-navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/main-navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/main-sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/main-sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/more-menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/more-menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/multi-select.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/multi-select.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/pricing/pricing-plan.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pricing/pricing-plan.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/property-list-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/property-list-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/property-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/property-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/quill-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/quill-editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/rtl.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/rtl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/scrollbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/scrollbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/settings-button.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/settings-button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/settings-drawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/settings-drawer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/severity-pill.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/severity-pill.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/splash-screen.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/splash-screen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/status-indicator.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/status-indicator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/tip.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/tip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widget-previewer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widget-previewer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/buttons/buttons-1.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/buttons/buttons-1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/buttons/buttons-2.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/buttons/buttons-2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/buttons/buttons-3.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/buttons/buttons-3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/charts/chart-1.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/charts/chart-1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/charts/chart-10.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/charts/chart-10.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/charts/chart-11.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/charts/chart-11.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/charts/chart-12.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/charts/chart-12.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/charts/chart-2.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/charts/chart-2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/charts/chart-3.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/charts/chart-3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/charts/chart-4.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/charts/chart-4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/charts/chart-5.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/charts/chart-5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/charts/chart-6.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/charts/chart-6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/charts/chart-7.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/charts/chart-7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/charts/chart-8.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/charts/chart-8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/charts/chart-9.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/charts/chart-9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/colors/colors-main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/colors/colors-main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/colors/colors-severity.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/colors/colors-severity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/detail-lists/detail-list-1.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/detail-lists/detail-list-1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/detail-lists/detail-list-2.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/detail-lists/detail-list-2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/detail-lists/detail-list-3.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/detail-lists/detail-list-3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/detail-lists/detail-list-4.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/detail-lists/detail-list-4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/detail-lists/detail-list-5.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/detail-lists/detail-list-5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/detail-lists/detail-list-6.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/detail-lists/detail-list-6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/detail-lists/detail-list-7.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/detail-lists/detail-list-7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/detail-lists/detail-list-8.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/detail-lists/detail-list-8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-1.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-10.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-10.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-11.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-11.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-12.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-12.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-13.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-13.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-14.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-14.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-15.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-15.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-16.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-16.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-2.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-3.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-4.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-5.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-6.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-7.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-8.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-9.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/grid-lists/grid-list-1.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/grid-lists/grid-list-1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/grid-lists/grid-list-2.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/grid-lists/grid-list-2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/grid-lists/grid-list-3.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/grid-lists/grid-list-3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/grid-lists/grid-list-4.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/grid-lists/grid-list-4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/grid-lists/grid-list-5.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/grid-lists/grid-list-5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/grid-lists/grid-list-6.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/grid-lists/grid-list-6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/grouped-lists/grouped-list-1.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/grouped-lists/grouped-list-1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/grouped-lists/grouped-list-10.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/grouped-lists/grouped-list-10.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/grouped-lists/grouped-list-11.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/grouped-lists/grouped-list-11.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/grouped-lists/grouped-list-2.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/grouped-lists/grouped-list-2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/grouped-lists/grouped-list-3.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/grouped-lists/grouped-list-3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/grouped-lists/grouped-list-4.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/grouped-lists/grouped-list-4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/grouped-lists/grouped-list-5.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/grouped-lists/grouped-list-5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/grouped-lists/grouped-list-6.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/grouped-lists/grouped-list-6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/grouped-lists/grouped-list-7.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/grouped-lists/grouped-list-7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/grouped-lists/grouped-list-8.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/grouped-lists/grouped-list-8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/grouped-lists/grouped-list-9.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/grouped-lists/grouped-list-9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/inputs/input-checkbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/inputs/input-checkbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/inputs/input-mixed.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/inputs/input-mixed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/inputs/input-radio.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/inputs/input-radio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/inputs/input-switch.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/inputs/input-switch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/inputs/input-text-field.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/inputs/input-text-field.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/modals/modal-1.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/modals/modal-1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/modals/modal-10.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/modals/modal-10.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/modals/modal-11.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/modals/modal-11.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/modals/modal-12.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/modals/modal-12.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/modals/modal-2.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/modals/modal-2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/modals/modal-3.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/modals/modal-3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/modals/modal-4.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/modals/modal-4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/modals/modal-5.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/modals/modal-5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/modals/modal-6.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/modals/modal-6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/modals/modal-7.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/modals/modal-7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/modals/modal-8.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/modals/modal-8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/modals/modal-9.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/modals/modal-9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/quick-stats/quick-stats-1.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/quick-stats/quick-stats-1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/quick-stats/quick-stats-2.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/quick-stats/quick-stats-2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/quick-stats/quick-stats-3.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/quick-stats/quick-stats-3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/quick-stats/quick-stats-4.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/quick-stats/quick-stats-4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/quick-stats/quick-stats-5.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/quick-stats/quick-stats-5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/quick-stats/quick-stats-6.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/quick-stats/quick-stats-6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/quick-stats/quick-stats-7.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/quick-stats/quick-stats-7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/quick-stats/quick-stats-8.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/quick-stats/quick-stats-8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/tables/table-1.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/tables/table-1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/tables/table-10.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/tables/table-10.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/tables/table-11.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/tables/table-11.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/tables/table-2.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/tables/table-2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/tables/table-3.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/tables/table-3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/tables/table-4.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/tables/table-4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/tables/table-5.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/tables/table-5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/tables/table-6.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/tables/table-6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/tables/table-7.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/tables/table-7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/tables/table-8.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/tables/table-8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/tables/table-9.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/tables/table-9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/contexts/amplify-context.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/contexts/amplify-context.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/contexts/auth0-context.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/contexts/auth0-context.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/contexts/firebase-auth-context.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/contexts/firebase-auth-context.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/contexts/jwt-context.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/contexts/jwt-context.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/contexts/settings-context.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/contexts/settings-context.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/hocs/with-auth-guard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/hocs/with-auth-guard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/hocs/with-guest-guard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/hocs/with-guest-guard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/hooks/use-auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/hooks/use-auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/hooks/use-mounted.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/hooks/use-mounted.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/hooks/use-settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/hooks/use-settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/hooks/use-update-effect.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/hooks/use-update-effect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/i18n.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/academic-cap.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/academic-cap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/adjustments.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/adjustments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/archive.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/archive.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/arrow-left.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/arrow-left.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/arrow-narrow-left.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/arrow-narrow-left.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/arrow-narrow-right.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/arrow-narrow-right.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/arrow-right.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/arrow-right.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/arrows-expand.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/arrows-expand.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/badge-check-outlined.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/badge-check-outlined.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/ban.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/ban.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/bell.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/bell.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/briefcase.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/briefcase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/calendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/camera.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/camera.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/cash.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/cash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/chart-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/chart-bar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/chart-pie.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/chart-pie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/chart-square-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/chart-square-bar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/chat-alt.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/chat-alt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/chat-alt2.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/chat-alt2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/check-circle-outlined.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/check-circle-outlined.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/check.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/check.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/chevron-down.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/chevron-down.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/chevron-left.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/chevron-left.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/chevron-right.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/chevron-right.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/chevron-up.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/chevron-up.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/clipboard-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/clipboard-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/clipboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/clipboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/clock.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/clock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/cog.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/cog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/collection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/credit-card.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/credit-card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/currency-dollar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/currency-dollar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/device-tablet.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/device-tablet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/document-text.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/document-text.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/dot.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/dot.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/dots-horizontal.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/dots-horizontal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/dots-vertical.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/dots-vertical.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/download.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/download.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/duplicate.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/duplicate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/emoji-happy.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/emoji-happy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/exclamation-circle.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/exclamation-circle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/exclamation.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/exclamation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/external-link.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/external-link.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/eye-off.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/eye-off.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/eye.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/eye.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/filter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/finger-print.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/finger-print.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/folder-open.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/folder-open.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/image.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/inbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/inbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/information-circle-outlined.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/information-circle-outlined.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/light-bulb.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/light-bulb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/link.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/link.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/lock-closed.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/lock-closed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/lock.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/lock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/mail-open.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/mail-open.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/mail.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/mail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/menu-alt-4.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/menu-alt-4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/minus-outlined.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/minus-outlined.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/moon.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/moon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/newspaper.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/newspaper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/office-building.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/office-building.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/paper-airplane.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/paper-airplane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/paper-clip.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/paper-clip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/pencil-alt.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/pencil-alt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/pencil.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/pencil.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/phone.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/phone.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/photograph.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/photograph.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/plus.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/plus.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/receipt-tax.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/receipt-tax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/refresh.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/refresh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/reports.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/reports.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/save.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/save.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/selector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/share.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/share.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/shopping-bag.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/shopping-bag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/shopping-cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/shopping-cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/sort-ascending.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/sort-ascending.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/sort-descending.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/sort-descending.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/star-outlined.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/star-outlined.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/star.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/star.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/sun.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/sun.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/switch-horizontal-outlined.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/switch-horizontal-outlined.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/switch-horizontal.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/switch-horizontal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/tag-outlined.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/tag-outlined.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/trash.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/trash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/truck.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/truck.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/upload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/user-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/user-add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/user-circle.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/user-circle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/view-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/view-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/x-circle.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/x-circle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/icons/x.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/icons/x.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/lib/firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/lib/firebase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/lib/gtm.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/lib/gtm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/401.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/401.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/404.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/404.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/500.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/500.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/_document.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/_document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/authentication/authorize.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/authentication/authorize.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/authentication/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/authentication/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/authentication/password-recovery.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/authentication/password-recovery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/authentication/password-reset.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/authentication/password-reset.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/authentication/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/authentication/register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/authentication/verify-code.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/authentication/verify-code.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/blog/[postId].js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/blog/[postId].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/blog/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/blog/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/blog/new.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/blog/new.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/browse/buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/browse/buttons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/browse/charts.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/browse/charts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/browse/colors.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/browse/colors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/browse/data-display/detail-lists.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/browse/data-display/detail-lists.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/browse/data-display/quick-stats.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/browse/data-display/quick-stats.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/browse/data-display/tables.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/browse/data-display/tables.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/browse/forms.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/browse/forms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/browse/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/browse/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/browse/inputs.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/browse/inputs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/browse/lists/grid-lists.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/browse/lists/grid-lists.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/browse/lists/grouped-lists.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/browse/lists/grouped-lists.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/browse/modals.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/browse/modals.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/browse/typography.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/browse/typography.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/checkout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/account.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/account.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/analytics.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/analytics.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/calendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/customers/[customerId]/edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/customers/[customerId]/edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/customers/[customerId]/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/customers/[customerId]/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/customers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/customers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/finance.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/finance.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/invoices/[invoiceId].js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/invoices/[invoiceId].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/invoices/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/invoices/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/jobs/companies/[companyId].js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/jobs/companies/[companyId].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/jobs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/jobs/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/jobs/new.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/jobs/new.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/kanban.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/kanban.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/logistics.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/logistics.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/mail.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/mail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/orders/[orderId].js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/orders/[orderId].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/orders/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/orders/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/pricing.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/pricing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/products/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/products/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/products/new.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/products/new.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/social/feed.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/social/feed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/social/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/social/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/docs/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/docs/[slug].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/slices/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/slices/calendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/slices/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/slices/chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/slices/kanban.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/slices/kanban.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/slices/mail.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/slices/mail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/slices/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/slices/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/root-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/root-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/theme/base-theme-options.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/theme/base-theme-options.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/theme/dark-theme-options.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/theme/dark-theme-options.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/theme/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/theme/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/theme/light-theme-options.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/theme/light-theme-options.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/bytes-to-size.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/bytes-to-size.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/create-emotion-cache.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/create-emotion-cache.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/create-resource-id.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/create-resource-id.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/deep-copy.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/deep-copy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/docs.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/docs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/file-to-base64.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/file-to-base64.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/get-initials.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/get-initials.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/jwt.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/jwt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/obj-from-array.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/obj-from-array.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/wait.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/wait.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,19 +716,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/apple/www/html/oakland/frontend/src/slices&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/apple/www/html/oakland/frontend/node_modules/typescript/lib&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "//wsl$/Ubuntu/home/heinz/www/html/oakland",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "php.override.implement.member.chooser.php.doc": "NONE",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/Users/apple/www/html/oakland/frontend/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frontend/src/slices" />
@@ -157,6 +753,7 @@
       <workItem from="1656630255744" duration="4581000" />
       <workItem from="1656635554492" duration="23817000" />
       <workItem from="1656686208064" duration="4392000" />
+      <workItem from="1656764812910" duration="4360000" />
     </task>
     <task id="LOCAL-00001" summary="API fix">
       <created>1656635345358</created>
@@ -267,7 +864,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/backend/controllers/UserController.php</url>
-          <line>12</line>
+          <line>13</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
