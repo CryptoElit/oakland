@@ -56,6 +56,7 @@ $config = [
                 'controller' => 'user',
                 'extraPatterns' => [
                     'POST login' => 'login',
+                    'POST check' => 'check',
                 ],
             ]
             ],

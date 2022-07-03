@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\User;
 use Yii;
 use yii\helpers\ArrayHelper;
 use app\controllers\ServeController;
@@ -33,25 +34,13 @@ class UserController extends ServeController
         Yii::info("Username: ". $model->username , __METHOD__);
 
         if ($model->login()) {
+
             $user = $model->getUser();
-            $user->auth_key = $requestDataRes->token;
+
+            $user->auth_key = JWT::encode(['email' => $user->username], '1', 'HS256');
             $user->save(false);
 
-
-            Yii::$app->cache->set($user->auth_key, $user, 36600);
-
-
-            return JWT::encode(
-                        [
-                            'auth_token' => $user->auth_key,
-                            'id' => $user->id,
-                            'name' => $user->name,
-                            'surname' => $user->surname,
-                            'email' => $user->username,
-                            'avatar' => '/',
-                        ],
-                    'q'
-                );
+            return  $user->auth_key;
         }
 
             foreach ($model->getErrors() as $key => $error) {
@@ -91,6 +80,28 @@ class UserController extends ServeController
             }
         } else {
             return ['message' => "Email address does not exist"];
+        }
+    }
+
+    public function actionCheck()
+    {
+
+        $requestData = Yii::$app->request->rawBody;
+        $requestDataRes = json_decode($requestData);
+
+        $username = $requestDataRes->username;
+        $token = JWT::decode($requestDataRes->token, '1', ['HS256']);
+        $user = User::findByUsername($username);
+
+        if ($user->username === $token->email) {
+
+        return  ['auth_key' => $user->auth_key,
+                'id' => $user->id,
+                'name' => $user->name,
+                'surname' => $user->surname,
+                'email' => $user->username,
+                'avatar' => '/',
+            ];
         }
     }
 
