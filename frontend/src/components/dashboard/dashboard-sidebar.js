@@ -41,136 +41,14 @@ const getSections = (t) => [
         icon: <HomeIcon fontSize="small" />
       },
       {
-        title: t('Analytics'),
-        path: '/dashboard/analytics',
-        icon: <ChartBarIcon fontSize="small" />
-      },
-      {
-        title: t('Finance'),
+        title: t('Finances'),
         path: '/dashboard/finance',
         icon: <ChartPieIcon fontSize="small" />
       },
-      {
-        title: t('Logistics'),
-        path: '/dashboard/logistics',
-        icon: <TruckIcon fontSize="small" />,
-        chip: <Chip
-          color="secondary"
-          label={(
-            <Typography
-              sx={{
-                fontSize: '10px',
-                fontWeight: '600'
-              }}
-            >
-              NEW
-            </Typography>
-          )}
-          size="small"
-        />
-      },
-      {
-        title: t('Account'),
-        path: '/dashboard/account',
-        icon: <UserCircleIcon fontSize="small" />
-      }
     ]
   },
   {
-    title: t('Management'),
-    items: [
-      {
-        title: t('Customers'),
-        path: '/dashboard/customers',
-        icon: <UsersIcon fontSize="small" />,
-        children: [
-          {
-            title: t('List'),
-            path: '/dashboard/customers'
-          },
-          {
-            title: t('Details'),
-            path: '/dashboard/customers/1'
-          },
-          {
-            title: t('Edit'),
-            path: '/dashboard/customers/1/edit'
-          }
-        ]
-      },
-      {
-        title: t('Products'),
-        path: '/dashboard/products',
-        icon: <ShoppingBagIcon fontSize="small" />,
-        children: [
-          {
-            title: t('List'),
-            path: '/dashboard/products'
-          },
-          {
-            title: t('Create'),
-            path: '/dashboard/products/new'
-          }
-        ]
-      },
-      {
-        title: t('Orders'),
-        icon: <ShoppingCartIcon fontSize="small" />,
-        path: '/dashboard/orders',
-        children: [
-          {
-            title: t('List'),
-            path: '/dashboard/orders'
-          },
-          {
-            title: t('Details'),
-            path: '/dashboard/orders/1'
-          }
-        ]
-      },
-      {
-        title: t('Invoices'),
-        path: '/dashboard/invoices',
-        icon: <ReceiptTaxIcon fontSize="small" />,
-        children: [
-          {
-            title: t('List'),
-            path: '/dashboard/invoices'
-          },
-          {
-            title: t('Details'),
-            path: '/dashboard/invoices/1'
-          }
-        ]
-      }
-    ]
-  },
-  {
-    title: t('Platforms'),
-    items: [
-      {
-        title: t('Job Listings'),
-        path: '/dashboard/jobs',
-        icon: <OfficeBuildingIcon fontSize="small" />,
-        children: [
-          {
-            title: t('Browse'),
-            path: '/dashboard/jobs'
-          },
-          {
-            title: t('Details'),
-            path: '/dashboard/jobs/companies/1'
-          },
-          {
-            title: t('Create'),
-            path: '/dashboard/jobs/new'
-          }
-        ]
-      },
-    ]
-  },
-  {
-    title: t('Apps'),
+    title: t('Notifications'),
     items: [
       {
         title: t('Mail'),
@@ -184,6 +62,50 @@ const getSections = (t) => [
       },
     ]
   },
+	{
+		title: t('General'),
+		items: [
+			{
+				title: t('Overview'),
+				path: '/dashboard',
+				icon: <HomeIcon fontSize="small" />
+			},
+			{
+				title: t('Analytics'),
+				path: '/dashboard/analytics',
+				icon: <ChartBarIcon fontSize="small" />
+			},
+			{
+				title: t('Finance'),
+				path: '/dashboard/finance',
+				icon: <ChartPieIcon fontSize="small" />
+			},
+			{
+				title: t('Logistics'),
+				path: '/dashboard/logistics',
+				icon: <TruckIcon fontSize="small" />,
+				chip: <Chip
+					color="secondary"
+					label={(
+						<Typography
+							sx={{
+								fontSize: '10px',
+								fontWeight: '600'
+							}}
+						>
+							NEW
+						</Typography>
+					)}
+					size="small"
+				/>
+			},
+			{
+				title: t('Account'),
+				path: '/dashboard/account',
+				icon: <UserCircleIcon fontSize="small" />
+			}
+		]
+	},
 ];
 
 export const DashboardSidebar = (props) => {
