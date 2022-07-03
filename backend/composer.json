@@ -19,7 +19,8 @@
         "yiisoft/yii2-bootstrap4": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
         "firebase/php-jwt": "^5.2",
-        "laminas/laminas-config": "^3.5.0"
+        "laminas/laminas-config": "^3.5.0",
+        "sendgrid/sendgrid" : "7.3.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",

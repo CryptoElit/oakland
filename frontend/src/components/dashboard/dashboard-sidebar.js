@@ -167,50 +167,11 @@ const getSections = (t) => [
           }
         ]
       },
-      {
-        title: t('Social Media'),
-        path: '/dashboard/social',
-        icon: <ShareIcon fontSize="small" />,
-        children: [
-          {
-            title: t('Profile'),
-            path: '/dashboard/social/profile'
-          },
-          {
-            title: t('Feed'),
-            path: '/dashboard/social/feed'
-          }
-        ]
-      },
-      {
-        title: t('Blog'),
-        path: '/blog',
-        icon: <NewspaperIcon fontSize="small" />,
-        children: [
-          {
-            title: t('Post List'),
-            path: '/blog'
-          },
-          {
-            title: t('Post Details'),
-            path: '/blog/1'
-          },
-          {
-            title: t('Post Create'),
-            path: '/blog/new'
-          }
-        ]
-      }
     ]
   },
   {
     title: t('Apps'),
     items: [
-      {
-        title: t('Kanban'),
-        path: '/dashboard/kanban',
-        icon: <ClipboardListIcon fontSize="small" />
-      },
       {
         title: t('Mail'),
         path: '/dashboard/mail',
@@ -221,67 +182,8 @@ const getSections = (t) => [
         path: '/dashboard/chat',
         icon: <ChatAlt2Icon fontSize="small" />
       },
-      {
-        title: t('Calendar'),
-        path: '/dashboard/calendar',
-        icon: <CalendarIcon fontSize="small" />
-      }
     ]
   },
-  {
-    title: t('Pages'),
-    items: [
-      {
-        title: t('Auth'),
-        path: '/authentication',
-        icon: <LockClosedIcon fontSize="small" />,
-        children: [
-          {
-            title: t('Register'),
-            path: '/authentication/register?disableGuard=true'
-          },
-          {
-            title: t('Login'),
-            path: '/authentication/login?disableGuard=true'
-          }
-        ]
-      },
-      {
-        title: t('Pricing'),
-        path: '/dashboard/pricing',
-        icon: <CreditCardIcon fontSize="small" />
-      },
-      {
-        title: t('Checkout'),
-        path: '/checkout',
-        icon: <CashIcon fontSize="small" />
-      },
-      {
-        title: t('Contact'),
-        path: '/contact',
-        icon: <MailOpenIcon fontSize="small" />
-      },
-      {
-        title: t('Error'),
-        path: '/error',
-        icon: <XCircleIcon fontSize="small" />,
-        children: [
-          {
-            title: '401',
-            path: '/401'
-          },
-          {
-            title: '404',
-            path: '/404'
-          },
-          {
-            title: '500',
-            path: '/500'
-          }
-        ]
-      }
-    ]
-  }
 ];
 
 export const DashboardSidebar = (props) => {

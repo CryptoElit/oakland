@@ -28,6 +28,7 @@
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.21.1",
     "@aws-amplify/auth": "^4.5.6",
+    "@emailjs/browser": "^3.6.2",
     "@emotion/cache": "^11.7.1",
     "@emotion/react": "^11.9.0",
     "@emotion/server": "^11.4.0",

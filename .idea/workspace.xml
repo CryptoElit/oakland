@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5199bfd-2985-4e6b-a6b3-a17917f2db50" name="Changes" comment="Password">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/dashboard-sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/dashboard-sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-15.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/forms/form-15.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/browse/forms.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/browse/forms.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +164,7 @@
       <workItem from="1656630255744" duration="4581000" />
       <workItem from="1656635554492" duration="23817000" />
       <workItem from="1656686208064" duration="4392000" />
-      <workItem from="1656865549614" duration="10721000" />
+      <workItem from="1656865549614" duration="15412000" />
     </task>
     <task id="LOCAL-00001" summary="API fix">
       <created>1656635345358</created>

@@ -99,10 +99,7 @@ const BrowseForms = () => {
             element={<Form14 />}
             name="Mixed form"
           />
-          <WidgetPreviewer
-            element={<Form15 />}
-            name="Basic input field"
-          />
+
           <WidgetPreviewer
             element={<Form16 />}
             name="Form with input fields and checkbox"
