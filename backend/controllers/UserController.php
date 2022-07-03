@@ -6,8 +6,7 @@ use Yii;
 use yii\helpers\ArrayHelper;
 use app\controllers\ServeController;
 use app\models\LoginForm;
-
-
+use Firebase\JWT\JWT;
 
 class UserController extends ServeController
 {
@@ -42,17 +41,17 @@ class UserController extends ServeController
             Yii::$app->cache->set($user->auth_key, $user, 36600);
 
 
-            return json_encode(
-                [
-                    'auth_token' => $user->auth_key,
-                    'id' => $user->id,
-                    'name' => $user->name,
-                    'surname' => $user->surname,
-                    'email' => $user->username,
-                    'password' => $user->password,
-                    'avatar' => '/',
-                ]
-            );
+            return JWT::encode(
+                        [
+                            'auth_token' => $user->auth_key,
+                            'id' => $user->id,
+                            'name' => $user->name,
+                            'surname' => $user->surname,
+                            'email' => $user->username,
+                            'avatar' => '/',
+                        ],
+                    'q'
+                );
         }
 
             foreach ($model->getErrors() as $key => $error) {

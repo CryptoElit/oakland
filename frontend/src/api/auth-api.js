@@ -29,10 +29,9 @@ class AuthApi {
 
 
   async login({ email, password }) {
-	  const accessToken = sign(email, JWT_SECRET, {expiresIn: JWT_EXPIRES_IN});
-	  return await this.postData('http://localhost:7878/users/login', {username: email, password, token: accessToken})
+	  return await this.postData('http://localhost:7878/users/login', {username: email, password})
 		  .then((d) => {
-			  return {user: JSON.parse(d), token: accessToken}
+			  return (d)
 		  })
   }
 
@@ -44,19 +43,6 @@ class AuthApi {
         // Check if a user already exists
         let user = users.find((_user) => _user.email === email);
 
-        if (user) {
-          reject(new Error('User already exists'));
-          return;
-        }
-
-        user = {
-          id: createResourceId(),
-          avatar: undefined,
-          email,
-          name,
-          password,
-          plan: 'Standard'
-        };
 
         users.push(user);
 
