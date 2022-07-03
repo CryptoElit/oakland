@@ -76,7 +76,7 @@ const Overview = () => {
             >
               <Grid item>
                 <Typography variant="h4">
-                  Good Morning
+					{(new Date()).getHours < 12 ?  "Good Morning" : "Good Afternoon"}
                 </Typography>
               </Grid>
               <Grid
