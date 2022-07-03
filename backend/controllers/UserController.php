@@ -2,7 +2,6 @@
 
 namespace app\controllers;
 
-use app\models\User;
 use Yii;
 use yii\helpers\ArrayHelper;
 use app\controllers\ServeController;
@@ -25,11 +24,6 @@ class UserController extends ServeController
         //    password: 'go',
         //    plan: 'Premium'
         //  }
-
-
-        $user = User::find()->where(['id' => 1])->asArray()->one();
-return $user;
-
         $requestDataRes = json_decode(Yii::$app->request->rawBody);
 
         $model = new LoginForm();
@@ -83,11 +77,11 @@ return $user;
         Yii::info("Email: ". $model->email , __METHOD__);
 
         if ($model->validate()) {
-            $model_user = User::findByUsername($model->email);
-            if ($model_user != null) {
-                if (Yii::$app->mailcomponent->sendEmail(TemplateType::PASSWORD_RESET, $model_user->id)) {
-                    $model_user->users->status_id = Status::STATUS_PASSWORD_RESET;
-                    $model_user->save();
+            $model_system_user = User::findByUsername($model->email);
+            if ($model_system_user != null) {
+                if (Yii::$app->mailcomponent->sendEmail(TemplateType::PASSWORD_RESET, $model_system_user->id)) {
+                    $model_system_user->users->status_id = Status::STATUS_PASSWORD_RESET;
+                    $model_system_user->save();
                     return ['message' => "Forgot Password e-mail sent."];
                 } else {
                     return ['message' => "The email could not be sent, please retry or contact support at support@servsol.co.za"];
@@ -110,12 +104,12 @@ return $user;
 
 
 $query = "SELECT
-    user.user_id AS id,
+    system_user.user_id AS id,
     title_type_id,
-    user.name,
+    system_user.name,
     surname,
     id_number,
-    user_company.company_id,
+    system_user_company.company_id,
     company.name as company_name,
     username,
     last_login,
@@ -124,28 +118,28 @@ $query = "SELECT
            status.description AS status_description,
        '' as file
 FROM
-    user
+    system_user
         LEFT JOIN
-    user_company ON user.user_id = user_company.user_id
+    system_user_company ON system_user.user_id = system_user_company.system_user_id
         LEFT JOIN
-    company ON user.company_id = company.user_id
+    company ON system_user.company_id = company.user_id
         LEFT JOIN
-    auth_assignment aa ON user.user_id = aa.user_id
+    auth_assignment aa ON system_user.user_id = aa.user_id
         LEFT JOIN
     auth_item ai ON aa.item_name = ai.name
         LEFT JOIN
-    `user` ON user.id = user.user_id
+    `user` ON user.id = system_user.user_id
       LEFT JOIN
     `status` ON user.status_id = status.id
    WHERE ai.type = 1
     ";
 
-        $ids = UserCompany::getAllCompanyIDsForUser();
+        $ids = SystemUserCompany::getAllCompanyIDsForUser();
         if (!empty($ids)){
-            $query .= " AND user_company.company_id IN ('.$ids.')";
+            $query .= " AND system_user_company.company_id IN ('.$ids.')";
         }
 
-        $query .= " GROUP BY user.user_id";
+        $query .= " GROUP BY system_user.user_id";
 
         $create =  Yii::$app->getDb()->createCommand($query);
 
@@ -160,7 +154,7 @@ public function  actionView() {
     $requestData = Yii::$app->request->rawBody;
     $requestDataRes = json_decode($requestData);
 
-    $user = User::findOne($requestDataRes->id)->user;
+    $user = User::findOne($requestDataRes->id)->systemUser;
 
     $data['user'] = [
         'uuid' => $user->user_id,
@@ -174,14 +168,14 @@ public function  actionView() {
             'company' => $user->company->trading_name,
             'photoURL' => 'assets/images/avatars/Abbott.jpg',
             'email' => $user->username,
-            'permissions' => $user->userCompanyMap
+            'permissions' => $user->systemUserCompanyMap
         ]
     ];
 
     return $data;
 }
 
-    public function actionUserCompany()
+    public function actionSystemUserCompany()
     {
 
         $requestData = Yii::$app->request->rawBody;
@@ -189,18 +183,18 @@ public function  actionView() {
 
 
         $query = "SELECT
-    user_id AS user_id,
+    system_user_id AS user_id,
     company.name AS company_name,
     company_id,
     permission.id AS permission_type,
     can_edit
 FROM
-    `user_company`
+    `system_user_company`
         LEFT JOIN
-    `company` ON `user_company`.`company_id` = `company`.`user_id`
+    `company` ON `system_user_company`.`company_id` = `company`.`user_id`
         LEFT JOIN
-    `permission` ON `user_company`.`permission_id` = `permission`.`id`
-     WHERE user.company =`user_id`= $requestDataRes->id";
+    `permission` ON `system_user_company`.`permission_id` = `permission`.`id`
+     WHERE system_user.company =`system_user_id`= $requestDataRes->id";
 
       return Yii::$app->getDb()->createCommand($query)->queryAll();
 
@@ -234,21 +228,21 @@ FROM
 
                     // Company changed, let's revoke all system access and recreate it.
                     if ($existingCompany != $model->company_id){
-                        UserCompany::revokeAllAccess($id, $existingCompany);
-                        //Create and insert all the relevant UserCompany Permissions, set all to view initially.
+                        SystemUserCompany::revokeAllAccess($id, $existingCompany);
+                        //Create and insert all the relevant SystemUserCompany Permissions, set all to view initially.
                         $permissions = Permission::find()->all();
 
                         foreach ($permissions as $permission){
                             Yii::info("Adding Permission for users");
-                            $userCompany = new UserCompany();
-                            $userCompany->user_id = $model->user_id;
-                            $userCompany->company_id = $model->company_id;
-                            $userCompany->permission_id = $permission->id;
-                            $userCompany->can_edit = 0;
-                            if ($userCompany->validate()){
-                                $userCompany->save();
+                            $systemUserCompany = new SystemUserCompany();
+                            $systemUserCompany->system_user_id = $model->user_id;
+                            $systemUserCompany->company_id = $model->company_id;
+                            $systemUserCompany->permission_id = $permission->id;
+                            $systemUserCompany->can_edit = 0;
+                            if ($systemUserCompany->validate()){
+                                $systemUserCompany->save();
                             }else{
-                                Yii::info($userCompany->getErrors());
+                                Yii::info($systemUserCompany->getErrors());
                             }
                         }
                     }
@@ -289,7 +283,7 @@ FROM
         $model = new User();
         $model_User = new User();
         $model_User->status_id = Status::STATUS_NEW;
-        $model_User->user_type_id = UserType::user;
+        $model_User->user_type_id = UserType::SYSTEM_USER;
         $model_User->date_created = date('Y-m-d H:i:s');
 
         $auth = Yii::$app->authManager;
@@ -297,7 +291,7 @@ FROM
 
         if (User::retrieveRole(Yii::$app->user->id) != User::FINSAFE_SYSTEM_ADMIN){
             unset($model->roles[User::FINSAFE_SYSTEM_ADMIN]);
-            $model->company_id = UserCompany::getFirstCompanyForUser($user_id);
+            $model->company_id = SystemUserCompany::getFirstCompanyForUser($user_id);
         }
 
         if ($model->load(Yii::$app->request->post())) {
@@ -325,20 +319,20 @@ FROM
                     //Assign the selected Role
                     $auth->assign($auth->getRole($model->selected_role), $model->user_id);
 
-                    //Create and insert all the relevant UserCompany Permissions, set all to view initially.
+                    //Create and insert all the relevant SystemUserCompany Permissions, set all to view initially.
                     $permissions = Permission::find()->all();
 
                     foreach ($permissions as $permission){
                         Yii::info("Adding Permission for users");
-                        $userCompany = new UserCompany();
-                        $userCompany->user_id = $model->user_id;
-                        $userCompany->company_id = $model->company_id;
-                        $userCompany->permission_id = $permission->id;
-                        $userCompany->can_edit = 0;
-                        if ($userCompany->validate()){
-                            $userCompany->save();
+                        $systemUserCompany = new SystemUserCompany();
+                        $systemUserCompany->system_user_id = $model->user_id;
+                        $systemUserCompany->company_id = $model->company_id;
+                        $systemUserCompany->permission_id = $permission->id;
+                        $systemUserCompany->can_edit = 0;
+                        if ($systemUserCompany->validate()){
+                            $systemUserCompany->save();
                         }else{
-                         return $userCompany->getErrors();
+                         return $systemUserCompany->getErrors();
                         }
                     }
              return $resultSuccess;

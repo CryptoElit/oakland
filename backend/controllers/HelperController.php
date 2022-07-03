@@ -26,7 +26,7 @@ use common\models\PolicyMailer;
 use common\models\ProductAvailable;
 use common\models\ProductBroker;
 use common\models\ProductFeeType;
-use common\models\UserCompany;
+use common\models\SystemUserCompany;
 use common\models\Template;
 use common\models\TemplateType;
 use common\models\UserType;
@@ -114,8 +114,8 @@ ORDER BY `system_file_group`, `position_index` ASC';
         $requestDataRes = json_decode(\Yii::$app->request->rawBody);
 
         switch ($requestDataRes->params->ref) {
-            case 'userCompany':
-                $model = UserCompany::findOne($requestDataRes->params->id);
+            case 'systemUserCompany':
+                $model = SystemUserCompany::findOne($requestDataRes->params->id);
 
                 $model->can_edit = $requestDataRes->params->can_edit;
 
