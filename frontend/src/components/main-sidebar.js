@@ -65,28 +65,6 @@ export const MainSidebar = (props) => {
             Components
           </MainSidebarLink>
         </NextLink>
-        <NextLink
-          href="/docs/welcome"
-          passHref
-        >
-          <MainSidebarLink
-            color="textSecondary"
-            underline="none"
-            variant="subtitle2"
-          >
-            Documentation
-          </MainSidebarLink>
-        </NextLink>
-        <Button
-          component="a"
-          fullWidth
-          href="https://material-ui.com/store/items/devias-kit-pro"
-          sx={{ mt: 1.5 }}
-          target="_blank"
-          variant="contained"
-        >
-          Buy Now
-        </Button>
       </Box>
     </Drawer>
   );

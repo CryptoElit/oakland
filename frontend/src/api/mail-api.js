@@ -98,7 +98,7 @@ const emails = [
         id: '09223c93e60f815fdce487af',
         type: 'file',
         url: '/static/mock-images/mail/attachment_2.pdf',
-        name: 'summer-customers.pdf',
+        name: 'summer-user.pdf',
         size: '782.3Kb'
       },
       {

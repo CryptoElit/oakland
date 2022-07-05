@@ -56,7 +56,7 @@ const Kanban = () => {
     <>
       <Head>
         <title>
-          Dashboard: Kanban | Material Kit Pro
+          Dashboard: Kanban |
         </title>
       </Head>
       <Box

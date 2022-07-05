@@ -92,7 +92,7 @@ const Chat = () => {
     <>
       <Head>
         <title>
-          Dashboard: Chat | Material Kit Pro
+          Dashboard: Chat |
         </title>
       </Head>
       <Box

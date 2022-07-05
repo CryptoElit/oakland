@@ -27,7 +27,7 @@ const Login = () => {
     <>
       <Head>
         <title>
-          Login | Material Kit Pro
+          Login | Citations Portal
         </title>
       </Head>
       <Box

@@ -32,7 +32,7 @@ const Register = () => {
     <>
       <Head>
         <title>
-          Register | Material Kit Pro
+          Register |
         </title>
       </Head>
       <Box

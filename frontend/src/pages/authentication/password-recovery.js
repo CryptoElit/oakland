@@ -24,7 +24,7 @@ const PasswordRecovery = () => {
     <>
       <Head>
         <title>
-          Password Recovery | Material Kit Pro
+          Password Recovery |
         </title>
       </Head>
       <Box

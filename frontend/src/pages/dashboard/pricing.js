@@ -18,7 +18,7 @@ const Pricing = () => {
     <>
       <Head>
         <title>
-          Pricing | Material Kit Pro
+        Citations
         </title>
       </Head>
       <Box
@@ -153,7 +153,7 @@ const Pricing = () => {
                   'All previous',
                   'Highlights reporting',
                   'Data history',
-                  'Unlimited users'
+                  'Unlimited user'
                 ]}
                 image="/static/pricing/plan2.svg"
                 name="Standard"

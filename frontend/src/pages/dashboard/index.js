@@ -57,7 +57,7 @@ const Overview = () => {
     <>
       <Head>
         <title>
-          Dashboard: Overview | Material Kit Pro
+          Dashboard: Overview |
         </title>
       </Head>
       <Box

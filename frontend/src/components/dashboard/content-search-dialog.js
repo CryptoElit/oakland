@@ -20,7 +20,7 @@ import { Tip } from '../tip';
 const results = {
   Platform: [
     {
-      description: 'Provide your users with the content they need, exactly when they need it, by building a next-level site search experience using our AI-powered search API.',
+      description: 'Provide your user with the content they need, exactly when they need it, by building a next-level site search experience using our AI-powered search API.',
       title: 'Level up your site search experience with our hosted API',
       path: 'Users / Api-usage'
     },

@@ -57,7 +57,7 @@ const JobBrowse = () => {
     <>
       <Head>
         <title>
-          Dashboard: Job Browse | Material Kit Pro
+          Dashboard: Job Browse |
         </title>
       </Head>
       <Box

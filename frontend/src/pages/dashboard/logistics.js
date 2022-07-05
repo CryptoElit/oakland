@@ -21,7 +21,7 @@ const Logistics = () => {
     <>
       <Head>
         <title>
-          Dashboard: Logistics | Material Kit Pro
+          Dashboard: Logistics |
         </title>
       </Head>
       <Box

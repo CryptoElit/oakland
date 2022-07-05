@@ -1,6 +1,7 @@
 import { Box } from '@mui/material';
 import { Logo } from './logo';
 import { keyframes } from '@emotion/react';
+import {Image} from "../icons/image";
 
 const bounce1 = keyframes`
   0% {
@@ -43,17 +44,6 @@ export const SplashScreen = () => (
       zIndex: 2000
     }}
   >
-    <Logo
-      sx={{
-        height: 80,
-        width: 80,
-        '& path:nth-child(1)': {
-          animation: `${bounce1} 1s ease-in-out infinite`
-        },
-        '& path:nth-child(3)': {
-          animation: `${bounce3} 1s ease-in-out infinite`
-        }
-      }}
-    />
+    <Image source={'/static/logo-admin-portal.png'} />
   </Box>
 );

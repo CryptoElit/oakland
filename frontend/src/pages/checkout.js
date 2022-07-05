@@ -79,7 +79,7 @@ const Checkout = () => {
     <>
       <Head>
         <title>
-          Checkout | Material Kit Pro
+          Checkout |
         </title>
       </Head>
       <Box

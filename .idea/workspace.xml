@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5199bfd-2985-4e6b-a6b3-a17917f2db50" name="Changes" comment="Password">
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/dashboard-sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/dashboard-sidebar.js" afterDir="false" />
+    <list default="true" id="c5199bfd-2985-4e6b-a6b3-a17917f2db50" name="Changes" comment="sidebar">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +162,7 @@
       <workItem from="1656630255744" duration="4581000" />
       <workItem from="1656635554492" duration="23817000" />
       <workItem from="1656686208064" duration="4392000" />
-      <workItem from="1656865549614" duration="16044000" />
+      <workItem from="1656865549614" duration="16898000" />
     </task>
     <task id="LOCAL-00001" summary="API fix">
       <created>1656635345358</created>
@@ -234,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656889245747</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="sidebar">
+      <created>1656890021260</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1656890021260</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +301,8 @@
     <MESSAGE value="API fix" />
     <MESSAGE value="Sanity" />
     <MESSAGE value="Password" />
-    <option name="LAST_COMMIT_MESSAGE" value="Password" />
+    <MESSAGE value="sidebar" />
+    <option name="LAST_COMMIT_MESSAGE" value="sidebar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

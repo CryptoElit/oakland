@@ -76,7 +76,7 @@ const CompanyDetails = () => {
     <>
       <Head>
         <title>
-          Dashboard: Company Details | Material Kit Pro
+          Dashboard: Company Details |
         </title>
       </Head>
       <Box

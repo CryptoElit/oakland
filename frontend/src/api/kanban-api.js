@@ -98,7 +98,7 @@ let board = {
       isSubscribed: true,
       labels: [],
       memberIds: ['5e887a62195cc5aef7e8ca5d'],
-      name: 'Update the customer API for payments'
+      name: 'Update the user API for payments'
     },
     {
       id: '5e849cb5d0c6e8894451fdfa',
