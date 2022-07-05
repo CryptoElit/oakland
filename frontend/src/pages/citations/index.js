@@ -6,11 +6,13 @@ import {orderApi} from '../../api/order-api';
 import {AuthGuard} from '../../components/authentication/auth-guard';
 import {DashboardLayout} from '../../components/dashboard/dashboard-layout';
 import {CitationDrawer} from '../../components/dashboard/citation/citation-drawer';
-import {OrderListTable} from '../../components/dashboard/citation/citation-list-table';
+import {CitationListTable} from '../../components/dashboard/citation/citation-list-table';
 import {useMounted} from '../../hooks/use-mounted';
 import {Plus as PlusIcon} from '../../icons/plus';
 import {Search as SearchIcon} from '../../icons/search';
 import {gtm} from '../../lib/gtm';
+import {DataGridHelper} from '../../components/data-grid-helper';
+
 
 const tabs = [
   {
@@ -77,7 +79,7 @@ const applySort = (orders, sortDir) => orders.sort((a, b) => {
 const applyPagination = (orders, page, rowsPerPage) => orders.slice(page * rowsPerPage,
   page * rowsPerPage + rowsPerPage);
 
-const OrderListInner = styled('div',
+const CitationListInner = styled('div',
   { shouldForwardProp: (prop) => prop !== 'open' })(
   ({ theme, open }) => ({
     flexGrow: 1,
@@ -103,7 +105,7 @@ const OrderListInner = styled('div',
     })
   }));
 
-const OrderList = () => {
+const CitationList = () => {
   const isMounted = useMounted();
   const rootRef = useRef(null);
   const queryRef = useRef(null);
@@ -208,7 +210,7 @@ const OrderList = () => {
           overflow: 'hidden'
         }}
       >
-        <OrderListInner open={drawer.isOpen}>
+        <CitationListInner open={drawer.isOpen}>
           <Box sx={{ px: 3 }}>
             <Grid
               container
@@ -229,23 +231,7 @@ const OrderList = () => {
                 </Button>
               </Grid>
             </Grid>
-            <Tabs
-              indicatorColor="primary"
-              onChange={handleTabsChange}
-              scrollButtons="auto"
-              textColor="primary"
-              value={currentTab}
-              sx={{ mt: 3 }}
-              variant="scrollable"
-            >
-              {tabs.map((tab) => (
-                <Tab
-                  key={tab.value}
-                  label={tab.label}
-                  value={tab.value}
-                />
-              ))}
-            </Tabs>
+            <DataGridHelper />
           </Box>
           <Divider />
           <Box
@@ -299,7 +285,7 @@ const OrderList = () => {
             </TextField>
           </Box>
           <Divider />
-          <OrderListTable
+          <CitationListTable
             onOpenDrawer={handleOpenDrawer}
             onPageChange={handlePageChange}
             onRowsPerPageChange={handleRowsPerPageChange}
@@ -308,7 +294,7 @@ const OrderList = () => {
             page={page}
             rowsPerPage={rowsPerPage}
           />
-        </OrderListInner>
+        </CitationListInner>
         <CitationDrawer
           containerRef={rootRef}
           onClose={handleCloseDrawer}
@@ -320,7 +306,7 @@ const OrderList = () => {
   );
 };
 
-OrderList.getLayout = (page) => (
+CitationList.getLayout = (page) => (
   <AuthGuard>
     <DashboardLayout>
       {page}
@@ -328,4 +314,4 @@ OrderList.getLayout = (page) => (
   </AuthGuard>
 );
 
-export default OrderList;
+export default CitationList;

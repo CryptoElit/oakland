@@ -11,7 +11,7 @@ const severityMap = {
   rejected: 'error'
 };
 
-export const OrderListTable = (props) => {
+export const CitationListTable = (props) => {
   const {
     onOpenDrawer,
     onPageChange,
@@ -100,7 +100,7 @@ export const OrderListTable = (props) => {
   );
 };
 
-OrderListTable.propTypes = {
+CitationListTable.propTypes = {
   onOpenDrawer: PropTypes.func,
   onPageChange: PropTypes.func.isRequired,
   onRowsPerPageChange: PropTypes.func,

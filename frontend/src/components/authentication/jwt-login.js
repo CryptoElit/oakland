@@ -103,19 +103,6 @@ export const JWTLogin = (props) => {
           Log In
         </Button>
       </Box>
-      <Box sx={{ mt: 2 }}>
-        <Alert severity="info">
-          <div>
-            Use
-            {' '}
-            <b>demo@devias.io</b>
-            {' '}
-            and password
-            {' '}
-            <b>Password123!</b>
-          </div>
-        </Alert>
-      </Box>
     </form>
   );
 };

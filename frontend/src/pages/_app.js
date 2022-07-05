@@ -10,7 +10,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import {LocalizationProvider} from '@mui/lab';
 import AdapterDateFns from '@mui/lab/AdapterDateFns';
 import {RTL} from '../components/rtl';
-import {SettingsButton} from '../components/settings-button';
 import {SplashScreen} from '../components/splash-screen';
 import {SettingsConsumer, SettingsProvider} from '../contexts/settings-context';
 import {AuthConsumer, AuthProvider} from '../contexts/jwt-context';
@@ -63,7 +62,6 @@ const App = (props) => {
                     <RTL direction={settings.direction}>
                       <CssBaseline />
                       <Toaster position="top-center" />
-                      <SettingsButton />
                       <AuthConsumer>
                         {(auth) => !auth.isInitialized
                           ? <SplashScreen />
