@@ -1,21 +1,21 @@
-import { formatDistanceToNowStrict, subHours, subMinutes } from 'date-fns';
+import {formatDistanceToNowStrict, subHours, subMinutes} from 'date-fns';
 import numeral from 'numeral';
 import {
-  Avatar,
-  Box,
-  Card,
-  CardMedia,
-  Divider,
-  Grid,
-  IconButton,
-  Link,
-  Rating,
-  Tooltip,
-  Typography
+    Avatar,
+    Box,
+    Card,
+    CardMedia,
+    Divider,
+    Grid,
+    IconButton,
+    Link,
+    Rating,
+    Tooltip,
+    Typography
 } from '@mui/material';
-import { red } from '@mui/material/colors';
+import {red} from '@mui/material/colors';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import { Users as UsersIcon } from '../../../icons/users';
+import {Users as UsersIcon} from '../../../icons/users';
 
 const now = new Date();
 

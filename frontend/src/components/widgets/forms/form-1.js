@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Switch, TextField, Typography } from '@mui/material';
+import {Box, Button, Grid, Switch, TextField, Typography} from '@mui/material';
 
 export const Form1 = () => (
 <Box

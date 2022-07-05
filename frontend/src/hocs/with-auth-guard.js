@@ -1,4 +1,4 @@
-import { AuthGuard } from '../components/authentication/auth-guard';
+import {AuthGuard} from '../components/authentication/auth-guard';
 
 /**
  * @deprecated Use the layout strategy

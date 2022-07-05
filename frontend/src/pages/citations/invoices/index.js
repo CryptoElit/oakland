@@ -1,25 +1,17 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import {useCallback, useEffect, useRef, useState} from 'react';
 import Head from 'next/head';
-import { endOfDay, startOfDay } from 'date-fns';
-import {
-  Box,
-  Button,
-  FormControlLabel,
-  Grid,
-  Switch,
-  Typography,
-  useMediaQuery
-} from '@mui/material';
-import { styled } from '@mui/material/styles';
-import { invoiceApi } from '../../../api/invoice-api';
-import { AuthGuard } from '../../../components/authentication/auth-guard';
-import { DashboardLayout } from '../../../components/dashboard/dashboard-layout';
-import { InvoiceListFilters } from '../../../components/dashboard/invoice/invoice-list-filters';
-import { InvoiceListTable } from '../../../components/dashboard/invoice/invoice-list-table';
-import { useMounted } from '../../../hooks/use-mounted';
-import { Filter as FilterIcon } from '../../../icons/filter';
-import { Plus as PlusIcon } from '../../../icons/plus';
-import { gtm } from '../../../lib/gtm';
+import {endOfDay, startOfDay} from 'date-fns';
+import {Box, Button, FormControlLabel, Grid, Switch, Typography, useMediaQuery} from '@mui/material';
+import {styled} from '@mui/material/styles';
+import {invoiceApi} from '../../../api/invoice-api';
+import {AuthGuard} from '../../../components/authentication/auth-guard';
+import {DashboardLayout} from '../../../components/dashboard/dashboard-layout';
+import {InvoiceListFilters} from '../../../components/dashboard/invoice/invoice-list-filters';
+import {InvoiceListTable} from '../../../components/dashboard/invoice/invoice-list-table';
+import {useMounted} from '../../../hooks/use-mounted';
+import {Filter as FilterIcon} from '../../../icons/filter';
+import {Plus as PlusIcon} from '../../../icons/plus';
+import {gtm} from '../../../lib/gtm';
 
 const applyFilters = (invoices, filters) => invoices.filter((invoice) => {
   if (filters.query) {

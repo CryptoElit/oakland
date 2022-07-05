@@ -1,10 +1,10 @@
-import { useRef, useState } from 'react';
-import { IconButton, ListItemIcon, ListItemText, Menu, MenuItem, Tooltip } from '@mui/material';
-import { Archive as ArchiveIcon } from '../icons/archive';
-import { DocumentText as DocumentTextIcon } from '../icons/document-text';
-import { DotsHorizontal as DotsHorizontalIcon } from '../icons/dots-horizontal';
-import { Download as DownloadIcon } from '../icons/download';
-import { Duplicate as DuplicateIcon } from '../icons/duplicate';
+import {useRef, useState} from 'react';
+import {IconButton, ListItemIcon, ListItemText, Menu, MenuItem, Tooltip} from '@mui/material';
+import {Archive as ArchiveIcon} from '../icons/archive';
+import {DocumentText as DocumentTextIcon} from '../icons/document-text';
+import {DotsHorizontal as DotsHorizontalIcon} from '../icons/dots-horizontal';
+import {Download as DownloadIcon} from '../icons/download';
+import {Duplicate as DuplicateIcon} from '../icons/duplicate';
 
 export const MoreMenu = (props) => {
   const anchorRef = useRef(null);

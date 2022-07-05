@@ -1,19 +1,19 @@
 import numeral from 'numeral';
 import {
-  Avatar,
-  Box,
-  Card,
-  CardHeader,
-  Container,
-  Divider,
-  IconButton,
-  List,
-  ListItem,
-  ListItemAvatar,
-  ListItemText,
-  Typography
+    Avatar,
+    Box,
+    Card,
+    CardHeader,
+    Container,
+    Divider,
+    IconButton,
+    List,
+    ListItem,
+    ListItemAvatar,
+    ListItemText,
+    Typography
 } from '@mui/material';
-import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
+import {DotsHorizontal as DotsHorizontalIcon} from '../../../icons/dots-horizontal';
 
 const referrals = [
   {

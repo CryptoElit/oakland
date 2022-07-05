@@ -1,16 +1,5 @@
-import {
-  Box,
-  Button,
-  Card,
-  CardHeader,
-  Divider,
-  Table,
-  TableBody,
-  TableCell,
-  TableRow,
-  Typography
-} from '@mui/material';
-import { SeverityPill } from '../../severity-pill';
+import {Box, Button, Card, CardHeader, Divider, Table, TableBody, TableCell, TableRow, Typography} from '@mui/material';
+import {SeverityPill} from '../../severity-pill';
 
 const campaigns = [
   {

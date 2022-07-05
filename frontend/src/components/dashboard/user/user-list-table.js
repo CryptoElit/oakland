@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import {useEffect, useState} from 'react';
 import NextLink from 'next/link';
 import numeral from 'numeral';
 import PropTypes from 'prop-types';
@@ -17,10 +17,10 @@ import {
   TableRow,
   Typography
 } from '@mui/material';
-import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
-import { PencilAlt as PencilAltIcon } from '../../../icons/pencil-alt';
-import { getInitials } from '../../../utils/get-initials';
-import { Scrollbar } from '../../scrollbar';
+import {ArrowRight as ArrowRightIcon} from '../../../icons/arrow-right';
+import {PencilAlt as PencilAltIcon} from '../../../icons/pencil-alt';
+import {getInitials} from '../../../utils/get-initials';
+import {Scrollbar} from '../../scrollbar';
 
 export const UserListTable = (props) => {
   const {

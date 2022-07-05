@@ -1,18 +1,7 @@
-import {
-  Box,
-  Button,
-  Card,
-  CardHeader,
-  Divider,
-  Table,
-  TableBody,
-  TableCell,
-  TableRow,
-  Typography
-} from '@mui/material';
-import { Lock as LockIcon } from '../../../icons/lock';
-import { User as UserIcon } from '../../../icons/user';
-import { SeverityPill } from '../../severity-pill';
+import {Box, Button, Card, CardHeader, Divider, Table, TableBody, TableCell, TableRow, Typography} from '@mui/material';
+import {Lock as LockIcon} from '../../../icons/lock';
+import {User as UserIcon} from '../../../icons/user';
+import {SeverityPill} from '../../severity-pill';
 
 export const DetailList2 = () => (
   <Box

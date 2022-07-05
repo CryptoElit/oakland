@@ -1,29 +1,29 @@
-import { useRef, useState } from 'react';
+import {useRef, useState} from 'react';
 import {
-  Box,
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  Divider,
-  Grid,
-  IconButton,
-  ListItemIcon,
-  ListItemText,
-  Menu,
-  MenuItem,
-  Tooltip,
-  Typography
+    Box,
+    Button,
+    Card,
+    CardActions,
+    CardContent,
+    CardMedia,
+    Divider,
+    Grid,
+    IconButton,
+    ListItemIcon,
+    ListItemText,
+    Menu,
+    MenuItem,
+    Tooltip,
+    Typography
 } from '@mui/material';
-import { blueGrey } from '@mui/material/colors';
-import { Archive as ArchiveIcon } from '../../../icons/archive';
-import { DocumentText as DocumentTextIcon } from '../../../icons/document-text';
-import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
-import { Download as DownloadIcon } from '../../../icons/download';
-import { PencilAlt as PencilAltIcon } from '../../../icons/pencil-alt';
-import { Trash as TrashIcon } from '../../../icons/trash';
-import { bytesToSize } from '../../../utils/bytes-to-size';
+import {blueGrey} from '@mui/material/colors';
+import {Archive as ArchiveIcon} from '../../../icons/archive';
+import {DocumentText as DocumentTextIcon} from '../../../icons/document-text';
+import {DotsHorizontal as DotsHorizontalIcon} from '../../../icons/dots-horizontal';
+import {Download as DownloadIcon} from '../../../icons/download';
+import {PencilAlt as PencilAltIcon} from '../../../icons/pencil-alt';
+import {Trash as TrashIcon} from '../../../icons/trash';
+import {bytesToSize} from '../../../utils/bytes-to-size';
 
 const files = [
   {

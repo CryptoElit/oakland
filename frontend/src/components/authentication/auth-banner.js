@@ -1,5 +1,5 @@
 import NextLink from 'next/link';
-import { Box, Chip, Container, Link, Tooltip, Typography } from '@mui/material';
+import {Box, Chip, Container, Link, Tooltip, Typography} from '@mui/material';
 
 const platformIcons = {
   Amplify: '/static/icons/amplify.svg',

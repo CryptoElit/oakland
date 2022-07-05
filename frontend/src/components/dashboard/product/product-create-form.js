@@ -1,23 +1,23 @@
-import { useState } from 'react';
-import { useRouter } from 'next/router';
+import {useState} from 'react';
+import {useRouter} from 'next/router';
 import toast from 'react-hot-toast';
 import * as Yup from 'yup';
-import { useFormik } from 'formik';
+import {useFormik} from 'formik';
 import {
-  Box,
-  Button,
-  Card,
-  CardContent,
-  FormControlLabel,
-  FormHelperText,
-  Grid,
-  MenuItem,
-  Switch,
-  TextField,
-  Typography
+    Box,
+    Button,
+    Card,
+    CardContent,
+    FormControlLabel,
+    FormHelperText,
+    Grid,
+    MenuItem,
+    Switch,
+    TextField,
+    Typography
 } from '@mui/material';
-import { FileDropzone } from '../../file-dropzone';
-import { QuillEditor } from '../../quill-editor';
+import {FileDropzone} from '../../file-dropzone';
+import {QuillEditor} from '../../quill-editor';
 
 const categoryOptions = [
   {

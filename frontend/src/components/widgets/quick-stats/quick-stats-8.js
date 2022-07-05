@@ -1,8 +1,8 @@
-import { format, subDays } from 'date-fns';
-import { Avatar, Box, Card, Container, Typography } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
-import { Refresh as RefreshIcon } from '../../../icons/refresh';
-import { Chart } from '../../chart';
+import {format, subDays} from 'date-fns';
+import {Avatar, Box, Card, Container, Typography} from '@mui/material';
+import {useTheme} from '@mui/material/styles';
+import {Refresh as RefreshIcon} from '../../../icons/refresh';
+import {Chart} from '../../chart';
 
 const getCategories = () => {
   const now = new Date();

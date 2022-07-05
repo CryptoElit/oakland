@@ -1,33 +1,33 @@
-import { Fragment, useState } from 'react';
+import {Fragment, useState} from 'react';
 import numeral from 'numeral';
 import PropTypes from 'prop-types';
-import { toast } from 'react-hot-toast';
+import {toast} from 'react-hot-toast';
 import {
-  Box,
-  Button,
-  CardContent,
-  Divider,
-  Grid,
-  IconButton,
-  InputAdornment,
-  LinearProgress,
-  MenuItem,
-  Switch,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TablePagination,
-  TableRow,
-  TextField,
-  Typography
+    Box,
+    Button,
+    CardContent,
+    Divider,
+    Grid,
+    IconButton,
+    InputAdornment,
+    LinearProgress,
+    MenuItem,
+    Switch,
+    Table,
+    TableBody,
+    TableCell,
+    TableHead,
+    TablePagination,
+    TableRow,
+    TextField,
+    Typography
 } from '@mui/material';
-import { ChevronDown as ChevronDownIcon } from '../../../icons/chevron-down';
-import { ChevronRight as ChevronRightIcon } from '../../../icons/chevron-right';
-import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
-import { Image as ImageIcon } from '../../../icons/image';
-import { Scrollbar } from '../../scrollbar';
-import { SeverityPill } from '../../severity-pill';
+import {ChevronDown as ChevronDownIcon} from '../../../icons/chevron-down';
+import {ChevronRight as ChevronRightIcon} from '../../../icons/chevron-right';
+import {DotsHorizontal as DotsHorizontalIcon} from '../../../icons/dots-horizontal';
+import {Image as ImageIcon} from '../../../icons/image';
+import {Scrollbar} from '../../scrollbar';
+import {SeverityPill} from '../../severity-pill';
 
 const categoryOptions = [
   {

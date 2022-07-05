@@ -1,17 +1,17 @@
-import { formatDistanceToNowStrict, subHours, subMinutes } from 'date-fns';
+import {formatDistanceToNowStrict, subHours, subMinutes} from 'date-fns';
 import {
-  Avatar,
-  Badge,
-  Box,
-  Button,
-  Card,
-  CardActions,
-  CardHeader,
-  List,
-  ListItem,
-  ListItemAvatar,
-  ListItemText,
-  Typography
+    Avatar,
+    Badge,
+    Box,
+    Button,
+    Card,
+    CardActions,
+    CardHeader,
+    List,
+    ListItem,
+    ListItemAvatar,
+    ListItemText,
+    Typography
 } from '@mui/material';
 
 const messages = [

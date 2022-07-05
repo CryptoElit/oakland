@@ -1,4 +1,4 @@
-import { subDays, subHours, subMinutes, subSeconds } from 'date-fns';
+import {subDays, subHours, subMinutes, subSeconds} from 'date-fns';
 
 const now = new Date();
 

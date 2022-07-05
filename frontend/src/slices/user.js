@@ -1,6 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { calendarApi } from '../api/calendar-api';
-import {objFromArray} from "../utils/obj-from-array";
+import {createSlice} from '@reduxjs/toolkit';
 
 
 const postData = async (url = '', data = {}) => {

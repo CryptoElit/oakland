@@ -1,23 +1,23 @@
-import { useCallback, useEffect, useState } from 'react';
-import { format } from 'date-fns';
+import {useCallback, useEffect, useState} from 'react';
+import {format} from 'date-fns';
 import {
-  Box,
-  Button,
-  Card,
-  CardContent,
-  CardHeader,
-  Divider,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableRow,
-  TextField,
-  Typography
+    Box,
+    Button,
+    Card,
+    CardContent,
+    CardHeader,
+    Divider,
+    Table,
+    TableBody,
+    TableCell,
+    TableHead,
+    TableRow,
+    TextField,
+    Typography
 } from '@mui/material';
-import { customerApi } from '../../../api/customer-api';
-import { useMounted } from '../../../hooks/use-mounted';
-import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
+import {customerApi} from '../../../api/customer-api';
+import {useMounted} from '../../../hooks/use-mounted';
+import {ArrowRight as ArrowRightIcon} from '../../../icons/arrow-right';
 
 const emailOptions = [
   'Resend last invoice',

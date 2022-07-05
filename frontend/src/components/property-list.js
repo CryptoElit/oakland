@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { List } from '@mui/material';
+import {List} from '@mui/material';
 
 export const PropertyList = (props) => {
   const { children } = props;

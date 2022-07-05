@@ -1,7 +1,7 @@
-import { useRef, useState } from 'react';
+import {useRef, useState} from 'react';
 import PropTypes from 'prop-types';
-import { Button, Checkbox, FormControlLabel, Menu, MenuItem } from '@mui/material';
-import { ChevronDown as ChevronDownIcon } from '../icons/chevron-down';
+import {Button, Checkbox, FormControlLabel, Menu, MenuItem} from '@mui/material';
+import {ChevronDown as ChevronDownIcon} from '../icons/chevron-down';
 
 export const MultiSelect = (props) => {
   const { label, onChange, options, value = [], ...other } = props;

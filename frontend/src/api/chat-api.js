@@ -1,6 +1,6 @@
-import { subDays, subHours, subMinutes } from 'date-fns';
-import { createResourceId } from '../utils/create-resource-id';
-import { deepCopy } from '../utils/deep-copy';
+import {subDays, subHours, subMinutes} from 'date-fns';
+import {createResourceId} from '../utils/create-resource-id';
+import {deepCopy} from '../utils/deep-copy';
 
 const now = new Date();
 

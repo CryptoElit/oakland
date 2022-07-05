@@ -1,24 +1,24 @@
-import { useCallback, useEffect, useState } from 'react';
+import {useCallback, useEffect, useState} from 'react';
 import NextLink from 'next/link';
-import { format } from 'date-fns';
+import {format} from 'date-fns';
 import {
-  Card,
-  CardHeader,
-  Divider,
-  IconButton,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TablePagination,
-  TableRow
+    Card,
+    CardHeader,
+    Divider,
+    IconButton,
+    Table,
+    TableBody,
+    TableCell,
+    TableHead,
+    TablePagination,
+    TableRow
 } from '@mui/material';
-import { customerApi } from '../../../api/customer-api';
-import { useMounted } from '../../../hooks/use-mounted';
-import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
-import { MoreMenu } from '../../more-menu';
-import { Scrollbar } from '../../scrollbar';
-import { SeverityPill } from '../../severity-pill';
+import {customerApi} from '../../../api/customer-api';
+import {useMounted} from '../../../hooks/use-mounted';
+import {ArrowRight as ArrowRightIcon} from '../../../icons/arrow-right';
+import {MoreMenu} from '../../more-menu';
+import {Scrollbar} from '../../scrollbar';
+import {SeverityPill} from '../../severity-pill';
 
 export const CustomerInvoices = (props) => {
   const isMounted = useMounted();

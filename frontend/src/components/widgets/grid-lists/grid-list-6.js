@@ -1,5 +1,5 @@
-import { Avatar, Box, Button, Grid, IconButton, Link, Paper, Typography } from '@mui/material';
-import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
+import {Avatar, Box, Button, Grid, IconButton, Link, Paper, Typography} from '@mui/material';
+import {DotsHorizontal as DotsHorizontalIcon} from '../../../icons/dots-horizontal';
 
 const connections = [
   {

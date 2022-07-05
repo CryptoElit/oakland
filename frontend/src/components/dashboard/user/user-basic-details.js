@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import { Button, Card, CardActions, CardHeader, Divider, useMediaQuery } from '@mui/material';
-import { PropertyList } from '../../property-list';
-import { PropertyListItem } from '../../property-list-item';
+import {Button, Card, CardActions, CardHeader, Divider, useMediaQuery} from '@mui/material';
+import {PropertyList} from '../../property-list';
+import {PropertyListItem} from '../../property-list-item';
 
 export const CustomerBasicDetails = (props) => {
   const { address1, address2, country, email, isVerified, phone, state, ...other } = props;

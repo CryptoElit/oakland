@@ -1,6 +1,6 @@
-import { formatDistanceToNowStrict, subHours, subMinutes } from 'date-fns';
-import { Avatar, Box, Card, Link, Typography } from '@mui/material';
-import { Download as DownloadIcon } from '../../../icons/download';
+import {formatDistanceToNowStrict, subHours, subMinutes} from 'date-fns';
+import {Avatar, Box, Card, Link, Typography} from '@mui/material';
+import {Download as DownloadIcon} from '../../../icons/download';
 
 const now = new Date();
 

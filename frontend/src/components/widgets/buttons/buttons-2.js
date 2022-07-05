@@ -1,6 +1,6 @@
-import { Box, Button } from '@mui/material';
-import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
-import { Trash as TrashIcon } from '../../../icons/trash';
+import {Box, Button} from '@mui/material';
+import {ArrowRight as ArrowRightIcon} from '../../../icons/arrow-right';
+import {Trash as TrashIcon} from '../../../icons/trash';
 
 export const Buttons2 = () => (
 <Box

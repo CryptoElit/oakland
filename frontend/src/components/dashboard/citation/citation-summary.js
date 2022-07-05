@@ -1,18 +1,9 @@
-import { useState } from 'react';
+import {useState} from 'react';
 import PropTypes from 'prop-types';
-import { format } from 'date-fns';
-import {
-  Box,
-  Button,
-  Card,
-  CardHeader,
-  Divider,
-  TextField,
-  Typography,
-  useMediaQuery
-} from '@mui/material';
-import { PropertyList } from '../../property-list';
-import { PropertyListItem } from '../../property-list-item';
+import {format} from 'date-fns';
+import {Box, Button, Card, CardHeader, Divider, TextField, Typography, useMediaQuery} from '@mui/material';
+import {PropertyList} from '../../property-list';
+import {PropertyListItem} from '../../property-list-item';
 
 const statusOptions = ['Canceled', 'Complete', 'Rejected'];
 

@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import {useState} from 'react';
 import NextLink from 'next/link';
 import PropTypes from 'prop-types';
-import { Box, Button, Collapse, ListItem } from '@mui/material';
-import { ChevronDown as ChevronDownIcon } from '../../icons/chevron-down';
-import { ChevronRight as ChevronRightIcon } from '../../icons/chevron-right';
+import {Box, Button, Collapse, ListItem} from '@mui/material';
+import {ChevronDown as ChevronDownIcon} from '../../icons/chevron-down';
+import {ChevronRight as ChevronRightIcon} from '../../icons/chevron-right';
 
 export const DashboardSidebarItem = (props) => {
   const {

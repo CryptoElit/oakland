@@ -1,4 +1,4 @@
-import { Box, FormControlLabel, Paper, Radio, RadioGroup, Typography } from '@mui/material';
+import {Box, FormControlLabel, Paper, Radio, RadioGroup, Typography} from '@mui/material';
 
 const typeOptions = [
   {

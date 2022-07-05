@@ -1,10 +1,10 @@
 // This page is only for Auth0. If you use some other Auth Provider, you can (should) delete this.
 // The role of this page is to handle the "authorize" callback.
 
-import { useEffect } from 'react';
-import { useRouter } from 'next/router';
-import { useAuth } from '../../hooks/use-auth';
-import { useMounted } from '../../hooks/use-mounted';
+import {useEffect} from 'react';
+import {useRouter} from 'next/router';
+import {useAuth} from '../../hooks/use-auth';
+import {useMounted} from '../../hooks/use-mounted';
 
 const Authorize = () => {
   const isMounted = useMounted();

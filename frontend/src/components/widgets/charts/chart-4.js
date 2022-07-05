@@ -1,8 +1,8 @@
-import { Box, Card, CardContent, CardHeader, Divider, IconButton } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
-import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
-import { Chart } from '../../chart';
-import { Scrollbar } from '../../scrollbar';
+import {Box, Card, CardContent, CardHeader, Divider, IconButton} from '@mui/material';
+import {useTheme} from '@mui/material/styles';
+import {DotsHorizontal as DotsHorizontalIcon} from '../../../icons/dots-horizontal';
+import {Chart} from '../../chart';
+import {Scrollbar} from '../../scrollbar';
 
 const data = {
   series: [{ data: [10, 5, 11, 20, 13, 28, 18, 4, 13, 12, 13, 5] }],

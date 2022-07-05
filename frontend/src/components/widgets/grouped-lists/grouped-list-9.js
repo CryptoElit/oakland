@@ -1,5 +1,5 @@
-import { formatDistanceToNowStrict, subHours } from 'date-fns';
-import { Avatar, Box, Card, CardHeader, Link, Rating, Typography } from '@mui/material';
+import {formatDistanceToNowStrict, subHours} from 'date-fns';
+import {Avatar, Box, Card, CardHeader, Link, Rating, Typography} from '@mui/material';
 
 const now = new Date();
 

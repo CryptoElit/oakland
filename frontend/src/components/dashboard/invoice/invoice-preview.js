@@ -1,19 +1,9 @@
 import PropTypes from 'prop-types';
-import { format } from 'date-fns';
+import {format} from 'date-fns';
 import numeral from 'numeral';
-import {
-  Box,
-  Grid,
-  Paper,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableRow,
-  Typography
-} from '@mui/material';
-import { Logo } from '../../logo';
-import { Scrollbar } from '../../scrollbar';
+import {Box, Grid, Paper, Table, TableBody, TableCell, TableHead, TableRow, Typography} from '@mui/material';
+import {Logo} from '../../logo';
+import {Scrollbar} from '../../scrollbar';
 
 export const InvoicePreview = (props) => {
   const { invoice, ...other } = props;
@@ -32,7 +22,7 @@ export const InvoicePreview = (props) => {
             justifyContent="space-between"
           >
             <Grid item>
-              <Logo />
+              <Logo sizeLogo={120} />
               <Typography variant="subtitle2">
                 www.devias.io
               </Typography>

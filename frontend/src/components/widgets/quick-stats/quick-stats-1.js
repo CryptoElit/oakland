@@ -1,7 +1,7 @@
-import { Box, Card, CardHeader, Divider, IconButton, Typography } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
-import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
-import { Chart } from '../../chart';
+import {Box, Card, CardHeader, Divider, IconButton, Typography} from '@mui/material';
+import {useTheme} from '@mui/material/styles';
+import {DotsHorizontal as DotsHorizontalIcon} from '../../../icons/dots-horizontal';
+import {Chart} from '../../chart';
 
 const data = {
   series: [

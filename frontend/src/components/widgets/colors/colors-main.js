@@ -1,5 +1,5 @@
-import { Box, List, ListItem, ListItemAvatar, ListItemText, Typography } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
+import {Box, List, ListItem, ListItemAvatar, ListItemText, Typography} from '@mui/material';
+import {useTheme} from '@mui/material/styles';
 
 export const ColorsMain = () => {
   const theme = useTheme();

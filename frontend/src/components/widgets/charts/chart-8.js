@@ -1,17 +1,8 @@
-import {
-  Box,
-  Button,
-  Card,
-  CardContent,
-  CardHeader,
-  Container,
-  Tooltip,
-  Typography
-} from '@mui/material';
-import { useTheme } from '@mui/material/styles';
-import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
-import { InformationCircleOutlined as InformationCircleOutlinedIcon } from '../../../icons/information-circle-outlined';
-import { Chart } from '../../chart';
+import {Box, Button, Card, CardContent, CardHeader, Container, Tooltip, Typography} from '@mui/material';
+import {useTheme} from '@mui/material/styles';
+import {ArrowRight as ArrowRightIcon} from '../../../icons/arrow-right';
+import {InformationCircleOutlined as InformationCircleOutlinedIcon} from '../../../icons/information-circle-outlined';
+import {Chart} from '../../chart';
 
 export const Chart8 = () => {
   const theme = useTheme();

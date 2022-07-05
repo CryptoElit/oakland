@@ -1,20 +1,20 @@
-import { useState } from 'react';
-import { format, subDays, subHours, subMinutes } from 'date-fns';
+import {useState} from 'react';
+import {format, subDays, subHours, subMinutes} from 'date-fns';
 import {
-  Box,
-  Button,
-  Card,
-  CardContent,
-  CardHeader,
-  Divider,
-  Table,
-  TableBody,
-  TableCell,
-  TableRow,
-  TextField,
-  Typography
+    Box,
+    Button,
+    Card,
+    CardContent,
+    CardHeader,
+    Divider,
+    Table,
+    TableBody,
+    TableCell,
+    TableRow,
+    TextField,
+    Typography
 } from '@mui/material';
-import { Mail as MailIcon } from '../../../icons/mail';
+import {Mail as MailIcon} from '../../../icons/mail';
 
 const now = new Date();
 

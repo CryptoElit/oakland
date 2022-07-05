@@ -1,17 +1,6 @@
-import {
-  Box,
-  Button,
-  Card,
-  CardHeader,
-  Divider,
-  Table,
-  TableBody,
-  TableCell,
-  TableRow,
-  Typography
-} from '@mui/material';
+import {Box, Button, Card, CardHeader, Divider, Table, TableBody, TableCell, TableRow, Typography} from '@mui/material';
 import ReceiptIcon from '@mui/icons-material/Receipt';
-import { CurrencyDollar as CurrencyDollarIcon } from '../../../icons/currency-dollar';
+import {CurrencyDollar as CurrencyDollarIcon} from '../../../icons/currency-dollar';
 
 export const DetailList3 = () => (
   <Box

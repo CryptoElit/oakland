@@ -1,25 +1,25 @@
-import { format, subDays, subHours, subMinutes, subSeconds } from 'date-fns';
+import {format, subDays, subHours, subMinutes, subSeconds} from 'date-fns';
 import numeral from 'numeral';
 import {
-  Box,
-  Button,
-  Card,
-  CardHeader,
-  Divider,
-  IconButton,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableRow,
-  TableSortLabel,
-  Tooltip,
-  Typography
+    Box,
+    Button,
+    Card,
+    CardHeader,
+    Divider,
+    IconButton,
+    Table,
+    TableBody,
+    TableCell,
+    TableHead,
+    TableRow,
+    TableSortLabel,
+    Tooltip,
+    Typography
 } from '@mui/material';
-import { ChevronRight as ChevronRightIcon } from '../../../icons/chevron-right';
-import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
-import { Scrollbar } from '../../scrollbar';
-import { SeverityPill } from '../../severity-pill';
+import {ChevronRight as ChevronRightIcon} from '../../../icons/chevron-right';
+import {DotsHorizontal as DotsHorizontalIcon} from '../../../icons/dots-horizontal';
+import {Scrollbar} from '../../scrollbar';
+import {SeverityPill} from '../../severity-pill';
 
 const now = new Date();
 

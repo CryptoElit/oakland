@@ -1,19 +1,19 @@
 import {
-  Box,
-  Card,
-  IconButton,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemSecondaryAction,
-  ListItemText,
-  Tooltip,
-  Typography
+    Box,
+    Card,
+    IconButton,
+    List,
+    ListItem,
+    ListItemIcon,
+    ListItemSecondaryAction,
+    ListItemText,
+    Tooltip,
+    Typography
 } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
-import { CreditCard as CreditCardIcon } from '../../../icons/credit-card';
-import { Mail as MailIcon } from '../../../icons/mail';
-import { ChevronRight as ChevronRightIcon } from '../../../icons/chevron-right';
+import {CreditCard as CreditCardIcon} from '../../../icons/credit-card';
+import {Mail as MailIcon} from '../../../icons/mail';
+import {ChevronRight as ChevronRightIcon} from '../../../icons/chevron-right';
 
 const notifications = [
   {

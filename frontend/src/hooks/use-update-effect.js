@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import {useEffect, useRef} from 'react';
 
 /**
  * A custom useEffect hook that only triggers on updates, not on initial mount

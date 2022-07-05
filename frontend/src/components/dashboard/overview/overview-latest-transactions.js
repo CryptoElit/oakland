@@ -1,18 +1,8 @@
-import { format, subDays } from 'date-fns';
+import {format, subDays} from 'date-fns';
 import numeral from 'numeral';
-import {
-  Box,
-  Card,
-  CardHeader,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableRow,
-  Typography
-} from '@mui/material';
-import { Scrollbar } from '../../scrollbar';
-import { SeverityPill } from '../../severity-pill';
+import {Box, Card, CardHeader, Table, TableBody, TableCell, TableHead, TableRow, Typography} from '@mui/material';
+import {Scrollbar} from '../../scrollbar';
+import {SeverityPill} from '../../severity-pill';
 
 const transactions = [
   {

@@ -1,7 +1,7 @@
 import numeral from 'numeral';
-import { Box, Card, Grid, Typography } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
-import { Chart } from '../../chart';
+import {Box, Card, Grid, Typography} from '@mui/material';
+import {useTheme} from '@mui/material/styles';
+import {Chart} from '../../chart';
 
 const ChartLine = () => {
   const theme = useTheme();

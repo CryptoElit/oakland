@@ -1,16 +1,16 @@
-import { useEffect } from 'react';
+import {useEffect} from 'react';
 import Head from 'next/head';
 import NextLink from 'next/link';
-import { useRouter } from 'next/router';
-import { Box, Card, Container, Divider, Link, Typography } from '@mui/material';
-import { GuestGuard } from '../../components/authentication/guest-guard';
-import { AmplifyRegister } from '../../components/authentication/amplify-register';
-import { Auth0Register } from '../../components/authentication/auth0-register';
-import { FirebaseRegister } from '../../components/authentication/firebase-register';
-import { JWTRegister } from '../../components/authentication/jwt-register';
-import { Logo } from '../../components/logo';
-import { useAuth } from '../../hooks/use-auth';
-import { gtm } from '../../lib/gtm';
+import {useRouter} from 'next/router';
+import {Box, Card, Container, Divider, Link, Typography} from '@mui/material';
+import {GuestGuard} from '../../components/authentication/guest-guard';
+import {AmplifyRegister} from '../../components/authentication/amplify-register';
+import {Auth0Register} from '../../components/authentication/auth0-register';
+import {FirebaseRegister} from '../../components/authentication/firebase-register';
+import {JWTRegister} from '../../components/authentication/jwt-register';
+import {Logo} from '../../components/logo';
+import {useAuth} from '../../hooks/use-auth';
+import {gtm} from '../../lib/gtm';
 
 const platformIcons = {
   Amplify: '/static/icons/amplify.svg',
@@ -72,10 +72,7 @@ const Register = () => {
               >
                 <a>
                   <Logo
-                    sx={{
-                      height: 40,
-                      width: 40
-                    }}
+                      sizeLogo={40}
                   />
                 </a>
               </NextLink>

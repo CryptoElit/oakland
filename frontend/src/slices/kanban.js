@@ -1,6 +1,6 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { kanbanApi } from '../api/kanban-api';
-import { objFromArray } from '../utils/obj-from-array';
+import {createSlice} from '@reduxjs/toolkit';
+import {kanbanApi} from '../api/kanban-api';
+import {objFromArray} from '../utils/obj-from-array';
 
 const initialState = {
   isLoaded: false,

@@ -1,19 +1,19 @@
 import PropTypes from 'prop-types';
 import numeral from 'numeral';
 import {
-  Box,
-  Card,
-  CardHeader,
-  Divider,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TablePagination,
-  TableRow,
-  Typography
+    Box,
+    Card,
+    CardHeader,
+    Divider,
+    Table,
+    TableBody,
+    TableCell,
+    TableHead,
+    TablePagination,
+    TableRow,
+    Typography
 } from '@mui/material';
-import { Scrollbar } from '../../scrollbar';
+import {Scrollbar} from '../../scrollbar';
 
 export const OrderItems = (props) => {
   const { orderItems, ...other } = props;

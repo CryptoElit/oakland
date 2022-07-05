@@ -1,25 +1,25 @@
-import { format, subDays, subHours, subMinutes, subSeconds } from 'date-fns';
+import {format, subDays, subHours, subMinutes, subSeconds} from 'date-fns';
 import numeral from 'numeral';
 import {
-  Avatar,
-  Box,
-  Button,
-  Card,
-  CardHeader,
-  Divider,
-  IconButton,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableRow,
-  TableSortLabel,
-  Tooltip,
-  Typography
+    Avatar,
+    Box,
+    Button,
+    Card,
+    CardHeader,
+    Divider,
+    IconButton,
+    Table,
+    TableBody,
+    TableCell,
+    TableHead,
+    TableRow,
+    TableSortLabel,
+    Tooltip,
+    Typography
 } from '@mui/material';
-import { Scrollbar } from '../../scrollbar';
-import { ChevronRight as ChevronRightIcon } from '../../../icons/chevron-right';
-import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
+import {Scrollbar} from '../../scrollbar';
+import {ChevronRight as ChevronRightIcon} from '../../../icons/chevron-right';
+import {DotsHorizontal as DotsHorizontalIcon} from '../../../icons/dots-horizontal';
 
 const now = new Date();
 

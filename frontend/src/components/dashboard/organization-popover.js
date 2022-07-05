@@ -1,4 +1,4 @@
-import { MenuItem, Popover } from '@mui/material';
+import {MenuItem, Popover} from '@mui/material';
 
 const organizations = [
   'Acme Inc',

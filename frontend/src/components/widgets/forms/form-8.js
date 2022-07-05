@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import {useState} from 'react';
 import MobileDatePicker from '@mui/lab/MobileDatePicker';
-import { Avatar, Box, Button, Chip, IconButton, TextField, Typography } from '@mui/material';
-import { Plus as PlusIcon } from '../../../icons/plus';
+import {Avatar, Box, Button, Chip, IconButton, TextField, Typography} from '@mui/material';
+import {Plus as PlusIcon} from '../../../icons/plus';
 
 export const Form8 = () => {
   const [startDate, setStartDate] = useState(new Date());

@@ -1,5 +1,5 @@
-import { Avatar, Box, Button, Container, Paper, Typography } from '@mui/material';
-import { alpha } from '@mui/material/styles';
+import {Avatar, Box, Button, Container, Paper, Typography} from '@mui/material';
+import {alpha} from '@mui/material/styles';
 import WarningIcon from '@mui/icons-material/WarningOutlined';
 
 export const Modal8 = () => (

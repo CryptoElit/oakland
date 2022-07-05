@@ -1,18 +1,18 @@
 import {
-  Box,
-  Container,
-  Divider,
-  Grid,
-  Link,
-  List,
-  ListItem,
-  ListItemAvatar,
-  ListItemText,
-  Typography
+    Box,
+    Container,
+    Divider,
+    Grid,
+    Link,
+    List,
+    ListItem,
+    ListItemAvatar,
+    ListItemText,
+    Typography
 } from '@mui/material';
-import { alpha } from '@mui/material/styles';
-import { MinusOutlined as MinusOutlinedIcon } from '../icons/minus-outlined';
-import { Logo } from './logo';
+import {alpha} from '@mui/material/styles';
+import {MinusOutlined as MinusOutlinedIcon} from '../icons/minus-outlined';
+import {Logo} from './logo';
 
 const sections = [
   {
@@ -93,7 +93,7 @@ export const Footer = (props) => (
           }}
           xs={12}
         >
-          <Logo />
+          <Logo sizeLogo={60}/>
           <Typography
             color="textSecondary"
             sx={{ mt: 1 }}

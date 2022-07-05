@@ -1,4 +1,4 @@
-import { Box, Button, Card, CardContent, CardHeader, Divider, Typography } from '@mui/material';
+import {Box, Button, Card, CardContent, CardHeader, Divider, Typography} from '@mui/material';
 
 export const CustomerDataManagement = (props) => (
   <Card {...props}>

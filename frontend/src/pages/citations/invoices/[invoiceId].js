@@ -1,28 +1,18 @@
-import { useCallback, useEffect, useState } from 'react';
+import {useCallback, useEffect, useState} from 'react';
 import NextLink from 'next/link';
 import Head from 'next/head';
-import { PDFDownloadLink, PDFViewer } from '@react-pdf/renderer';
-import {
-  Avatar,
-  Box,
-  Button,
-  Container,
-  Dialog,
-  Divider,
-  Grid,
-  Link,
-  Typography
-} from '@mui/material';
+import {PDFDownloadLink, PDFViewer} from '@react-pdf/renderer';
+import {Avatar, Box, Button, Container, Dialog, Divider, Grid, Link, Typography} from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import { invoiceApi } from '../../../api/invoice-api';
-import { AuthGuard } from '../../../components/authentication/auth-guard';
-import { DashboardLayout } from '../../../components/dashboard/dashboard-layout';
-import { InvoicePDF } from '../../../components/dashboard/invoice/invoice-pdf';
-import { InvoicePreview } from '../../../components/dashboard/invoice/invoice-preview';
-import { useMounted } from '../../../hooks/use-mounted';
-import { ArrowLeft as ArrowLeftIcon } from '../../../icons/arrow-left';
-import { gtm } from '../../../lib/gtm';
-import { getInitials } from '../../../utils/get-initials';
+import {invoiceApi} from '../../../api/invoice-api';
+import {AuthGuard} from '../../../components/authentication/auth-guard';
+import {DashboardLayout} from '../../../components/dashboard/dashboard-layout';
+import {InvoicePDF} from '../../../components/dashboard/invoice/invoice-pdf';
+import {InvoicePreview} from '../../../components/dashboard/invoice/invoice-preview';
+import {useMounted} from '../../../hooks/use-mounted';
+import {ArrowLeft as ArrowLeftIcon} from '../../../icons/arrow-left';
+import {gtm} from '../../../lib/gtm';
+import {getInitials} from '../../../utils/get-initials';
 
 const InvoiceDetails = () => {
   const isMounted = useMounted();

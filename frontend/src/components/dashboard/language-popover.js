@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import { toast } from 'react-hot-toast';
-import { useTranslation } from 'react-i18next';
-import { Box, ListItemIcon, ListItemText, MenuItem, Popover, Typography } from '@mui/material';
+import {toast} from 'react-hot-toast';
+import {useTranslation} from 'react-i18next';
+import {Box, ListItemIcon, ListItemText, MenuItem, Popover, Typography} from '@mui/material';
 
 const languageOptions = {
   en: {

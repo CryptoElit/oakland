@@ -1,8 +1,8 @@
 import 'react-quill/dist/quill.snow.css';
 import dynamic from 'next/dynamic';
-import { styled } from '@mui/material/styles';
+import {styled} from '@mui/material/styles';
 import PropTypes from 'prop-types';
-import { useRef } from 'react';
+import {useRef} from 'react';
 
 const Quill = dynamic(() => import('react-quill'), { ssr: false });
 

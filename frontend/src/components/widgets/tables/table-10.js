@@ -1,19 +1,19 @@
-import { format, subDays, subMinutes, subSeconds } from 'date-fns';
+import {format, subDays, subMinutes, subSeconds} from 'date-fns';
 import {
-  Box,
-  Card,
-  CardHeader,
-  Divider,
-  IconButton,
-  Table,
-  TableBody,
-  TableCell,
-  TableRow,
-  Typography
+    Box,
+    Card,
+    CardHeader,
+    Divider,
+    IconButton,
+    Table,
+    TableBody,
+    TableCell,
+    TableRow,
+    Typography
 } from '@mui/material';
-import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
-import { Scrollbar } from '../../scrollbar';
-import { SeverityPill } from '../../severity-pill';
+import {DotsHorizontal as DotsHorizontalIcon} from '../../../icons/dots-horizontal';
+import {Scrollbar} from '../../scrollbar';
+import {SeverityPill} from '../../severity-pill';
 
 const now = new Date();
 

@@ -1,18 +1,18 @@
-import { useEffect, useRef, useState } from 'react';
+import {useEffect, useRef, useState} from 'react';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
-import { Avatar, Box, IconButton, Typography, useMediaQuery } from '@mui/material';
-import { styled } from '@mui/material/styles';
-import { AuthGuard } from '../../components/authentication/auth-guard';
-import { DashboardLayout } from '../../components/dashboard/dashboard-layout';
-import { ChatComposer } from '../../components/dashboard/chat/chat-composer';
-import { ChatSidebar } from '../../components/dashboard/chat/chat-sidebar';
-import { ChatThread } from '../../components/dashboard/chat/chat-thread';
-import { ChatAlt2 as ChatAlt2Icon } from '../../icons/chat-alt2';
-import { MenuAlt4 as MenuAlt4Icon } from '../../icons/menu-alt-4';
-import { gtm } from '../../lib/gtm';
-import { getThreads } from '../../slices/chat';
-import { useDispatch } from '../../store';
+import {useRouter} from 'next/router';
+import {Avatar, Box, IconButton, Typography, useMediaQuery} from '@mui/material';
+import {styled} from '@mui/material/styles';
+import {AuthGuard} from '../../components/authentication/auth-guard';
+import {DashboardLayout} from '../../components/dashboard/dashboard-layout';
+import {ChatComposer} from '../../components/dashboard/chat/chat-composer';
+import {ChatSidebar} from '../../components/dashboard/chat/chat-sidebar';
+import {ChatThread} from '../../components/dashboard/chat/chat-thread';
+import {ChatAlt2 as ChatAlt2Icon} from '../../icons/chat-alt2';
+import {MenuAlt4 as MenuAlt4Icon} from '../../icons/menu-alt-4';
+import {gtm} from '../../lib/gtm';
+import {getThreads} from '../../slices/chat';
+import {useDispatch} from '../../store';
 
 const ChatInner = styled('div',
   { shouldForwardProp: (prop) => prop !== 'open' })(

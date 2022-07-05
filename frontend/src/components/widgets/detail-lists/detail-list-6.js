@@ -1,6 +1,6 @@
 import Markdown from 'react-markdown';
-import { Box, Card, CardContent, Chip, Grid, Typography } from '@mui/material';
-import { styled } from '@mui/material/styles';
+import {Box, Card, CardContent, Chip, Grid, Typography} from '@mui/material';
+import {styled} from '@mui/material/styles';
 
 const MarkdownWrapper = styled('div')(({ theme }) => ({
   color: theme.palette.text.primary,

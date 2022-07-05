@@ -1,15 +1,5 @@
-import { useRef, useState } from 'react';
-import {
-  Box,
-  Button,
-  ButtonGroup,
-  ClickAwayListener,
-  Grow,
-  MenuItem,
-  MenuList,
-  Paper,
-  Popper
-} from '@mui/material';
+import {useRef, useState} from 'react';
+import {Box, Button, ButtonGroup, ClickAwayListener, Grow, MenuItem, MenuList, Paper, Popper} from '@mui/material';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const options = [

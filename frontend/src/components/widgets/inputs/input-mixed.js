@@ -1,15 +1,5 @@
-import {
-  Box,
-  Checkbox,
-  FormControl,
-  InputLabel,
-  MenuItem,
-  Select,
-  Switch,
-  TextField,
-  Typography
-} from '@mui/material';
-import { DateTimePicker } from '@mui/lab';
+import {Box, Checkbox, FormControl, InputLabel, MenuItem, Select, Switch, TextField, Typography} from '@mui/material';
+import {DateTimePicker} from '@mui/lab';
 
 export const InputMixed = () => (
   <Box

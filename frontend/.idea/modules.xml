@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../citation-portal/AdminPortal/frontend/.idea/frontend.iml" filepath="$PROJECT_DIR$/../../citation-portal/AdminPortal/frontend/.idea/frontend.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/oakland.iml" filepath="$PROJECT_DIR$/.idea/oakland.iml" />
     </modules>
   </component>

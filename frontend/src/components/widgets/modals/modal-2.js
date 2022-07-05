@@ -1,4 +1,4 @@
-import { Box, ListItemIcon, ListItemText, MenuItem, Paper, Typography } from '@mui/material';
+import {Box, ListItemIcon, ListItemText, MenuItem, Paper, Typography} from '@mui/material';
 
 const languageOptions = [
   {

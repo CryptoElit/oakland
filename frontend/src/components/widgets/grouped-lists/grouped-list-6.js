@@ -1,15 +1,6 @@
-import { format, subDays } from 'date-fns';
+import {format, subDays} from 'date-fns';
 import numeral from 'numeral';
-import {
-  Box,
-  Card,
-  CardHeader,
-  Table,
-  TableBody,
-  TableCell,
-  TableRow,
-  Typography
-} from '@mui/material';
+import {Box, Card, CardHeader, Table, TableBody, TableCell, TableRow, Typography} from '@mui/material';
 
 const transactions = [
   {

@@ -1,22 +1,22 @@
-import { Fragment } from 'react';
+import {Fragment} from 'react';
 import NextLink from 'next/link';
-import { format } from 'date-fns';
+import {format} from 'date-fns';
 import numeral from 'numeral';
 import PropTypes from 'prop-types';
 import {
-  Avatar,
-  Box,
-  IconButton,
-  Table,
-  TableBody,
-  TableCell,
-  TablePagination,
-  TableRow,
-  Typography
+    Avatar,
+    Box,
+    IconButton,
+    Table,
+    TableBody,
+    TableCell,
+    TablePagination,
+    TableRow,
+    Typography
 } from '@mui/material';
-import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
-import { getInitials } from '../../../utils/get-initials';
-import { Scrollbar } from '../../scrollbar';
+import {ArrowRight as ArrowRightIcon} from '../../../icons/arrow-right';
+import {getInitials} from '../../../utils/get-initials';
+import {Scrollbar} from '../../scrollbar';
 
 const groupInvoices = (invoices) => invoices.reduce((acc, invoice) => {
   const { status } = invoice;

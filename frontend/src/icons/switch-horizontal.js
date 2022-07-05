@@ -1,4 +1,4 @@
-import { createSvgIcon } from '@mui/material/utils';
+import {createSvgIcon} from '@mui/material/utils';
 
 export const SwitchHorizontal = createSvgIcon(
   <svg

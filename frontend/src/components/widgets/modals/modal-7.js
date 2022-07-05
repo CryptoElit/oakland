@@ -1,4 +1,4 @@
-import { Box, Button, FormControlLabel, Paper, Switch, TextField, Typography } from '@mui/material';
+import {Box, Button, FormControlLabel, Paper, Switch, TextField, Typography} from '@mui/material';
 
 export const Modal7 = () => (
 <Box

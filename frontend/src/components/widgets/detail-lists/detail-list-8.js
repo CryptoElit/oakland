@@ -1,20 +1,20 @@
 import {
-  Box,
-  Card,
-  CardContent,
-  CardHeader,
-  Divider,
-  Link,
-  List,
-  ListItem,
-  ListItemAvatar,
-  ListItemText,
-  Typography
+    Box,
+    Card,
+    CardContent,
+    CardHeader,
+    Divider,
+    Link,
+    List,
+    ListItem,
+    ListItemAvatar,
+    ListItemText,
+    Typography
 } from '@mui/material';
-import { AcademicCap as AcademicCapIcon } from '../../../icons/academic-cap';
-import { Briefcase as BriefcaseIcon } from '../../../icons/briefcase';
-import { Home as HomeIcon } from '../../../icons/home';
-import { Mail as MailIcon } from '../../../icons/mail';
+import {AcademicCap as AcademicCapIcon} from '../../../icons/academic-cap';
+import {Briefcase as BriefcaseIcon} from '../../../icons/briefcase';
+import {Home as HomeIcon} from '../../../icons/home';
+import {Mail as MailIcon} from '../../../icons/mail';
 
 export const DetailList8 = () => (
   <Box

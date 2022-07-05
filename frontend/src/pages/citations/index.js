@@ -1,26 +1,16 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import {useCallback, useEffect, useRef, useState} from 'react';
 import Head from 'next/head';
-import {
-  Box,
-  Button,
-  Divider,
-  Grid,
-  InputAdornment,
-  Tab,
-  Tabs,
-  TextField,
-  Typography
-} from '@mui/material';
-import { styled } from '@mui/material/styles';
-import { orderApi } from '../../api/order-api';
-import { AuthGuard } from '../../components/authentication/auth-guard';
-import { DashboardLayout } from '../../components/dashboard/dashboard-layout';
-import { CitationDrawer } from '../../components/dashboard/citation/citation-drawer';
-import { OrderListTable } from '../../components/dashboard/citation/citation-list-table';
-import { useMounted } from '../../hooks/use-mounted';
-import { Plus as PlusIcon } from '../../icons/plus';
-import { Search as SearchIcon } from '../../icons/search';
-import { gtm } from '../../lib/gtm';
+import {Box, Button, Divider, Grid, InputAdornment, Tab, Tabs, TextField, Typography} from '@mui/material';
+import {styled} from '@mui/material/styles';
+import {orderApi} from '../../api/order-api';
+import {AuthGuard} from '../../components/authentication/auth-guard';
+import {DashboardLayout} from '../../components/dashboard/dashboard-layout';
+import {CitationDrawer} from '../../components/dashboard/citation/citation-drawer';
+import {OrderListTable} from '../../components/dashboard/citation/citation-list-table';
+import {useMounted} from '../../hooks/use-mounted';
+import {Plus as PlusIcon} from '../../icons/plus';
+import {Search as SearchIcon} from '../../icons/search';
+import {gtm} from '../../lib/gtm';
 
 const tabs = [
   {

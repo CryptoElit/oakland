@@ -1,7 +1,7 @@
-import { createContext, useEffect, useReducer } from 'react';
+import {createContext, useEffect, useReducer} from 'react';
 import PropTypes from 'prop-types';
 import {useSelector} from "../store";
-import { decode, JWT_EXPIRES_IN, JWT_SECRET, sign } from '../utils/jwt';
+import {decode, JWT_EXPIRES_IN, JWT_SECRET, sign} from '../utils/jwt';
 
 let ActionType;
 (function (ActionType) {

@@ -1,5 +1,5 @@
-import { Box, Button, TextField, Typography } from '@mui/material';
-import { QuillEditor } from '../../quill-editor';
+import {Box, Button, TextField, Typography} from '@mui/material';
+import {QuillEditor} from '../../quill-editor';
 
 export const Form10 = () => (
 <Box

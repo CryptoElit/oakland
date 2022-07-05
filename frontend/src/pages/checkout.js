@@ -1,13 +1,13 @@
-import { useEffect, useState } from 'react';
+import {useEffect, useState} from 'react';
 import NextLink from 'next/link';
 import Head from 'next/head';
-import { Box, Button, Container, Grid, Typography } from '@mui/material';
-import { CheckoutBilling } from '../components/checkout/checkout-billing';
-import { CheckoutOrderSummary } from '../components/checkout/checkout-order-summary';
-import { ArrowLeft as ArrowLeftIcon } from '../icons/arrow-left';
-import { ArrowRight as ArrowRightIcon } from '../icons/arrow-right';
-import { Lock as LockIcon } from '../icons/lock';
-import { gtm } from '../lib/gtm';
+import {Box, Button, Container, Grid, Typography} from '@mui/material';
+import {CheckoutBilling} from '../components/checkout/checkout-billing';
+import {CheckoutOrderSummary} from '../components/checkout/checkout-order-summary';
+import {ArrowLeft as ArrowLeftIcon} from '../icons/arrow-left';
+import {ArrowRight as ArrowRightIcon} from '../icons/arrow-right';
+import {Lock as LockIcon} from '../icons/lock';
+import {gtm} from '../lib/gtm';
 
 const productsData = [
   {

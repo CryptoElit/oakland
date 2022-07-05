@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import { List, ListSubheader } from '@mui/material';
-import { DashboardSidebarItem } from './dashboard-sidebar-item';
+import {List, ListSubheader} from '@mui/material';
+import {DashboardSidebarItem} from './dashboard-sidebar-item';
 
 const renderNavItems = ({ depth = 0, items, path }) => (
   <List disablePadding>

@@ -1,13 +1,13 @@
-import { useEffect } from 'react';
+import {useEffect} from 'react';
 import Head from 'next/head';
 import NextLink from 'next/link';
-import { Box, Card, Container, Typography } from '@mui/material';
-import { GuestGuard } from '../../components/authentication/guest-guard';
+import {Box, Card, Container, Typography} from '@mui/material';
+import {GuestGuard} from '../../components/authentication/guest-guard';
 
-import { AmplifyPasswordRecovery } from '../../components/authentication/amplify-password-recovery';
-import { Logo } from '../../components/logo';
-import { useAuth } from '../../hooks/use-auth';
-import { gtm } from '../../lib/gtm';
+import {AmplifyPasswordRecovery} from '../../components/authentication/amplify-password-recovery';
+import {Logo} from '../../components/logo';
+import {useAuth} from '../../hooks/use-auth';
+import {gtm} from '../../lib/gtm';
 
 const platformIcons = {
   JWT: '/static/icons/jwt.svg'
@@ -64,10 +64,7 @@ const PasswordRecovery = () => {
               >
                 <a>
                   <Logo
-                    sx={{
-                      height: 40,
-                      width: 40
-                    }}
+                      sizeLogo={40}
                   />
                 </a>
               </NextLink>

@@ -1,20 +1,11 @@
-import { useCallback, useEffect, useState } from 'react';
-import { format } from 'date-fns';
-import {
-  Card,
-  CardHeader,
-  Divider,
-  Table,
-  TableBody,
-  TableCell,
-  TableRow,
-  Typography
-} from '@mui/material';
-import { customerApi } from '../../../api/customer-api';
-import { useMounted } from '../../../hooks/use-mounted';
-import { MoreMenu } from '../../more-menu';
-import { Scrollbar } from '../../scrollbar';
-import { SeverityPill } from '../../severity-pill';
+import {useCallback, useEffect, useState} from 'react';
+import {format} from 'date-fns';
+import {Card, CardHeader, Divider, Table, TableBody, TableCell, TableRow, Typography} from '@mui/material';
+import {customerApi} from '../../../api/customer-api';
+import {useMounted} from '../../../hooks/use-mounted';
+import {MoreMenu} from '../../more-menu';
+import {Scrollbar} from '../../scrollbar';
+import {SeverityPill} from '../../severity-pill';
 
 export const CustomerLogs = (props) => {
   const isMounted = useMounted();

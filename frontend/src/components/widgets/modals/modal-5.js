@@ -1,19 +1,19 @@
-import { subDays, subHours } from 'date-fns';
+import {subDays, subHours} from 'date-fns';
 import {
-  Avatar,
-  Box,
-  Button,
-  Link,
-  List,
-  ListItem,
-  ListItemAvatar,
-  ListItemText,
-  Paper,
-  Typography
+    Avatar,
+    Box,
+    Button,
+    Link,
+    List,
+    ListItem,
+    ListItemAvatar,
+    ListItemText,
+    Paper,
+    Typography
 } from '@mui/material';
-import { ChatAlt as ChatAltIcon } from '../../../icons/chat-alt';
-import { CreditCard as CreditCardIcon } from '../../../icons/credit-card';
-import { ShoppingCart as ShoppingCartIcon } from '../../../icons/shopping-cart';
+import {ChatAlt as ChatAltIcon} from '../../../icons/chat-alt';
+import {CreditCard as CreditCardIcon} from '../../../icons/credit-card';
+import {ShoppingCart as ShoppingCartIcon} from '../../../icons/shopping-cart';
 
 const now = new Date();
 

@@ -1,23 +1,17 @@
-import { useEffect, useRef } from 'react';
-import { useRouter } from 'next/router';
+import {useEffect, useRef} from 'react';
+import {useRouter} from 'next/router';
 import Head from 'next/head';
-import { Box, useMediaQuery } from '@mui/material';
-import { styled } from '@mui/material/styles';
-import { AuthGuard } from '../../components/authentication/auth-guard';
-import { DashboardLayout } from '../../components/dashboard/dashboard-layout';
-import { MailComposer } from '../../components/dashboard/mail/mail-composer';
-import { MailDetails } from '../../components/dashboard/mail/mail-details';
-import { MailList } from '../../components/dashboard/mail/mail-list';
-import { MailSidebar } from '../../components/dashboard/mail/mail-sidebar';
-import { gtm } from '../../lib/gtm';
-import {
-  closeComposer,
-  closeSidebar,
-  getLabels,
-  openComposer,
-  openSidebar
-} from '../../slices/mail';
-import { useDispatch, useSelector } from '../../store';
+import {Box, useMediaQuery} from '@mui/material';
+import {styled} from '@mui/material/styles';
+import {AuthGuard} from '../../components/authentication/auth-guard';
+import {DashboardLayout} from '../../components/dashboard/dashboard-layout';
+import {MailComposer} from '../../components/dashboard/mail/mail-composer';
+import {MailDetails} from '../../components/dashboard/mail/mail-details';
+import {MailList} from '../../components/dashboard/mail/mail-list';
+import {MailSidebar} from '../../components/dashboard/mail/mail-sidebar';
+import {gtm} from '../../lib/gtm';
+import {closeComposer, closeSidebar, getLabels, openComposer, openSidebar} from '../../slices/mail';
+import {useDispatch, useSelector} from '../../store';
 
 const MailInner = styled('div',
   { shouldForwardProp: (prop) => prop !== 'open' })(

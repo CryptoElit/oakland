@@ -1,8 +1,8 @@
-import { format } from 'date-fns';
-import { Box, Card, CardHeader, Typography } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
-import { Chart } from '../../chart';
-import { Scrollbar } from '../../scrollbar';
+import {format} from 'date-fns';
+import {Box, Card, CardHeader, Typography} from '@mui/material';
+import {useTheme} from '@mui/material/styles';
+import {Chart} from '../../chart';
+import {Scrollbar} from '../../scrollbar';
 
 const data = {
   series: [

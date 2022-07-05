@@ -1,12 +1,11 @@
-import { useRouter } from 'next/router';
+import {useRouter} from 'next/router';
 import * as Yup from 'yup';
-import { useFormik } from 'formik';
-import { Alert, Box, Button, FormHelperText, TextField } from '@mui/material';
-import { useAuth } from '../../hooks/use-auth';
+import {useFormik} from 'formik';
+import {Alert, Box, Button, FormHelperText, TextField} from '@mui/material';
+import {useAuth} from '../../hooks/use-auth';
 
-import { useMounted } from '../../hooks/use-mounted';
-import { useDispatch, useSelector } from '../../store';
-import { createUser, getUser } from '../../slices/user';
+import {useMounted} from '../../hooks/use-mounted';
+import {useDispatch, useSelector} from '../../store';
 
 export const JWTLogin = (props) => {
 

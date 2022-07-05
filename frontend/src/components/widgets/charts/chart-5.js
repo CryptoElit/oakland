@@ -1,19 +1,9 @@
-import { useCallback, useEffect, useState } from 'react';
-import {
-  Box,
-  Button,
-  Card,
-  CardHeader,
-  Container,
-  List,
-  ListItem,
-  ListItemText,
-  Typography
-} from '@mui/material';
-import { useTheme } from '@mui/material/styles';
-import { useMounted } from '../../../hooks/use-mounted';
-import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
-import { Chart } from '../../chart';
+import {useCallback, useEffect, useState} from 'react';
+import {Box, Button, Card, CardHeader, Container, List, ListItem, ListItemText, Typography} from '@mui/material';
+import {useTheme} from '@mui/material/styles';
+import {useMounted} from '../../../hooks/use-mounted';
+import {ArrowRight as ArrowRightIcon} from '../../../icons/arrow-right';
+import {Chart} from '../../chart';
 
 const getRandomInt = (min, max) => {
   min = Math.ceil(min);

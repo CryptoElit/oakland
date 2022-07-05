@@ -1,7 +1,7 @@
-import { Avatar, Box, Button, Container, IconButton, Paper, Typography } from '@mui/material';
-import { alpha } from '@mui/material/styles';
+import {Avatar, Box, Button, Container, IconButton, Paper, Typography} from '@mui/material';
+import {alpha} from '@mui/material/styles';
 import WarningIcon from '@mui/icons-material/WarningOutlined';
-import { X as XIcon } from '../../../icons/x';
+import {X as XIcon} from '../../../icons/x';
 
 export const Modal11 = () => (
 <Box

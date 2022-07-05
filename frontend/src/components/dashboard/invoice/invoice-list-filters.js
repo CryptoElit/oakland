@@ -1,24 +1,24 @@
-import { useRef } from 'react';
+import {useRef} from 'react';
 import PropTypes from 'prop-types';
 import {
-  Box,
-  Checkbox,
-  Drawer,
-  FormControlLabel,
-  FormGroup,
-  IconButton,
-  InputAdornment,
-  Stack,
-  Switch,
-  TextField,
-  Typography,
-  useMediaQuery
+    Box,
+    Checkbox,
+    Drawer,
+    FormControlLabel,
+    FormGroup,
+    IconButton,
+    InputAdornment,
+    Stack,
+    Switch,
+    TextField,
+    Typography,
+    useMediaQuery
 } from '@mui/material';
-import { styled } from '@mui/material/styles';
-import { DatePicker } from '@mui/lab';
-import { Search as SearchIcon } from '../../../icons/search';
-import { X } from '../../../icons/x';
-import { Scrollbar } from '../../scrollbar';
+import {styled} from '@mui/material/styles';
+import {DatePicker} from '@mui/lab';
+import {Search as SearchIcon} from '../../../icons/search';
+import {X} from '../../../icons/x';
+import {Scrollbar} from '../../scrollbar';
 
 const customers = [
   'Blind Spots Inc.',

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {useState} from 'react';
 import {
   Box,
   Button,
@@ -14,26 +14,26 @@ import {
   TableRow,
   Typography
 } from '@mui/material';
-import { Logo } from '../../logo';
-import { Pencil as PencilIcon } from '../../../icons/pencil';
-import { PropertyList } from '../../property-list';
-import { PropertyListItem } from '../../property-list-item';
+import {Logo} from '../../logo';
+import {Pencil as PencilIcon} from '../../../icons/pencil';
+import {PropertyList} from '../../property-list';
+import {PropertyListItem} from '../../property-list-item';
 
 const plans = [
   {
-    image: <Logo />,
+    image: <Logo sizeLogo={40} />,
     name: 'Startup',
     price: '0',
     current: true
   },
   {
-    image: <Logo />,
+    image: <Logo sizeLogo={40} />,
     name: 'Standard',
     price: '4.99',
     current: false
   },
   {
-    image: <Logo />,
+    image: <Logo sizeLogo={40} />,
     name: 'Business',
     price: '29.99',
     current: false
@@ -85,7 +85,7 @@ export const AccountBillingSettings = (props) => {
                     }}
                   >
                     <CardContent>
-                      <Logo />
+                      <Logo sizeLogo={60} sizeLogo={40} />
                       <Box
                         sx={{
                           display: 'flex',

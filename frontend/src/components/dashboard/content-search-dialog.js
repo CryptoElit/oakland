@@ -1,21 +1,21 @@
-import { Fragment, useState } from 'react';
+import {Fragment, useState} from 'react';
 import PropTypes from 'prop-types';
 import {
-  Badge,
-  Box,
-  CircularProgress,
-  Dialog,
-  DialogContent,
-  Divider,
-  IconButton,
-  InputAdornment,
-  TextField,
-  Typography
+    Badge,
+    Box,
+    CircularProgress,
+    Dialog,
+    DialogContent,
+    Divider,
+    IconButton,
+    InputAdornment,
+    TextField,
+    Typography
 } from '@mui/material';
-import { Search as SearchIcon } from '../../icons/search';
-import { wait } from '../../utils/wait';
-import { X as XIcon } from '../../icons/x';
-import { Tip } from '../tip';
+import {Search as SearchIcon} from '../../icons/search';
+import {wait} from '../../utils/wait';
+import {X as XIcon} from '../../icons/x';
+import {Tip} from '../tip';
 
 const results = {
   Platform: [

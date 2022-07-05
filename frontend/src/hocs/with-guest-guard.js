@@ -1,4 +1,4 @@
-import { GuestGuard } from '../components/authentication/guest-guard';
+import {GuestGuard} from '../components/authentication/guest-guard';
 
 /**
  * @deprecated Use the layout strategy

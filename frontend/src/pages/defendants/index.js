@@ -1,28 +1,28 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import {useCallback, useEffect, useRef, useState} from 'react';
 import Head from 'next/head';
 import {
-  Box,
-  Button,
-  Card,
-  Container,
-  Divider,
-  Grid,
-  InputAdornment,
-  Tab,
-  Tabs,
-  TextField,
-  Typography
+    Box,
+    Button,
+    Card,
+    Container,
+    Divider,
+    Grid,
+    InputAdornment,
+    Tab,
+    Tabs,
+    TextField,
+    Typography
 } from '@mui/material';
-import { customerApi } from '../../api/customer-api';
-import { AuthGuard } from '../../components/authentication/auth-guard';
-import { DashboardLayout } from '../../components/dashboard/dashboard-layout';
-import { CustomerListTable } from '../../components/dashboard/user/user-list-table';
-import { useMounted } from '../../hooks/use-mounted';
-import { Download as DownloadIcon } from '../../icons/download';
-import { Plus as PlusIcon } from '../../icons/plus';
-import { Search as SearchIcon } from '../../icons/search';
-import { Upload as UploadIcon } from '../../icons/upload';
-import { gtm } from '../../lib/gtm';
+import {customerApi} from '../../api/customer-api';
+import {AuthGuard} from '../../components/authentication/auth-guard';
+import {DashboardLayout} from '../../components/dashboard/dashboard-layout';
+import {CustomerListTable} from '../../components/dashboard/user/user-list-table';
+import {useMounted} from '../../hooks/use-mounted';
+import {Download as DownloadIcon} from '../../icons/download';
+import {Plus as PlusIcon} from '../../icons/plus';
+import {Search as SearchIcon} from '../../icons/search';
+import {Upload as UploadIcon} from '../../icons/upload';
+import {gtm} from '../../lib/gtm';
 
 const tabs = [
   {

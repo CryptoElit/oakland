@@ -1,4 +1,4 @@
-import { Box, Checkbox, FormControlLabel, FormGroup, Typography } from '@mui/material';
+import {Box, Checkbox, FormControlLabel, FormGroup, Typography} from '@mui/material';
 
 export const InputCheckbox = () => (
 <Box

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Box, ListItem, ListItemText, Typography } from '@mui/material';
+import {Box, ListItem, ListItemText, Typography} from '@mui/material';
 
 export const PropertyListItem = (props) => {
   const { align, children, disableGutters, value, label, ...other } = props;

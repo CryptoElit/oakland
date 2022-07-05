@@ -1,6 +1,6 @@
-import { useEffect } from 'react';
-import { MainLayout } from '../components/main-layout';
-import { gtm } from '../lib/gtm';
+import {useEffect} from 'react';
+import {MainLayout} from '../components/main-layout';
+import {gtm} from '../lib/gtm';
 import Login from "./authentication/login";
 
 const Home = () => {

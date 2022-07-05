@@ -1,16 +1,6 @@
-import { addDays, format, subMinutes } from 'date-fns';
+import {addDays, format, subMinutes} from 'date-fns';
 import numeral from 'numeral';
-import {
-  Avatar,
-  Box,
-  Card,
-  CardContent,
-  CardHeader,
-  Link,
-  List,
-  ListItem,
-  Typography
-} from '@mui/material';
+import {Avatar, Box, Card, CardContent, CardHeader, Link, List, ListItem, Typography} from '@mui/material';
 
 export const DetailList7 = () => (
   <Box

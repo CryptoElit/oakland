@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
-import { styled } from '@mui/material/styles';
+import {styled} from '@mui/material/styles';
 
 export const Logo = styled((props) => {
-  const { variant, ...other } = props;
+  const { variant, sizeLogo } = props;
 
   const color = variant === 'light' ? '#C1C4D6' : '#5048E5';
 
   return (
-      <svg className="badge" xmlns="http://www.w3.org/2000/svg" height="440" width="440" viewBox="-40 -40 440 440">
+      <svg className="badge" xmlns="http://www.w3.org/2000/svg" height={!sizeLogo ? 90 : sizeLogo}  viewBox="-40 -40 440 440">
           <circle className="outer" fill="#F9D535" stroke="#fff" stroke-width="8" stroke-linecap="round" cx="180"
                   cy="180" r="157"/>
           <circle className="inner" fill="#DFB828" stroke="#fff" stroke-width="8" cx="180" cy="180" r="108.3"/>

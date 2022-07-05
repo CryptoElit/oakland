@@ -1,14 +1,6 @@
-import {
-  Box,
-  Button,
-  Container,
-  IconButton,
-  InputAdornment,
-  Paper,
-  TextField
-} from '@mui/material';
-import { Search as SearchIcon } from '../../../icons/search';
-import { X as XIcon } from '../../../icons/x';
+import {Box, Button, Container, IconButton, InputAdornment, Paper, TextField} from '@mui/material';
+import {Search as SearchIcon} from '../../../icons/search';
+import {X as XIcon} from '../../../icons/x';
 
 export const Modal3 = () => (
   <Box

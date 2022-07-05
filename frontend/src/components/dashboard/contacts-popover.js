@@ -1,20 +1,10 @@
-import { useEffect } from 'react';
-import { formatDistanceToNowStrict } from 'date-fns';
+import {useEffect} from 'react';
+import {formatDistanceToNowStrict} from 'date-fns';
 import PropTypes from 'prop-types';
-import {
-  Avatar,
-  Box,
-  Link,
-  List,
-  ListItem,
-  ListItemAvatar,
-  ListItemText,
-  Popover,
-  Typography
-} from '@mui/material';
-import { getContacts } from '../../slices/chat';
-import { useDispatch, useSelector } from '../../store';
-import { StatusIndicator } from '../status-indicator';
+import {Avatar, Box, Link, List, ListItem, ListItemAvatar, ListItemText, Popover, Typography} from '@mui/material';
+import {getContacts} from '../../slices/chat';
+import {useDispatch, useSelector} from '../../store';
+import {StatusIndicator} from '../status-indicator';
 
 export const ContactsPopover = (props) => {
   const { anchorEl, onClose, open, ...other } = props;

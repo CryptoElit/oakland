@@ -1,20 +1,20 @@
-import { formatDistanceToNowStrict, subHours, subMinutes } from 'date-fns';
+import {formatDistanceToNowStrict, subHours, subMinutes} from 'date-fns';
 import {
-  Avatar,
-  Box,
-  Card,
-  CardHeader,
-  Container,
-  Divider,
-  IconButton,
-  Link,
-  List,
-  ListItem,
-  ListItemAvatar,
-  ListItemText,
-  Typography
+    Avatar,
+    Box,
+    Card,
+    CardHeader,
+    Container,
+    Divider,
+    IconButton,
+    Link,
+    List,
+    ListItem,
+    ListItemAvatar,
+    ListItemText,
+    Typography
 } from '@mui/material';
-import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
+import {DotsHorizontal as DotsHorizontalIcon} from '../../../icons/dots-horizontal';
 
 const now = new Date();
 

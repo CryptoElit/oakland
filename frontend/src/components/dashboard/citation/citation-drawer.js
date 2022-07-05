@@ -1,28 +1,28 @@
-import { useState } from 'react';
+import {useState} from 'react';
 import PropTypes from 'prop-types';
-import { format } from 'date-fns';
+import {format} from 'date-fns';
 import numeral from 'numeral';
 import {
-  Box,
-  Button,
-  Divider,
-  Drawer,
-  IconButton,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableRow,
-  TextField,
-  Typography,
-  useMediaQuery
+    Box,
+    Button,
+    Divider,
+    Drawer,
+    IconButton,
+    Table,
+    TableBody,
+    TableCell,
+    TableHead,
+    TableRow,
+    TextField,
+    Typography,
+    useMediaQuery
 } from '@mui/material';
-import { styled } from '@mui/material/styles';
+import {styled} from '@mui/material/styles';
 import EditIcon from '@mui/icons-material/Edit';
-import { X as XIcon } from '../../../icons/x';
-import { PropertyList } from '../../property-list';
-import { PropertyListItem } from '../../property-list-item';
-import { Scrollbar } from '../../scrollbar';
+import {X as XIcon} from '../../../icons/x';
+import {PropertyList} from '../../property-list';
+import {PropertyListItem} from '../../property-list-item';
+import {Scrollbar} from '../../scrollbar';
 
 const statusOptions = [
   {

@@ -1,6 +1,6 @@
-import { Box, Card, CardContent, Container, Typography } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
-import { Chart } from '../../chart';
+import {Box, Card, CardContent, Container, Typography} from '@mui/material';
+import {useTheme} from '@mui/material/styles';
+import {Chart} from '../../chart';
 
 export const Chart3 = () => {
   const theme = useTheme();

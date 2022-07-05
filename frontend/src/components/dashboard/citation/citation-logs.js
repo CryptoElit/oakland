@@ -1,15 +1,8 @@
 import PropTypes from 'prop-types';
-import { format, subHours } from 'date-fns';
-import { Avatar, Button, Card, CardContent, CardHeader, Divider, Typography } from '@mui/material';
-import {
-  Timeline,
-  TimelineConnector,
-  TimelineContent,
-  TimelineDot,
-  TimelineItem,
-  TimelineSeparator
-} from '@mui/lab';
-import { ShoppingCart as ShoppingCartIcon } from '../../../icons/shopping-cart';
+import {format, subHours} from 'date-fns';
+import {Avatar, Button, Card, CardContent, CardHeader, Divider, Typography} from '@mui/material';
+import {Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineSeparator} from '@mui/lab';
+import {ShoppingCart as ShoppingCartIcon} from '../../../icons/shopping-cart';
 
 const activities = [
   {

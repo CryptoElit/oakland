@@ -1,14 +1,14 @@
 import {
-  Box,
-  Button,
-  CardActions,
-  CardContent,
-  CardHeader,
-  Checkbox,
-  Divider,
-  FormControlLabel,
-  Grid,
-  Typography
+    Box,
+    Button,
+    CardActions,
+    CardContent,
+    CardHeader,
+    Checkbox,
+    Divider,
+    FormControlLabel,
+    Grid,
+    Typography
 } from '@mui/material';
 
 export const Form3 = () => (

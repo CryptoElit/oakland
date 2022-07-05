@@ -1,15 +1,4 @@
-import {
-  Avatar,
-  Box,
-  Card,
-  CardContent,
-  CardMedia,
-  Chip,
-  Divider,
-  Grid,
-  Link,
-  Typography
-} from '@mui/material';
+import {Avatar, Box, Card, CardContent, CardMedia, Chip, Divider, Grid, Link, Typography} from '@mui/material';
 
 const applicants = [
   {

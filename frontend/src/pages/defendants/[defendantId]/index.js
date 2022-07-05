@@ -1,34 +1,22 @@
-import { useCallback, useEffect, useState } from 'react';
+import {useCallback, useEffect, useState} from 'react';
 import NextLink from 'next/link';
 import Head from 'next/head';
-import {
-  Avatar,
-  Box,
-  Button,
-  Chip,
-  Container,
-  Divider,
-  Grid,
-  Link,
-  Tab,
-  Tabs,
-  Typography
-} from '@mui/material';
+import {Avatar, Box, Button, Chip, Container, Divider, Grid, Link, Tab, Tabs, Typography} from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import { customerApi } from '../../../api/customer-api';
-import { AuthGuard } from '../../../components/authentication/auth-guard';
-import { DashboardLayout } from '../../../components/dashboard/dashboard-layout';
-import { CustomerBasicDetails } from '../../../../components/dashboard/user/customer-basic-details';
-import { CustomerDataManagement } from '../../../../components/dashboard/user/customer-data-management';
-import { CustomerEmailsSummary } from '../../../../components/dashboard/user/customer-emails-summary';
-import { CustomerInvoices } from '../../../../components/dashboard/user/customer-invoices';
-import { CustomerPayment } from '../../../../components/dashboard/user/customer-payment';
-import { CustomerLogs } from '../../../../components/dashboard/user/customer-logs';
-import { useMounted } from '../../../hooks/use-mounted';
-import { ChevronDown as ChevronDownIcon } from '../../../icons/chevron-down';
-import { PencilAlt as PencilAltIcon } from '../../../icons/pencil-alt';
-import { gtm } from '../../../lib/gtm';
-import { getInitials } from '../../../utils/get-initials';
+import {customerApi} from '../../../api/customer-api';
+import {AuthGuard} from '../../../components/authentication/auth-guard';
+import {DashboardLayout} from '../../../components/dashboard/dashboard-layout';
+import {CustomerBasicDetails} from '../../../../components/dashboard/user/customer-basic-details';
+import {CustomerDataManagement} from '../../../../components/dashboard/user/customer-data-management';
+import {CustomerEmailsSummary} from '../../../../components/dashboard/user/customer-emails-summary';
+import {CustomerInvoices} from '../../../../components/dashboard/user/customer-invoices';
+import {CustomerPayment} from '../../../../components/dashboard/user/customer-payment';
+import {CustomerLogs} from '../../../../components/dashboard/user/customer-logs';
+import {useMounted} from '../../../hooks/use-mounted';
+import {ChevronDown as ChevronDownIcon} from '../../../icons/chevron-down';
+import {PencilAlt as PencilAltIcon} from '../../../icons/pencil-alt';
+import {gtm} from '../../../lib/gtm';
+import {getInitials} from '../../../utils/get-initials';
 
 const tabs = [
   { label: 'Details', value: 'details' },

@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import NextLink from 'next/link';
-import { AppBar, Box, Button, Container, IconButton, Link, Toolbar } from '@mui/material';
-import { Menu as MenuIcon } from '../icons/menu';
-import { Logo } from './logo';
+import {AppBar, Box, Button, Container, IconButton, Link, Toolbar} from '@mui/material';
+import {Menu as MenuIcon} from '../icons/menu';
+import {Logo} from './logo';
 
 export const MainNavbar = (props) => {
   const { onOpenSidebar } = props;
@@ -29,13 +29,13 @@ export const MainNavbar = (props) => {
           >
             <a>
               <Logo
+                  sizeLogo={60}
+                  fontSize="small"
                 sx={{
                   display: {
                     md: 'inline',
                     xs: 'none'
                   },
-                  height: 40,
-                  width: 40
                 }}
               />
             </a>

@@ -1,15 +1,5 @@
-import React, { useRef } from 'react';
-import {
-  Box,
-  Button,
-  Card,
-  CardContent,
-  Container,
-  Divider,
-  Link,
-  TextField,
-  Typography
-} from '@mui/material';
+import React, {useRef} from 'react';
+import {Box, Button, Card, CardContent, Container, Divider, Link, TextField, Typography} from '@mui/material';
 import emailjs from '@emailjs/browser';
 
 export const EmailForm = () => {

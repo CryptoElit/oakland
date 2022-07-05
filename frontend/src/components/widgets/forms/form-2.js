@@ -1,7 +1,7 @@
-import { useMemo } from 'react';
-import { Box, Checkbox, Chip, Divider, FormControlLabel, Input } from '@mui/material';
-import { MultiSelect } from '../../multi-select';
-import { Search as SearchIcon } from '../../../icons/search';
+import {useMemo} from 'react';
+import {Box, Checkbox, Chip, Divider, FormControlLabel, Input} from '@mui/material';
+import {MultiSelect} from '../../multi-select';
+import {Search as SearchIcon} from '../../../icons/search';
 
 const categoryOptions = [
   {

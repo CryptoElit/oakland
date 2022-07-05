@@ -1,18 +1,18 @@
 import numeral from 'numeral';
 import {
-  Box,
-  Card,
-  CardHeader,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableRow,
-  TableSortLabel,
-  Tooltip,
-  Typography
+    Box,
+    Card,
+    CardHeader,
+    Table,
+    TableBody,
+    TableCell,
+    TableHead,
+    TableRow,
+    TableSortLabel,
+    Tooltip,
+    Typography
 } from '@mui/material';
-import { InformationCircleOutlined as InformationCircleOutlinedIcon } from '../../../icons/information-circle-outlined';
+import {InformationCircleOutlined as InformationCircleOutlinedIcon} from '../../../icons/information-circle-outlined';
 
 const countries = [
   {

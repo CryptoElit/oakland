@@ -1,19 +1,9 @@
-import {
-  Avatar,
-  Box,
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  Divider,
-  Grid,
-  Typography
-} from '@mui/material';
-import { alpha, useTheme } from '@mui/material/styles';
-import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
-import { ChevronDown as ChevronDownIcon } from '../../../icons/chevron-down';
-import { ChevronUp as ChevronUpIcon } from '../../../icons/chevron-up';
-import { Chart } from '../../chart';
+import {Avatar, Box, Button, Card, CardActions, CardContent, Divider, Grid, Typography} from '@mui/material';
+import {alpha, useTheme} from '@mui/material/styles';
+import {ArrowRight as ArrowRightIcon} from '../../../icons/arrow-right';
+import {ChevronDown as ChevronDownIcon} from '../../../icons/chevron-down';
+import {ChevronUp as ChevronUpIcon} from '../../../icons/chevron-up';
+import {Chart} from '../../chart';
 
 export const QuickStats6 = () => {
   const theme = useTheme();

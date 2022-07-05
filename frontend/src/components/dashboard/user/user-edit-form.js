@@ -2,21 +2,21 @@ import NextLink from 'next/link';
 import PropTypes from 'prop-types';
 import toast from 'react-hot-toast';
 import * as Yup from 'yup';
-import { useFormik } from 'formik';
+import {useFormik} from 'formik';
 import {
-  Box,
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  CardHeader,
-  Divider,
-  Grid,
-  Switch,
-  TextField,
-  Typography
+    Box,
+    Button,
+    Card,
+    CardActions,
+    CardContent,
+    CardHeader,
+    Divider,
+    Grid,
+    Switch,
+    TextField,
+    Typography
 } from '@mui/material';
-import { wait } from '../../../utils/wait';
+import {wait} from '../../../utils/wait';
 
 export const CustomerEditForm = (props) => {
   const { customer, ...other } = props;

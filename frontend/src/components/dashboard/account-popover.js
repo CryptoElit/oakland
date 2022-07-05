@@ -1,22 +1,13 @@
 import NextLink from 'next/link';
-import { useRouter } from 'next/router';
+import {useRouter} from 'next/router';
 import PropTypes from 'prop-types';
 import toast from 'react-hot-toast';
-import {
-  Avatar,
-  Box,
-  Divider,
-  ListItemIcon,
-  ListItemText,
-  MenuItem,
-  Popover,
-  Typography
-} from '@mui/material';
+import {Avatar, Box, Divider, ListItemIcon, ListItemText, MenuItem, Popover, Typography} from '@mui/material';
 import LogoutIcon from '@mui/icons-material/Logout';
-import { useAuth } from '../../hooks/use-auth';
-import { Cog as CogIcon } from '../../icons/cog';
-import { UserCircle as UserCircleIcon } from '../../icons/user-circle';
-import { SwitchHorizontalOutlined as SwitchHorizontalOutlinedIcon } from '../../icons/switch-horizontal-outlined';
+import {useAuth} from '../../hooks/use-auth';
+import {Cog as CogIcon} from '../../icons/cog';
+import {UserCircle as UserCircleIcon} from '../../icons/user-circle';
+import {SwitchHorizontalOutlined as SwitchHorizontalOutlinedIcon} from '../../icons/switch-horizontal-outlined';
 
 export const AccountPopover = (props) => {
   const { anchorEl, onClose, open, ...other } = props;

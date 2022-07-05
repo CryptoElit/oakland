@@ -1,29 +1,29 @@
 import numeral from 'numeral';
-import { subDays, subHours } from 'date-fns';
+import {subDays, subHours} from 'date-fns';
 import {
-  Avatar,
-  Box,
-  Card,
-  Checkbox,
-  Divider,
-  IconButton,
-  InputAdornment,
-  Link,
-  Tab,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TablePagination,
-  TableRow,
-  Tabs,
-  TextField,
-  Typography
+    Avatar,
+    Box,
+    Card,
+    Checkbox,
+    Divider,
+    IconButton,
+    InputAdornment,
+    Link,
+    Tab,
+    Table,
+    TableBody,
+    TableCell,
+    TableHead,
+    TablePagination,
+    TableRow,
+    Tabs,
+    TextField,
+    Typography
 } from '@mui/material';
-import { Scrollbar } from '../../scrollbar';
-import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
-import { PencilAlt as PencilAltIcon } from '../../../icons/pencil-alt';
-import { Search as SearchIcon } from '../../../icons/search';
+import {Scrollbar} from '../../scrollbar';
+import {ArrowRight as ArrowRightIcon} from '../../../icons/arrow-right';
+import {PencilAlt as PencilAltIcon} from '../../../icons/pencil-alt';
+import {Search as SearchIcon} from '../../../icons/search';
 
 const now = new Date();
 

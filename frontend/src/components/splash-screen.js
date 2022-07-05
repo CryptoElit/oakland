@@ -1,8 +1,6 @@
-import { Box } from '@mui/material';
-import { Logo } from './logo';
-import { keyframes } from '@emotion/react';
-import {Image} from "../icons/image";
-
+import {Box} from '@mui/material';
+import {Logo} from './logo';
+import {keyframes} from '@emotion/react';
 
 
 const bounce1 = keyframes`
@@ -47,6 +45,7 @@ export const SplashScreen = () => (
     }}
   >
       <Logo
+          sizeLogo={80}
           sx={{
               height: 80,
               width: 80,

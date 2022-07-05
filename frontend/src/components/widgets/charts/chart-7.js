@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import { Box, Card, CardContent, CardHeader, Checkbox, Tooltip, Typography } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
-import { InformationCircleOutlined as InformationCircleOutlinedIcon } from '../../../icons/information-circle-outlined';
-import { Chart } from '../../chart';
+import {useState} from 'react';
+import {Box, Card, CardContent, CardHeader, Checkbox, Tooltip, Typography} from '@mui/material';
+import {useTheme} from '@mui/material/styles';
+import {InformationCircleOutlined as InformationCircleOutlinedIcon} from '../../../icons/information-circle-outlined';
+import {Chart} from '../../chart';
 
 const data = {
   series: [

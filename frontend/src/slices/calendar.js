@@ -1,5 +1,5 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { calendarApi } from '../api/calendar-api';
+import {createSlice} from '@reduxjs/toolkit';
+import {calendarApi} from '../api/calendar-api';
 
 const initialState = {
     events: []

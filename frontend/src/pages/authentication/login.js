@@ -1,14 +1,14 @@
-import { useEffect } from 'react';
+import {useEffect} from 'react';
 import Head from 'next/head';
 import NextLink from 'next/link';
-import { useRouter } from 'next/router';
-import { Box, Card, Container, Divider, Link, Typography } from '@mui/material';
-import { GuestGuard } from '../../components/authentication/guest-guard';
+import {useRouter} from 'next/router';
+import {Box, Card, Container, Divider, Link, Typography} from '@mui/material';
+import {GuestGuard} from '../../components/authentication/guest-guard';
 
-import { JWTLogin } from '../../components/authentication/jwt-login';
-import { Logo } from '../../components/logo';
-import { useAuth } from '../../hooks/use-auth';
-import { gtm } from '../../lib/gtm';
+import {JWTLogin} from '../../components/authentication/jwt-login';
+import {Logo} from '../../components/logo';
+import {useAuth} from '../../hooks/use-auth';
+import {gtm} from '../../lib/gtm';
 
 const platformIcons = {
   JWT: '/static/icons/jwt.svg'
@@ -67,10 +67,7 @@ const Login = () => {
               >
                 <a>
                   <Logo
-                    sx={{
-                      height: 40,
-                      width: 40
-                    }}
+                      sizeLogo={80}
                   />
                 </a>
               </NextLink>

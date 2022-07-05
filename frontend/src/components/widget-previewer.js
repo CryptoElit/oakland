@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react';
+import {useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
-import { Card, CardHeader, Divider, IconButton, ThemeProvider } from '@mui/material';
-import { useSettings } from '../hooks/use-settings';
-import { Moon as MoonIcon } from '../icons/moon';
-import { Sun as SunIcon } from '../icons/sun';
-import { createTheme } from '../theme';
+import {Card, CardHeader, Divider, IconButton, ThemeProvider} from '@mui/material';
+import {useSettings} from '../hooks/use-settings';
+import {Moon as MoonIcon} from '../icons/moon';
+import {Sun as SunIcon} from '../icons/sun';
+import {createTheme} from '../theme';
 
 export const WidgetPreviewer = (props) => {
   const { element, name, ...other } = props;

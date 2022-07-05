@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import { Typography } from '@mui/material';
-import { styled } from '@mui/material/styles';
-import { LightBulb as LightBulbIcon } from '../icons/light-bulb';
+import {Typography} from '@mui/material';
+import {styled} from '@mui/material/styles';
+import {LightBulb as LightBulbIcon} from '../icons/light-bulb';
 
 const TipRoot = styled('div')((({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark'

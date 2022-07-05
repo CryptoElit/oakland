@@ -1,18 +1,18 @@
 import numeral from 'numeral';
 import {
-  Box,
-  Card,
-  CardHeader,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableRow,
-  Tooltip,
-  Typography
+    Box,
+    Card,
+    CardHeader,
+    Table,
+    TableBody,
+    TableCell,
+    TableHead,
+    TableRow,
+    Tooltip,
+    Typography
 } from '@mui/material';
-import { ExternalLink as ExternalLinkIcon } from '../../../icons/external-link';
-import { InformationCircleOutlined as InformationCircleOutlinedIcon } from '../../../icons/information-circle-outlined';
+import {ExternalLink as ExternalLinkIcon} from '../../../icons/external-link';
+import {InformationCircleOutlined as InformationCircleOutlinedIcon} from '../../../icons/information-circle-outlined';
 
 const pages = [
   {

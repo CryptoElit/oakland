@@ -1,9 +1,9 @@
-import { useEffect } from 'react';
+import {useEffect} from 'react';
 import NextLink from 'next/link';
-import { useRouter } from 'next/router';
+import {useRouter} from 'next/router';
 import PropTypes from 'prop-types';
-import { Box, Button, Drawer, Link, useMediaQuery } from '@mui/material';
-import { styled } from '@mui/material/styles';
+import {Box, Drawer, Link, useMediaQuery} from '@mui/material';
+import {styled} from '@mui/material/styles';
 
 const MainSidebarLink = styled(Link)(({ theme }) => ({
   borderRadius: theme.shape.borderRadius,

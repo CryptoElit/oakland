@@ -1,16 +1,5 @@
-import {
-  Avatar,
-  Box,
-  Button,
-  Card,
-  CardContent,
-  Divider,
-  Grid,
-  Switch,
-  TextField,
-  Typography
-} from '@mui/material';
-import { UserCircle as UserCircleIcon } from '../../../icons/user-circle';
+import {Avatar, Box, Button, Card, CardContent, Divider, Grid, Switch, TextField, Typography} from '@mui/material';
+import {UserCircle as UserCircleIcon} from '../../../icons/user-circle';
 
 export const AccountGeneralSettings = (props) => {
   // To get the user from the authContext, you can use

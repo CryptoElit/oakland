@@ -1,16 +1,6 @@
-import { formatDistanceToNowStrict, subDays, subHours, subMinutes } from 'date-fns';
-import {
-  Avatar,
-  Box,
-  Link,
-  List,
-  ListItem,
-  ListItemAvatar,
-  ListItemText,
-  Paper,
-  Typography
-} from '@mui/material';
-import { StatusIndicator } from '../../status-indicator';
+import {formatDistanceToNowStrict, subDays, subHours, subMinutes} from 'date-fns';
+import {Avatar, Box, Link, List, ListItem, ListItemAvatar, ListItemText, Paper, Typography} from '@mui/material';
+import {StatusIndicator} from '../../status-indicator';
 
 const now = new Date();
 

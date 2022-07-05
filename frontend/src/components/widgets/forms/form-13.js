@@ -1,14 +1,4 @@
-import {
-  Box,
-  Button,
-  Checkbox,
-  FormControlLabel,
-  Grid,
-  Radio,
-  RadioGroup,
-  TextField,
-  Typography
-} from '@mui/material';
+import {Box, Button, Checkbox, FormControlLabel, Grid, Radio, RadioGroup, TextField, Typography} from '@mui/material';
 
 const paymentMethods = [
   {

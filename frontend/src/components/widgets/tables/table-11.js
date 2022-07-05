@@ -1,18 +1,18 @@
 import numeral from 'numeral';
 import {
-  Box,
-  Card,
-  CardHeader,
-  Divider,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TablePagination,
-  TableRow,
-  Typography
+    Box,
+    Card,
+    CardHeader,
+    Divider,
+    Table,
+    TableBody,
+    TableCell,
+    TableHead,
+    TablePagination,
+    TableRow,
+    Typography
 } from '@mui/material';
-import { Scrollbar } from '../../scrollbar';
+import {Scrollbar} from '../../scrollbar';
 
 const orderItems = [
   {

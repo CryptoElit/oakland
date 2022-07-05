@@ -1,21 +1,21 @@
-import { format } from 'date-fns';
+import {format} from 'date-fns';
 import {
-  Box,
-  Card,
-  CardHeader,
-  Divider,
-  IconButton,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TablePagination,
-  TableRow
+    Box,
+    Card,
+    CardHeader,
+    Divider,
+    IconButton,
+    Table,
+    TableBody,
+    TableCell,
+    TableHead,
+    TablePagination,
+    TableRow
 } from '@mui/material';
-import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
-import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizontal';
-import { Scrollbar } from '../../scrollbar';
-import { SeverityPill } from '../../severity-pill';
+import {ArrowRight as ArrowRightIcon} from '../../../icons/arrow-right';
+import {DotsHorizontal as DotsHorizontalIcon} from '../../../icons/dots-horizontal';
+import {Scrollbar} from '../../scrollbar';
+import {SeverityPill} from '../../severity-pill';
 
 const now = new Date();
 

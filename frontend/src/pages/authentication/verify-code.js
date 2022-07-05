@@ -1,13 +1,13 @@
-import { useEffect } from 'react';
+import {useEffect} from 'react';
 import Head from 'next/head';
 import NextLink from 'next/link';
-import { useRouter } from 'next/router';
-import { Box, Card, Container, Divider, Link, Typography } from '@mui/material';
-import { GuestGuard } from '../../components/authentication/guest-guard';
-import { AmplifyVerifyCode } from '../../components/authentication/amplify-verify-code';
-import { Logo } from '../../components/logo';
-import { useAuth } from '../../hooks/use-auth';
-import { gtm } from '../../lib/gtm';
+import {useRouter} from 'next/router';
+import {Box, Card, Container, Divider, Link, Typography} from '@mui/material';
+import {GuestGuard} from '../../components/authentication/guest-guard';
+import {AmplifyVerifyCode} from '../../components/authentication/amplify-verify-code';
+import {Logo} from '../../components/logo';
+import {useAuth} from '../../hooks/use-auth';
+import {gtm} from '../../lib/gtm';
 
 const platformIcons = {
   Amplify: '/static/icons/amplify.svg',
@@ -68,10 +68,7 @@ const VerifyCode = () => {
               >
                 <a>
                   <Logo
-                    sx={{
-                      height: 40,
-                      width: 40
-                    }}
+                      sizeLogo={40}
                   />
                 </a>
               </NextLink>

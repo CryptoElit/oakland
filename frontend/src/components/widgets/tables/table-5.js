@@ -1,28 +1,28 @@
 import numeral from 'numeral';
-import { subDays, subHours } from 'date-fns';
+import {subDays, subHours} from 'date-fns';
 import {
-  Box,
-  Card,
-  Checkbox,
-  FormControlLabel,
-  IconButton,
-  InputAdornment,
-  Link,
-  Switch,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TablePagination,
-  TableRow,
-  TextField
+    Box,
+    Card,
+    Checkbox,
+    FormControlLabel,
+    IconButton,
+    InputAdornment,
+    Link,
+    Switch,
+    Table,
+    TableBody,
+    TableCell,
+    TableHead,
+    TablePagination,
+    TableRow,
+    TextField
 } from '@mui/material';
-import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
-import { Image as ImageIcon } from '../../../icons/image';
-import { PencilAlt as PencilAltIcon } from '../../../icons/pencil-alt';
-import { Search as SearchIcon } from '../../../icons/search';
-import { Scrollbar } from '../../scrollbar';
-import { SeverityPill } from '../../severity-pill';
+import {ArrowRight as ArrowRightIcon} from '../../../icons/arrow-right';
+import {Image as ImageIcon} from '../../../icons/image';
+import {PencilAlt as PencilAltIcon} from '../../../icons/pencil-alt';
+import {Search as SearchIcon} from '../../../icons/search';
+import {Scrollbar} from '../../scrollbar';
+import {SeverityPill} from '../../severity-pill';
 
 const now = new Date();
 

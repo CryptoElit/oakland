@@ -1,4 +1,4 @@
-import { deepCopy } from '../utils/deep-copy';
+import {deepCopy} from '../utils/deep-copy';
 
 const now = new Date();
 

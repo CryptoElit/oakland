@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
+import {useEffect, useState} from 'react';
+import {useRouter} from 'next/router';
 import PropTypes from 'prop-types';
-import { useAuth } from '../../hooks/use-auth';
+import {useAuth} from '../../hooks/use-auth';
 
 export const AuthGuard = (props) => {
   const { children } = props;

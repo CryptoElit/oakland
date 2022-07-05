@@ -1,4 +1,4 @@
-import { Box, Grid, TextField } from '@mui/material';
+import {Box, Grid, TextField} from '@mui/material';
 
 export const InputTextField = () => (
 <Box

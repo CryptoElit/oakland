@@ -1,20 +1,20 @@
-import { useState } from 'react';
+import {useState} from 'react';
 import {
-  Box,
-  Button,
-  Card,
-  CardContent,
-  Grid,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableRow,
-  TextField,
-  Typography
+    Box,
+    Button,
+    Card,
+    CardContent,
+    Grid,
+    Table,
+    TableBody,
+    TableCell,
+    TableHead,
+    TableRow,
+    TextField,
+    Typography
 } from '@mui/material';
-import { ArrowRight as ArrowRightIcon } from '../../../icons/arrow-right';
-import { Scrollbar } from '../../scrollbar';
+import {ArrowRight as ArrowRightIcon} from '../../../icons/arrow-right';
+import {Scrollbar} from '../../scrollbar';
 
 export const AccountSecuritySettings = () => {
   const [isEditing, setIsEditing] = useState(false);

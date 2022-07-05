@@ -1,20 +1,20 @@
 import PropTypes from 'prop-types';
-import { useDropzone } from 'react-dropzone';
+import {useDropzone} from 'react-dropzone';
 import {
-  Box,
-  Button,
-  IconButton,
-  Link,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-  Tooltip,
-  Typography
+    Box,
+    Button,
+    IconButton,
+    Link,
+    List,
+    ListItem,
+    ListItemIcon,
+    ListItemText,
+    Tooltip,
+    Typography
 } from '@mui/material';
-import { Duplicate as DuplicateIcon } from '../icons/duplicate';
-import { X as XIcon } from '../icons/x';
-import { bytesToSize } from '../utils/bytes-to-size';
+import {Duplicate as DuplicateIcon} from '../icons/duplicate';
+import {X as XIcon} from '../icons/x';
+import {bytesToSize} from '../utils/bytes-to-size';
 
 export const FileDropzone = (props) => {
   const {

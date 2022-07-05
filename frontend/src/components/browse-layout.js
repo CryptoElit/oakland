@@ -1,8 +1,8 @@
 import NextLink from 'next/link';
-import { useRouter } from 'next/router';
+import {useRouter} from 'next/router';
 import PropTypes from 'prop-types';
-import { Box, Button, Container, Divider, Grid, Typography } from '@mui/material';
-import { ArrowLeft as ArrowLeftIcon } from '../icons/arrow-left';
+import {Box, Button, Container, Divider, Grid, Typography} from '@mui/material';
+import {ArrowLeft as ArrowLeftIcon} from '../icons/arrow-left';
 
 const getTitle = (pathname) => pathname
   .split('/')
