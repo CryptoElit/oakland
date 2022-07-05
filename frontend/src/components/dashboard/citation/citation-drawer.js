@@ -251,7 +251,7 @@ const OrderForm = (props) => {
           sx={{ mr: 2 }}
           color="textSecondary"
         >
-          Order
+          Citation
         </Typography>
         <Box
           sx={{
@@ -374,7 +374,7 @@ const OrderForm = (props) => {
   );
 };
 
-const OrderDrawerDesktop = styled(Drawer)({
+const CitationDrawerDesktop = styled(Drawer)({
   width: 500,
   flexShrink: 0,
   '& .MuiDrawer-paper': {
@@ -383,7 +383,7 @@ const OrderDrawerDesktop = styled(Drawer)({
   }
 });
 
-const OrderDrawerMobile = styled(Drawer)({
+const CitationDrawerMobile = styled(Drawer)({
   flexShrink: 0,
   maxWidth: '100%',
   height: 'calc(100% - 64px)',
@@ -396,7 +396,7 @@ const OrderDrawerMobile = styled(Drawer)({
   }
 });
 
-export const OrderDrawer = (props) => {
+export const CitationDrawer = (props) => {
   const { containerRef, onClose, open, order, ...other } = props;
   const [isEditing, setIsEditing] = useState(false);
   const lgUp = useMediaQuery((theme) => theme.breakpoints.up('lg'));
@@ -468,19 +468,19 @@ export const OrderDrawer = (props) => {
 
   if (lgUp) {
     return (
-      <OrderDrawerDesktop
+      <CitationDrawerDesktop
         anchor="right"
         open={open}
         SlideProps={{ container: containerRef?.current }}
         variant="persistent"
         {...other}>
         {content}
-      </OrderDrawerDesktop>
+      </CitationDrawerDesktop>
     );
   }
 
   return (
-    <OrderDrawerMobile
+    <CitationDrawerMobile
       anchor="right"
       ModalProps={{ container: containerRef?.current }}
       onClose={onClose}
@@ -489,11 +489,11 @@ export const OrderDrawer = (props) => {
       variant="temporary"
       {...other}>
       {content}
-    </OrderDrawerMobile>
+    </CitationDrawerMobile>
   );
 };
 
-OrderDrawer.propTypes = {
+CitationDrawer.propTypes = {
   containerRef: PropTypes.any,
   onClose: PropTypes.func,
   open: PropTypes.bool,

@@ -197,12 +197,12 @@ class CustomerApi {
       {
         id: '5ece2ce3613486d95ffaea58',
         createdAt: subDays(subHours(subMinutes(now, 34), 5), 3).getTime(),
-        description: 'Order confirmation'
+        description: 'Citation Payment confirmation'
       },
       {
         id: '5ece2ce8cebf7ad1d100c0cd',
         createdAt: subDays(subHours(subMinutes(now, 49), 11), 4).getTime(),
-        description: 'Order confirmation'
+        description: 'Citation Payment confirmation'
       }
     ];
 

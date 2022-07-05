@@ -134,7 +134,7 @@ export const Table4 = () => (
             <DotsHorizontalIcon fontSize="small" />
           </IconButton>
         )}
-        title="Orders"
+        title="Citations"
       />
       <Divider />
       <Scrollbar>

@@ -4,17 +4,17 @@ import Head from 'next/head';
 import { format } from 'date-fns';
 import { Box, Button, Container, Grid, Link, Typography } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import { orderApi } from '../../../api/order-api';
-import { AuthGuard } from '../../../components/authentication/auth-guard';
-import { DashboardLayout } from '../../../components/dashboard/dashboard-layout';
-import { OrderItems } from '../../../components/dashboard/order/order-items';
-import { OrderLogs } from '../../../components/dashboard/order/order-logs';
-import { OrderSummary } from '../../../components/dashboard/order/order-summary';
-import { useMounted } from '../../../hooks/use-mounted';
-import { Calendar as CalendarIcon } from '../../../icons/calendar';
-import { ChevronDown as ChevronDownIcon } from '../../../icons/chevron-down';
-import { PencilAlt as PencilAltIcon } from '../../../icons/pencil-alt';
-import { gtm } from '../../../lib/gtm';
+import { orderApi } from '../../api/order-api';
+import { AuthGuard } from '../../components/authentication/auth-guard';
+import { DashboardLayout } from '../../components/dashboard/dashboard-layout';
+import { OrderItems } from '../../components/dashboard/order/order-items';
+import { OrderLogs } from '../../components/dashboard/order/order-logs';
+import { OrderSummary } from '../../components/dashboard/order/order-summary';
+import { useMounted } from '../../hooks/use-mounted';
+import { Calendar as CalendarIcon } from '../../icons/calendar';
+import { ChevronDown as ChevronDownIcon } from '../../icons/chevron-down';
+import { PencilAlt as PencilAltIcon } from '../../icons/pencil-alt';
+import { gtm } from '../../lib/gtm';
 
 const OrderDetails = () => {
   const isMounted = useMounted();
@@ -50,7 +50,7 @@ const OrderDetails = () => {
     <>
       <Head>
         <title>
-          Dashboard: Order Details |
+          Dashboard: Citation Details |
         </title>
       </Head>
       <Box
@@ -79,7 +79,7 @@ const OrderDetails = () => {
                   sx={{ mr: 1 }}
                 />
                 <Typography variant="subtitle2">
-                  Orders
+                  Citations
                 </Typography>
               </Link>
             </NextLink>

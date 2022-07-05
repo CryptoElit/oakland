@@ -45,7 +45,7 @@ const getSections = (t) => [
             },
             {
                 title: t('Users'),
-                path: '/user',
+                path: '/users',
                 icon: <UserIcon fontSize="small"/>
             },
             {

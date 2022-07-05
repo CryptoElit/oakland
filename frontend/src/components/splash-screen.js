@@ -3,6 +3,8 @@ import { Logo } from './logo';
 import { keyframes } from '@emotion/react';
 import {Image} from "../icons/image";
 
+
+
 const bounce1 = keyframes`
   0% {
     transform: translate3d(0, 0, 0);
@@ -44,6 +46,16 @@ export const SplashScreen = () => (
       zIndex: 2000
     }}
   >
-    <Image source={'/static/logo-admin-portal.png'} />
+      <Logo
+          sx={{
+              height: 80,
+              width: 80,
+              '& .inline': {
+                  animation: `${bounce1} 1s ease-in-out infinite`
+              },
+              '& path:nth-child(3)': {
+                  animation: `${bounce3} 1s ease-in-out infinite`
+              }
+          }} />
   </Box>
 );

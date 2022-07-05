@@ -72,7 +72,7 @@ export const DetailList5 = () => {
       }}
     >
       <Card>
-        <CardHeader title="Order info" />
+        <CardHeader title="Citation info" />
         <Divider />
         <Table>
           <TableBody>

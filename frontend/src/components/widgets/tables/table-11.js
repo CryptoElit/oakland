@@ -42,7 +42,7 @@ export const Table11 = () => (
     }}
   >
     <Card>
-      <CardHeader title="Order items" />
+      <CardHeader title="Citation items" />
       <Divider />
       <Scrollbar>
         <Table sx={{ minWidth: 700 }}>

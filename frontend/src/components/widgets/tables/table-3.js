@@ -238,7 +238,7 @@ export const Table3 = () => (
                 Location
               </TableCell>
               <TableCell>
-                Orders
+                Citations
               </TableCell>
               <TableCell>
                 Spent

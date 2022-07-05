@@ -22,7 +22,7 @@ import { PencilAlt as PencilAltIcon } from '../../../icons/pencil-alt';
 import { getInitials } from '../../../utils/get-initials';
 import { Scrollbar } from '../../scrollbar';
 
-export const CustomerListTable = (props) => {
+export const UserListTable = (props) => {
   const {
     customers,
     customersCount,
@@ -110,7 +110,7 @@ export const CustomerListTable = (props) => {
                 Location
               </TableCell>
               <TableCell>
-                Orders
+                Citations
               </TableCell>
               <TableCell>
                 Spent

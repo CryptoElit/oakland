@@ -17,7 +17,7 @@ const activities = [
     date: subHours(Date.now(), 18).getTime()
   },
   {
-    log: 'Order status changed from Pending payment to Completed.',
+    log: 'Citation status changed from Pending payment to Completed.',
     date: subHours(Date.now(), 21).getTime()
   }
 ];

@@ -84,5 +84,5 @@ export const DashboardSidebarSection = (props) => {
 DashboardSidebarSection.propTypes = {
   items: PropTypes.array.isRequired,
   path: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string || PropTypes.bool
 };

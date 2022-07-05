@@ -12,15 +12,15 @@ import {
   Typography
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import { orderApi } from '../../../api/order-api';
-import { AuthGuard } from '../../../components/authentication/auth-guard';
-import { DashboardLayout } from '../../../components/dashboard/dashboard-layout';
-import { OrderDrawer } from '../../../components/dashboard/order/order-drawer';
-import { OrderListTable } from '../../../components/dashboard/order/order-list-table';
-import { useMounted } from '../../../hooks/use-mounted';
-import { Plus as PlusIcon } from '../../../icons/plus';
-import { Search as SearchIcon } from '../../../icons/search';
-import { gtm } from '../../../lib/gtm';
+import { orderApi } from '../../api/order-api';
+import { AuthGuard } from '../../components/authentication/auth-guard';
+import { DashboardLayout } from '../../components/dashboard/dashboard-layout';
+import { CitationDrawer } from '../../components/dashboard/citation/citation-drawer';
+import { OrderListTable } from '../../components/dashboard/citation/citation-list-table';
+import { useMounted } from '../../hooks/use-mounted';
+import { Plus as PlusIcon } from '../../icons/plus';
+import { Search as SearchIcon } from '../../icons/search';
+import { gtm } from '../../lib/gtm';
 
 const tabs = [
   {
@@ -121,7 +121,7 @@ const OrderList = () => {
   const [sort, setSort] = useState('desc');
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(5);
-  const [orders, setOrders] = useState([]);
+  const [orders, setCitations] = useState([]);
   const [filters, setFilters] = useState({
     query: '',
     status: undefined
@@ -135,12 +135,12 @@ const OrderList = () => {
     gtm.push({ event: 'page_view' });
   }, []);
 
-  const getOrders = useCallback(async () => {
+  const getCitations = useCallback(async () => {
     try {
-      const data = await orderApi.getOrders();
+      const data = await orderApi.getCitations();
 
       if (isMounted()) {
-        setOrders(data);
+        setCitations(data);
       }
     } catch (err) {
       console.error(err);
@@ -148,7 +148,7 @@ const OrderList = () => {
   }, [isMounted]);
 
   useEffect(() => {
-      getOrders();
+      getCitations();
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
     []);
@@ -197,15 +197,15 @@ const OrderList = () => {
   };
 
   // Usually query is done on backend with indexing solutions
-  const filteredOrders = applyFilters(orders, filters);
-  const sortedOrders = applySort(filteredOrders, sort);
-  const paginatedOrders = applyPagination(sortedOrders, page, rowsPerPage);
+  const filteredCitations = applyFilters(orders, filters);
+  const sortedCitations = applySort(filteredCitations, sort);
+  const paginatedCitations = applyPagination(sortedCitations, page, rowsPerPage);
 
   return (
     <>
       <Head>
         <title>
-          Dashboard: Order List |
+          Dashboard: Citation List |
         </title>
       </Head>
       <Box
@@ -227,7 +227,7 @@ const OrderList = () => {
             >
               <Grid item>
                 <Typography variant="h4">
-                  Orders
+                  Citations
                 </Typography>
               </Grid>
               <Grid item>
@@ -313,13 +313,13 @@ const OrderList = () => {
             onOpenDrawer={handleOpenDrawer}
             onPageChange={handlePageChange}
             onRowsPerPageChange={handleRowsPerPageChange}
-            orders={paginatedOrders}
-            ordersCount={filteredOrders.length}
+            orders={paginatedCitations}
+            ordersCount={filteredCitations.length}
             page={page}
             rowsPerPage={rowsPerPage}
           />
         </OrderListInner>
-        <OrderDrawer
+        <CitationDrawer
           containerRef={rootRef}
           onClose={handleCloseDrawer}
           open={drawer.isOpen}

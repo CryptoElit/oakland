@@ -20,7 +20,7 @@ export const OrderItems = (props) => {
 
   return (
     <Card {...other}>
-      <CardHeader title="Order items" />
+      <CardHeader title="Citation items" />
       <Divider />
       <Scrollbar>
         <Box sx={{ minWidth: 700 }}>
