@@ -57,7 +57,7 @@ const Overview = () => {
     <>
       <Head>
         <title>
-          Dashboard: Overview | Material Kit Pro
+          Dashboard: Overview | Oakland
         </title>
       </Head>
       <Box
@@ -76,7 +76,7 @@ const Overview = () => {
             >
               <Grid item>
                 <Typography variant="h4">
-					{(new Date()).getHours < 12 ?  "Good Morning" : "Good Afternoon"}
+					{(new Date()).getHours < 12 ?  "Good Morning Ian van Niekerk" : "Good Afternoon Ian van Niekerk"}
                 </Typography>
               </Grid>
               <Grid
@@ -190,14 +190,14 @@ const Overview = () => {
                       sx={{ pl: 1 }}
                       variant="subtitle2"
                     >
-                      Jobs
+                      Opportunities
                     </Typography>
                   </Box>
                   <Typography
                     variant="h6"
                     sx={{ mt: 2 }}
                   >
-                    Find your dream job
+                    Expand your supply chain
                   </Typography>
                   <Typography
                     color="textSecondary"

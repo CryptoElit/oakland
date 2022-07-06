@@ -87,14 +87,14 @@ export const OverviewCryptoWallet = (props) => {
               color="primary"
               variant="h4"
             >
-              0.299 BTC
+              Outstanding Invoice
             </Typography>
             <Typography
               color="textSecondary"
               sx={{ mt: 1 }}
               variant="body2"
             >
-              Your crypto wallet
+              There are 7 invoices outstanding.
             </Typography>
           </Box>
           <Avatar
@@ -111,7 +111,7 @@ export const OverviewCryptoWallet = (props) => {
       <Divider />
       <CardActions>
         <Button endIcon={<ArrowRightIcon fontSize="small" />}>
-          See all activity
+          Open invoices
         </Button>
       </CardActions>
     </Card>

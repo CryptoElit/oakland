@@ -205,7 +205,7 @@ const OrderList = () => {
     <>
       <Head>
         <title>
-          Dashboard: Order List | Material Kit Pro
+          Dashboard: Order List | Oakland
         </title>
       </Head>
       <Box

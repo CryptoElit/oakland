@@ -87,14 +87,14 @@ export const OverviewPrivateWallet = (props) => {
               color="secondary"
               variant="h4"
             >
-              $21,500.00
+              Unverified Orders
             </Typography>
             <Typography
               color="textSecondary"
               sx={{ mt: 1 }}
               variant="body2"
             >
-              Your private wallet
+              There are 7 orders that require verification.
             </Typography>
           </Box>
           <Avatar
@@ -111,7 +111,7 @@ export const OverviewPrivateWallet = (props) => {
       <Divider />
       <CardActions>
         <Button endIcon={<ArrowRightIcon fontSize="small" />}>
-          Withdraw money
+          Open Unverified Orders
         </Button>
       </CardActions>
     </Card>

@@ -119,6 +119,10 @@ const getSections = (t) => [
         path: '/dashboard/orders',
         children: [
           {
+            title: t('Create Oder'),
+            path: '/dashboard/orders/new'
+          },
+          {
             title: t('List'),
             path: '/dashboard/orders'
           },
@@ -149,7 +153,7 @@ const getSections = (t) => [
     title: t('Platforms'),
     items: [
       {
-        title: t('Job Listings'),
+        title: t('Analytics'),
         path: '/dashboard/jobs',
         icon: <OfficeBuildingIcon fontSize="small" />,
         children: [
@@ -272,15 +276,15 @@ export const DashboardSidebar = (props) => {
                     color="inherit"
                     variant="subtitle1"
                   >
-                    Acme Inc
+                    Oakland Milk
                   </Typography>
                   <Typography
                     color="neutral.400"
                     variant="body2"
                   >
-                    {t('Your tier')}
+                    {t('Your rank')}
                     {' '}
-                    : Premium
+                    : CEO
                   </Typography>
                 </div>
                 <SelectorIcon

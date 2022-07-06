@@ -16,17 +16,17 @@ const currencies = [
   {
     amount: 21500,
     color: '#2F3EB1',
-    name: 'US Dollars'
+    name: 'Maintenance'
   },
   {
     amount: 15300,
     color: '#0C7CD5',
-    name: 'Bitcoin'
+    name: 'Logistics'
   },
   {
     amount: 1076.81,
     color: '#7BC67E',
-    name: 'XRP Ripple'
+    name: 'Machinery'
   }
 ];
 
@@ -37,10 +37,10 @@ export const OverviewTotalBalance = (props) => (
         color="textSecondary"
         variant="overline"
       >
-        Total balance
+        Live Budget
       </Typography>
       <Typography variant="h4">
-        {numeral(3787681).format('$0,0.00')}
+        R {numeral(1178394).format('0,0.00')}
       </Typography>
 
       <Divider sx={{ my: 2 }} />
@@ -48,7 +48,7 @@ export const OverviewTotalBalance = (props) => (
         color="textSecondary"
         variant="overline"
       >
-        Available currency
+        Department Budgets
       </Typography>
       <List
         disablePadding
