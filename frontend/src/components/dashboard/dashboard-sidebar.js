@@ -119,7 +119,7 @@ const getSections = (t) => [
         path: '/dashboard/orders',
         children: [
           {
-            title: t('Create Oder'),
+            title: t('Create Order'),
             path: '/dashboard/orders/new'
           },
           {
@@ -149,6 +149,7 @@ const getSections = (t) => [
       }
     ]
   },
+/*
   {
     title: t('Platforms'),
     items: [
@@ -173,6 +174,7 @@ const getSections = (t) => [
       },
     ]
   },
+*/
   {
     title: t('Apps'),
     items: [

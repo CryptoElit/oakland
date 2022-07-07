@@ -31,7 +31,7 @@ const BrowseForms = () => {
     <>
       <Head>
         <title>
-          Browse: Forms | Material Kit Pro
+          Browse: Forms | Oakland
         </title>
       </Head>
       <Box
