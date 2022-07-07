@@ -40,17 +40,13 @@ const getSections = (t) => [
         path: '/dashboard',
         icon: <HomeIcon fontSize="small" />
       },
-      {
-        title: t('Analytics'),
-        path: '/dashboard/analytics',
-        icon: <ChartBarIcon fontSize="small" />
-      },
+
       {
         title: t('Finance'),
         path: '/dashboard/finance',
         icon: <ChartPieIcon fontSize="small" />
       },
-      {
+/*      {
         title: t('Logistics'),
         path: '/dashboard/logistics',
         icon: <TruckIcon fontSize="small" />,
@@ -69,12 +65,12 @@ const getSections = (t) => [
           size="small"
         />
       },
-      {
+    /*  {
         title: t('Account'),
         path: '/dashboard/account',
         icon: <UserCircleIcon fontSize="small" />
       }
-    ]
+  */ ]
   },
   {
     title: t('Management'),
@@ -149,6 +145,7 @@ const getSections = (t) => [
       }
     ]
   },
+
 /*
   {
     title: t('Platforms'),
@@ -175,9 +172,15 @@ const getSections = (t) => [
     ]
   },
 */
+
   {
     title: t('Apps'),
     items: [
+      {
+        title: t('Analytics'),
+        path: '/dashboard/analytics',
+        icon: <ChartBarIcon fontSize="small" />
+      },
       {
         title: t('Mail'),
         path: '/dashboard/mail',
@@ -188,6 +191,11 @@ const getSections = (t) => [
         path: '/dashboard/chat',
         icon: <ChatAlt2Icon fontSize="small" />
       },
+      {
+        title: t('Account'),
+        path: '/dashboard/account',
+        icon: <UserCircleIcon fontSize="small" />
+      }
     ]
   },
 ];

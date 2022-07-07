@@ -20,6 +20,7 @@ import { Form11 } from '../../components/widgets/forms/form-11';
 import { Form12 } from '../../components/widgets/forms/form-12';
 import { Form13 } from '../../components/widgets/forms/form-13';
 import { Form14 } from '../../components/widgets/forms/form-14';
+
 import { gtm } from '../../lib/gtm';
 
 const BrowseForms = () => {
@@ -98,6 +99,10 @@ const BrowseForms = () => {
           <WidgetPreviewer
             element={<Form14 />}
             name="Mixed form"
+          />
+          <WidgetPreviewer
+            element={<Form15 />}
+            name="Email form"
           />
 
           <WidgetPreviewer

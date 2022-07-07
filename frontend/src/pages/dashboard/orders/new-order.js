@@ -4,7 +4,7 @@ import Head from 'next/head';
 import { Box, Breadcrumbs, Container, Link, Typography } from '@mui/material';
 import { AuthGuard } from '../../../components/authentication/auth-guard';
 import { DashboardLayout } from '../../../components/dashboard/dashboard-layout';
-import { OrderCreateForm } from '../../../components/dashboard/orders/order-create-form';
+import { OrderCreateForm } from '../../../components/dashboard/order/order-create-form';
 import { gtm } from '../../../lib/gtm';
 
 const OrderCreate = () => {
