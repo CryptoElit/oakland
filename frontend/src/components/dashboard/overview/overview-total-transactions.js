@@ -229,7 +229,7 @@ export const OverviewTotalTransactions = (props) => {
       }}
     >
       <Card {...props}>
-        <CardHeader title="Sales" />
+        <CardHeader title="Expenditure by Department" />
         <CardContent>
           <Chart
             height={300}

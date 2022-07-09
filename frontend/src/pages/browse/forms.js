@@ -14,12 +14,13 @@ import { Form7 } from '../../components/widgets/forms/form-7';
 import { Form8 } from '../../components/widgets/forms/form-8';
 import { Form9 } from '../../components/widgets/forms/form-9';
 import { Form16 } from '../../components/widgets/forms/form-16';
-import { Form15 } from '../../components/widgets/forms/form-15';
+//import { Form15 } from '../../components/widgets/forms/form-15';
 import { Form10 } from '../../components/widgets/forms/form-10';
 import { Form11 } from '../../components/widgets/forms/form-11';
 import { Form12 } from '../../components/widgets/forms/form-12';
 import { Form13 } from '../../components/widgets/forms/form-13';
 import { Form14 } from '../../components/widgets/forms/form-14';
+import { DynamicForm } from '../../components/widgets/forms/form-dynamic';
 
 import { gtm } from '../../lib/gtm';
 
@@ -100,16 +101,19 @@ const BrowseForms = () => {
             element={<Form14 />}
             name="Mixed form"
           />
-          <WidgetPreviewer
-            element={<Form15 />}
-            name="Email form"
-          />
+
 
           <WidgetPreviewer
             element={<Form16 />}
             name="Form with input fields and checkbox"
           />
-        </Container>
+          <WidgetPreviewer
+            element={<DynamicForm />}
+            name="Add fields"
+          />
+          
+
+       </Container>
       </Box>
     </>
   );
