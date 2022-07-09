@@ -9,6 +9,8 @@ import {DashboardLayout} from '../../components/dashboard/dashboard-layout';
 import {useMounted} from '../../hooks/use-mounted';
 import {ChevronDown as ChevronDownIcon} from '../../icons/chevron-down';
 import {PencilAlt as PencilAltIcon} from '../../icons/pencil-alt';
+import {ArrowRight as ArrowRightIcon} from '../../icons/arrow-right';
+import {ArrowLeft as ArrowLeftIcon} from '../../icons/arrow-left';
 import {gtm} from '../../lib/gtm';
 import {
     AppBar,
@@ -147,18 +149,18 @@ const Citations = () => {
                     <Typography variant="h5">Add Citation</Typography>
                 </Grid>
                 <Grid item>
-                    <Button startIcon={<PlusIcon fontSize="small"/>} variant="contained">Add</Button>
-                    <Button startIcon={<UploadIcon fontSize="small"/>} variant="contained" sx={{ml: 1}}>Upload CSV</Button>
+                    <Button startIcon={<ArrowLeftIcon fontSize="small"/>} variant="contained">Back</Button>
+                    <Button endIcon={<ArrowRightIcon fontSize="small"/>} variant="contained" sx={{ml: 1}}>Next</Button>
                 </Grid>
             </Grid>
+            <Divider sx={{ my: 2 }} />
             </Box>
             <div style={{ display: 'flex', height: '95%',  paddingBottom: '15px'  }}>
                 <Paper elevation={12} sx={{flexGrow: 1, maxWidth: '95%', alignItems: 'center', mx: 'auto'}}>
             <form onSubmit={handleSubmit}>
                 <div className="form-row">
                     {inputFields.map((inputField, index) => (
-                        <Fragment key={`${inputField}~${index}`}>
- 
+                        <Fragment key={`${inputField}-${index}`}> 
                             <Box sx={{ mt: 3 }}>
                                 <Grid
                                     container
@@ -396,7 +398,7 @@ const Citations = () => {
           scrollButtons="auto"
           aria-label="scrollable auto tabs example"
         >
-          <Tab label="Item One" {...a11yProps(0)} />
+          <Tab label="Defendant Information" {...a11yProps(0)} />
 
         </Tabs>
       </AppBar>
@@ -408,7 +410,6 @@ const Citations = () => {
       p: 3
     }}
   >
-      <CardHeader title="Profile" />
       <CardContent>
         <Grid
           container
@@ -710,10 +711,26 @@ const Citations = () => {
               )}
             />
           </Grid>
+          <Grid
+                                        item
+                                        sm={3}
+                                        xs={12}
+                                    >
+<Divider sx={{ my: 2 }} />
+      <FormControlLabel
+        control={<Checkbox name="isTaxable" />}
+        label="Multiple Defendants"
+      />
+    </Grid>
+   
           </Grid>
+          <Divider sx={{ my: 2 }} />
           </CardContent>
+          <Divider sx={{ my: 2 }} />
                 </Box>
+                <Divider sx={{ my: 2 }} />
       </TabPanel>
+     
     </div>
             </form>
                 </Paper>
