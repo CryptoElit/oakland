@@ -75,7 +75,26 @@ const getSections = (t) => [
   {
     title: t('Management'),
     items: [
-
+      {
+        title: t('Departments'),
+        path: '/dashboard/customers',
+        icon: <TruckIcon fontSize="small" />,
+        children: [
+          {
+            title: t('List'),
+            path: '/dashboard/customers'
+          },
+          {
+            title: t('Details'),
+            path: '/dashboard/customers/1'
+          },
+          {
+            title: t('Budgets'),
+            path: '/dashboard/customers/1/edit'
+          }
+        ]
+      },
+      /*
       {
         title: t('Products'),
         path: '/dashboard/products',
@@ -91,6 +110,7 @@ const getSections = (t) => [
           }
         ]
       },
+      */
       {
         title: t('Orders'),
         icon: <ShoppingCartIcon fontSize="small" />,
@@ -327,41 +347,20 @@ export const DashboardSidebar = (props) => {
                 }}
                 {...section} />
             ))}
+            <Divider
+            sx={{
+              borderColor: '#2D3748'  // dark divider
+            }}
+          />
           </Box>
           <Divider
             sx={{
               borderColor: '#2D3748'  // dark divider
             }}
           />
-          <Box sx={{ p: 2 }}>
-            <Typography
-              color="neutral.100"
-              variant="subtitle2"
-            >
-              {t('Need Help?')}
-            </Typography>
-            <Typography
-              color="neutral.500"
-              variant="body2"
-            >
-              {t('Check our docs')}
-            </Typography>
-            <NextLink
-              href="/docs/welcome"
-              passHref
-            >
-              <Button
-                color="secondary"
-                component="a"
-                fullWidth
-                sx={{ mt: 2 }}
-                variant="contained"
-              >
-                {t('Documentation')}
-              </Button>
-            </NextLink>
-          </Box>
+          
         </Box>
+        
       </Scrollbar>
       <OrganizationPopover
         anchorEl={organizationsRef.current}
