@@ -81,6 +81,8 @@ const countries = [
 ];
 
 
+
+
 const Citations = () => {
     const isMounted = useMounted();
     const [citation, setCitation] = useState(null);
@@ -168,7 +170,7 @@ const Citations = () => {
                                         <TextField {...params}
                                         fullWidth
                                         label="Case Type"
-                                        name="country"
+                                        name="caseType"
                                         value={inputField.lastName}
                                         onChange={event => handleInputChange(index, event)}
                                             />
@@ -361,21 +363,21 @@ const Citations = () => {
                                         <TextField
                                             fullWidth
                                             label="First Name"
-                                            name="zip"
+                                            name="firstName"
                                         />
                                     </Grid>
                                     <Grid item sm={2} xs={12}>
                                         <TextField
                                             fullWidth
                                             label="Middle Name"
-                                            name="zip"
+                                            name="middleName"
                                         />
                                     </Grid>
                                     <Grid item sm={2} xs={12}>
                                         <TextField
                                             fullWidth
                                             label="Last Name"
-                                            name="zip"
+                                            name="lastName"
                                         />
                                     </Grid>
                                     <Grid item sm={1} xs={12}>
@@ -411,22 +413,10 @@ const Citations = () => {
               )}
             />
           </Grid>
-          <Grid
-                                        item
-                                        sm={2}
-                                        xs={12}
-                                    >
-                                        <TextField
-                                            fullWidth
-                                            label="SSN"
-                                            name="zip"
-                                        />
-                                    </Grid>
-                                    <Grid
-            item
-            sm={2}
-            xs={12}
-          >
+          <Grid item sm={2} xs={12}>
+            <TextField fullWidth label="SSN" name="zip"/>
+                </Grid>
+          <Grid item sm={2} xs={12}>
             <Autocomplete
               getOptionLabel={(option) => option.text}
               options={countries}
@@ -439,22 +429,10 @@ const Citations = () => {
               )}
             />
           </Grid>
-          <Grid
-                                        item
-                                        sm={2}
-                                        xs={12}
-                                    >
-                                        <TextField
-                                            fullWidth
-                                            label="Driver's License No."
-                                            name="zip"
-                                        />
-                                    </Grid>
-                                    <Grid
-            item
-            sm={2}
-            xs={12}
-          >
+          <Grid item sm={2} xs={12}>
+            <TextField fullWidth label="Driver's License No." name="zip"/>
+            </Grid>
+         <Grid item sm={2} xs={12}>
             <Autocomplete
               getOptionLabel={(option) => option.text}
               options={countries}
@@ -467,12 +445,8 @@ const Citations = () => {
               )}
             />
           </Grid>
-          <Grid
-                                        item
-                                        sm={2}
-                                        xs={12}
-                                    >
-                                        <TextField
+          <Grid item sm={2} xs={12}>
+             <TextField
                                             fullWidth
                                             label="State ID"
                                             name="zip"
@@ -501,19 +475,19 @@ const Citations = () => {
                 <TextField {...params}
                            fullWidth
                            label="Address Type"
-                           name="country"
+                           name="addressType"
                 />
               )}
             />
           </Grid>
           <Grid item sm={4} xs={12} >
-                                        <TextField fullWidth label="Address" name="adress" />
+                                        <TextField fullWidth label="Address" name="address" />
                                     </Grid>
                                     <Grid item sm={4} xs={12}>
                                         <TextField
                                             fullWidth
                                             label="Address 2"
-                                            name="address-2"
+                                            name="addressTwo"
                                         />
                                     </Grid>
                                     <Grid

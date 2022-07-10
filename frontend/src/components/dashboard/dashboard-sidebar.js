@@ -75,25 +75,7 @@ const getSections = (t) => [
   {
     title: t('Management'),
     items: [
-      {
-        title: t('Customers'),
-        path: '/dashboard/customers',
-        icon: <UsersIcon fontSize="small" />,
-        children: [
-          {
-            title: t('List'),
-            path: '/dashboard/customers'
-          },
-          {
-            title: t('Details'),
-            path: '/dashboard/customers/1'
-          },
-          {
-            title: t('Edit'),
-            path: '/dashboard/customers/1/edit'
-          }
-        ]
-      },
+
       {
         title: t('Products'),
         path: '/dashboard/products',
@@ -174,8 +156,27 @@ const getSections = (t) => [
 */
 
   {
-    title: t('Apps'),
+    title: t('Admin'),
     items: [
+      {
+        title: t('System Users'),
+        path: '/dashboard/customers',
+        icon: <UsersIcon fontSize="small" />,
+        children: [
+          {
+            title: t('List'),
+            path: '/dashboard/customers'
+          },
+          {
+            title: t('Details'),
+            path: '/dashboard/customers/1'
+          },
+          {
+            title: t('Edit'),
+            path: '/dashboard/customers/1/edit'
+          }
+        ]
+      },
       {
         title: t('Analytics'),
         path: '/dashboard/analytics',
