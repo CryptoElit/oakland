@@ -140,15 +140,11 @@ const Citations = () => {
             </Head>
             <Divider/>
             <Box sx={{mb: 4, backgroundColor: 'white', width: '100%', pl: 2}}>
-            <Grid
-                container
-                sx={{p: 1}}
-                justifyContent="space-between"
-                spacing={3}>
-                <Grid item>
+            <Grid container sx={{p: 1}} justifyContent="space-between" spacing={3}>
+                <Grid item mt={2}>
                     <Typography variant="h5">Add Citation</Typography>
                 </Grid>
-                <Grid item>
+                <Grid item mt={2}>
                     <Button startIcon={<ArrowLeftIcon fontSize="small"/>} variant="contained">Back</Button>
                     <Button endIcon={<ArrowRightIcon fontSize="small"/>} variant="contained" sx={{ml: 1}}>Next</Button>
                 </Grid>
@@ -162,34 +158,23 @@ const Citations = () => {
                     {inputFields.map((inputField, index) => (
                         <Fragment key={`${inputField}-${index}`}> 
                             <Box sx={{ mt: 3 }}>
-                                <Grid
-                                    container
-                                    spacing={3}
-                                >
-                            <Grid
-            item
-            sm={2}
-            xs={12}
-          >
-            <Autocomplete
-              getOptionLabel={(option) => option.text}
-              options={countries}
-              renderInput={(params) => (
-                <TextField {...params}
-                           fullWidth
-                           label="Case Type"
-                           name="country"
-                           value={inputField.lastName}
-                            onChange={event => handleInputChange(index, event)}
-                />
-              )}
-            />
-          </Grid>
-                                    <Grid
-                                        item
-                                        sm={2}
-                                        xs={12}
-                                    >
+                                <Grid container spacing={3}>
+                                    <Grid item sm={2} xs={12}>
+                                    <Autocomplete
+                                        getOptionLabel={(option) => option.text}
+                                        options={countries}
+                                        renderInput={(params) => (
+                                        <TextField {...params}
+                                        fullWidth
+                                        label="Case Type"
+                                        name="country"
+                                        value={inputField.lastName}
+                                        onChange={event => handleInputChange(index, event)}
+                                            />
+                                        )}
+                                    />
+                                    </Grid>
+                                    <Grid item sm={2} xs={12}>
                                         <TextField
                                             fullWidth
                                             label="Case Year"
@@ -198,55 +183,35 @@ const Citations = () => {
                                             onChange={event => handleInputChange(index, event)}
                                         />
                                     </Grid>
-                                    <Grid
-                                        item
-                                        sm={2}
-                                        xs={12}
-                                    >
+                                    <Grid item sm={2} xs={12}>
                                         <TextField
                                             fullWidth
                                             label="Case Number"
                                             name="address"
                                         />
                                     </Grid>
-                                    <Grid
-                                        item
-                                        sm={2}
-                                        xs={12}
-                                    >
+                                    <Grid item sm={2} xs={12}>
                                         <TextField
                                             fullWidth
                                             label="Citation/File Number"
                                             name="optionalAddress"
                                         />
                                     </Grid>
-                                    <Grid
-                                        item
-                                        sm={2}
-                                        xs={12}
-                                    >
+                                    <Grid item sm={2} xs={12}>
                                         <TextField
                                             fullWidth
                                             label="Incident Number"
                                             name="state"
                                         />
                                     </Grid>
-                                    <Grid
-                                        item
-                                        sm={2}
-                                        xs={12}
-                                    >
+                                    <Grid item sm={2} xs={12}>
                                         <TextField
                                             fullWidth
                                             label="Lases Number"
                                             name="zip"
                                         />
                                     </Grid>
-                                    <Grid
-                                        item
-                                        sm={2}
-                                        xs={12}
-                                    >
+                                    <Grid item sm={2} xs={12}>
                                     <DateTimePicker
                                     onChange={(newDate) => setStartDate(newDate)}
                                     label="Date Filed"
@@ -258,11 +223,7 @@ const Citations = () => {
                                     value={startDate}
                                     />
                                     </Grid>
-                                    <Grid
-                                        item
-                                        sm={2}
-                                        xs={12}
-                                    >
+                                    <Grid item sm={2} xs={12}>
                                     <DateTimePicker
                                     onChange={(newDate) => setEndDate(newDate)}
                                     label="Citation Due Date"
@@ -274,50 +235,34 @@ const Citations = () => {
                                     value={endDate}
                                     />
                                     </Grid>
-                                    <Grid
-                                        item
-                                        sm={2}
-                                        xs={12}
-                                    >
+                                    <Grid item sm={2} xs={12}>
                                         <TextField
                                             fullWidth
                                             label="Agency"
                                             name="zip"
                                         />
                                     </Grid>
-                                    <Grid
-            item
-            sm={2}
-            xs={12}
-          >
-            <Autocomplete
-              getOptionLabel={(option) => option.text}
-              options={countries}
-              renderInput={(params) => (
-                <TextField {...params}
-                           fullWidth
-                           label="Division"
-                           name="country"
-                />
-              )}
-            />
-          </Grid>
-                                    <Grid
-                                        item
-                                        sm={2}
-                                        xs={12}
-                                    >
+                                    <Grid item sm={2} xs={12}>
+                                    <Autocomplete
+                                        getOptionLabel={(option) => option.text}
+                                        options={countries}
+                                        renderInput={(params) => (
+                                        <TextField {...params}
+                                        fullWidth
+                                        label="Division"
+                                        name="country"
+                                                />
+                                            )}
+                                        />
+                                    </Grid>
+                                    <Grid item sm={2} xs={12}>
                                         <TextField
                                             fullWidth
                                             label="DA"
                                             name="zip"
                                         />
                                     </Grid>
-                                    <Grid
-            item
-            sm={2}
-            xs={12}
-          >
+                                    <Grid item sm={2} xs={12}>
             <Autocomplete
               getOptionLabel={(option) => option.text}
               options={countries}
@@ -330,43 +275,29 @@ const Citations = () => {
               )}
             />
           </Grid>
-                                    <Grid
-                                        item
-                                        sm={3}
-                                        xs={12}
-                                    >
+          <Grid item sm={2} xs={12}>
       <FormControlLabel
         control={<Checkbox name="isTaxable" />}
         label="Notify Victim"
       />
     </Grid>
-    <Grid
-                                        item
-                                        sm={3}
-                                        xs={12}
-                                    >
+    <Grid item sm={3} xs={12}>
       <FormControlLabel
         control={<Checkbox name="includesTaxes" />}
         label="Court Required"
       />
     </Grid>
-    <Grid
-                                        item
-                                        sm={3}
-                                        xs={12}
-                                    >
+    <Grid item sm={3} xs={12}>
       <FormControlLabel
         control={<Checkbox name="isTaxable" />}
         label="Vehicle Inclued"
       />
     </Grid>
-    
-                                </Grid>
-                            </Box>
-
-                            <div className="form-group col-sm-2">
-                                <button
-                                    className="btn btn-link"
+    </Grid>
+    </Box>
+        <div className="form-group col-sm-2">
+            <button
+            className="btn btn-link"
                                     type="button"
                                     disabled={index === 0}
                                     onClick={() => handleRemoveFields(index)}
@@ -411,15 +342,8 @@ const Citations = () => {
     }}
   >
       <CardContent>
-        <Grid
-          container
-          spacing={2}
-        >
-          <Grid
-            item
-            sm={1}
-            xs={12}
-          >
+        <Grid container spacing={2}>
+          <Grid item sm={1} xs={12}>
             <Autocomplete
               getOptionLabel={(option) => option.text}
               options={countries}
@@ -432,44 +356,28 @@ const Citations = () => {
               )}
             />
           </Grid>
-          <Grid
-                                        item
-                                        sm={2}
-                                        xs={12}
-                                    >
+          <Grid item sm={2} xs={12}>
                                         <TextField
                                             fullWidth
                                             label="First Name"
                                             name="zip"
                                         />
                                     </Grid>
-                                    <Grid
-                                        item
-                                        sm={2}
-                                        xs={12}
-                                    >
+                                    <Grid item sm={2} xs={12}>
                                         <TextField
                                             fullWidth
                                             label="Middle Name"
                                             name="zip"
                                         />
                                     </Grid>
-                                    <Grid
-                                        item
-                                        sm={2}
-                                        xs={12}
-                                    >
+                                    <Grid item sm={2} xs={12}>
                                         <TextField
                                             fullWidth
                                             label="Last Name"
                                             name="zip"
                                         />
                                     </Grid>
-                                    <Grid
-            item
-            sm={1}
-            xs={12}
-          >
+                                    <Grid item sm={1} xs={12}>
             <Autocomplete
               getOptionLabel={(option) => option.text}
               options={countries}
@@ -482,22 +390,14 @@ const Citations = () => {
               )}
             />
           </Grid>
-          <Grid
-                                        item
-                                        sm={2}
-                                        xs={12}
-                                    >
+          <Grid item sm={2} xs={12}>
                                         <TextField
                                             fullWidth
                                             label="DOB"
                                             name="zip"
                                         />
                                     </Grid>
-                                    <Grid
-            item
-            sm={2}
-            xs={12}
-          >
+                                    <Grid item sm={2} xs={12}>
             <Autocomplete
               getOptionLabel={(option) => option.text}
               options={countries}
