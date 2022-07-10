@@ -3,6 +3,7 @@ import NextLink from 'next/link';
 import Head from 'next/head';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import PropTypes from "prop-types";
+import { flexbox } from '@mui/system';
 
 import {AuthGuard} from '../../components/authentication/auth-guard';
 import {DashboardLayout} from '../../components/dashboard/dashboard-layout';
@@ -145,7 +146,7 @@ const Citations = () => {
                     <Typography variant="h5">Add Citation</Typography>
                 </Grid>
                 <Grid item mt={2}>
-                    <Button startIcon={<ArrowLeftIcon fontSize="small"/>} variant="contained">Back</Button>
+                    <Button startIcon={<ArrowLeftIcon fontSize="small"/>} variant="outlined">Back</Button>
                     <Button endIcon={<ArrowRightIcon fontSize="small"/>} variant="contained" sx={{ml: 1}}>Next</Button>
                 </Grid>
             </Grid>
@@ -505,26 +506,14 @@ const Citations = () => {
               )}
             />
           </Grid>
-          <Grid
-                                        item
-                                        sm={4}
-                                        xs={12}
-                                    >
-                                        <TextField
-                                            fullWidth
-                                            label="Address"
-                                            name="zip"
-                                        />
+          <Grid item sm={4} xs={12} >
+                                        <TextField fullWidth label="Address" name="adress" />
                                     </Grid>
-                                    <Grid
-                                        item
-                                        sm={4}
-                                        xs={12}
-                                    >
+                                    <Grid item sm={4} xs={12}>
                                         <TextField
                                             fullWidth
                                             label="Address 2"
-                                            name="zip"
+                                            name="address-2"
                                         />
                                     </Grid>
                                     <Grid
@@ -535,7 +524,7 @@ const Citations = () => {
                                         <TextField
                                             fullWidth
                                             label="City"
-                                            name="zip"
+                                            name="city"
                                         />
                                     </Grid>
                                     <Grid
@@ -550,38 +539,18 @@ const Citations = () => {
                 <TextField {...params}
                            fullWidth
                            label="State"
-                           name="country"
+                           name="state"
                 />
               )}
             />
           </Grid>
-          <Grid
-                                        item
-                                        sm={2}
-                                        xs={12}
-                                    >
-                                        <TextField
-                                            fullWidth
-                                            label="ZIP"
-                                            name="zip"
-                                        />
+          <Grid item sm={2} xs={12}>
+                                        <TextField fullWidth label="ZIP" name="zip"/>
                                     </Grid>
-                                    <Grid
-                                        item
-                                        sm={2}
-                                        xs={12}
-                                    >
-                                        <TextField
-                                            fullWidth
-                                            label="ZIP +4"
-                                            name="zip"
-                                        />
+                                    <Grid item sm={2} xs={12}>
+                                        <TextField fullWidth label="ZIP +4" name="zip-4"/>
                                     </Grid>
-                                    <Grid
-            item
-            sm={2}
-            xs={12}
-          >
+                                    <Grid item sm={2} xs={12}>
             <Autocomplete
               getOptionLabel={(option) => option.text}
               options={countries}
@@ -589,16 +558,12 @@ const Citations = () => {
                 <TextField {...params}
                            fullWidth
                            label="Race"
-                           name="country"
+                           name="race"
                 />
               )}
             />
           </Grid>
-          <Grid
-            item
-            sm={2}
-            xs={12}
-          >
+          <Grid item sm={2} xs={12}>
             <Autocomplete
               getOptionLabel={(option) => option.text}
               options={countries}
@@ -606,30 +571,38 @@ const Citations = () => {
                 <TextField {...params}
                            fullWidth
                            label="Ethnicity"
-                           name="country"
+                           name="ethnicity"
                 />
               )}
             />
           </Grid>
-          <Grid
-                                        item
-                                        sm={3}
-                                        xs={12}
-                                    >
+          <Grid item sm={3} xs={12}>
 <Divider sx={{ my: 2 }} />
       <FormControlLabel
         control={<Checkbox name="isTaxable" />}
         label="Multiple Defendants"
       />
     </Grid>
-   
+        
           </Grid>
+          
           <Divider sx={{ my: 2 }} />
           </CardContent>
-          <Divider sx={{ my: 2 }} />
+          <Box sx={{mb: 4, backgroundColor: 'white', width: '100%', pl: 2}}>
+            <Grid container sx={{p: 1}} justifyContent="space-between" spacing={3} flexDirection='row-reverse'>
+  
+                <Grid item>
+                    <Button variant="outlined">Cancel</Button>
+                    <Button variant="contained" sx={{ml: 1}}>Save</Button>
+                </Grid>
+            </Grid>
+            <Divider sx={{ my: 2 }} />
+            </Box> 
+       
                 </Box>
-                <Divider sx={{ my: 2 }} />
+               
       </TabPanel>
+
      
     </div>
             </form>
