@@ -34,7 +34,7 @@ export const InvoicePreview = (props) => {
             <Grid item>
               <Logo />
               <Typography variant="subtitle2">
-                www.devias.io
+                www.oaklandmilk.co.za
               </Typography>
             </Grid>
             <Grid item>
@@ -60,11 +60,9 @@ export const InvoicePreview = (props) => {
             >
               <Grid item>
                 <Typography variant="body2">
-                  Street King William, 123
+                  669 Weltevreden Rd,
                   <br />
-                  Level 2, C, 442456
-                  <br />
-                  San Francisco, CA, USA
+                  Philippi, Cape Town, 7781
                 </Typography>
               </Grid>
               <Grid item>
@@ -80,9 +78,9 @@ export const InvoicePreview = (props) => {
                   align="right"
                   variant="body2"
                 >
-                  accounts@devias.io
+                  accounts@oaklandmilk.co.za
                   <br />
-                  (+40) 652 3456 23
+                  021 007 3950
                 </Typography>
               </Grid>
             </Grid>

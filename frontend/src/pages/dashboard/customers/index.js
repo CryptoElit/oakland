@@ -215,7 +215,7 @@ const CustomerList = () => {
     <>
       <Head>
         <title>
-          Dashboard: Customer List | Material Kit Pro
+          Dashboard: Customer List | Oakland
         </title>
       </Head>
       <Box

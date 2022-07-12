@@ -101,7 +101,7 @@ export const InvoicePDF = (props) => {
               style={styles.brand}
             />
             <Text style={styles.h6}>
-              www.devias.io
+              www.oaklandmilk.co.za
             </Text>
           </View>
           <View>
@@ -116,13 +116,10 @@ export const InvoicePDF = (props) => {
         <View style={styles.company}>
           <View>
             <Text style={styles.body2}>
-              Street King William, 123
+              669 Weltevreden Rd,
             </Text>
             <Text style={styles.body2}>
-              Level 2, C, 442456
-            </Text>
-            <Text style={styles.body2}>
-              San Francisco, CA, USA
+              Philippi, Cape Town, 7781
             </Text>
           </View>
           <View>
@@ -135,10 +132,10 @@ export const InvoicePDF = (props) => {
           </View>
           <View>
             <Text style={styles.body2}>
-              accounts@devias.io
+              accounts@oaklandmilk.co.za
             </Text>
             <Text style={styles.body2}>
-              (+40) 652 3456 23
+              021 007 3950
             </Text>
           </View>
         </View>
@@ -173,7 +170,7 @@ export const InvoicePDF = (props) => {
             Billed to
           </Text>
           <Text style={styles.body2}>
-            Tracey Herman
+            Dairy Exchange (Pty) Ltd
           </Text>
           <Text style={styles.body2}>
             Countdown Grey Lynn
@@ -182,7 +179,7 @@ export const InvoicePDF = (props) => {
             6934656584231
           </Text>
           <Text style={styles.body2}>
-            271 Richmond Rd, Grey Lynn, Auckland 1022, New Zealand
+            4 Le Mans Cl, Killarney Gardens, Cape Town, 7440
           </Text>
         </View>
         <View style={styles.items}>

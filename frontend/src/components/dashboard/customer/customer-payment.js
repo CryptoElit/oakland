@@ -22,36 +22,36 @@ export const CustomerPayment = (props) => {
           align={align}
           divider
           label="Paid"
-          value="2 ($50.00)"
+          value="2 (R500.00)"
         />
         <PropertyListItem
           align={align}
           divider
           label="Draft"
-          value="1 ($5.00)"
+          value="1 (R50.00)"
         />
         <PropertyListItem
           align={align}
           divider
           label="State/Region"
-          value="2 ($50.00)"
+          value="2 (R 700.00)"
         />
         <PropertyListItem
           align={align}
           divider
           label="Unpaid/Due"
-          value="1 ($12.00)"
+          value="1 (R 112.00)"
         />
         <PropertyListItem
           align={align}
           divider
           label="Refunded"
-          value="0 ($0.00)"
+          value="0 (R 0.00)"
         />
         <PropertyListItem
           align={align}
           label="Gross Income"
-          value="$1,200.00"
+          value="R 1,362.00"
         />
       </PropertyList>
       <Divider />

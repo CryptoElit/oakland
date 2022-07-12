@@ -107,14 +107,14 @@ export const FinanceOverview = (props) => (
             Sales
           </Typography>
           <Typography variant="h5">
-            {numeral(data.sales.actualYear).format('$0,0.00')}
+            R {numeral(data.sales.actualYear).format('0,0.00')}
           </Typography>
           <Typography
             color="textSecondary"
             variant="body2"
           >
             vs.
-            {numeral(data.sales.lastYear).format('$0,0.00')}
+            R {numeral(data.sales.lastYear).format('0,0.00')}
             &nbsp;
             last year
           </Typography>
@@ -156,14 +156,14 @@ export const FinanceOverview = (props) => (
             Cost
           </Typography>
           <Typography variant="h5">
-            {numeral(data.cost.actualYear).format('$0,0.00')}
+            R {numeral(data.cost.actualYear).format('0,0.00')}
           </Typography>
           <Typography
             color="textSecondary"
             variant="body2"
           >
             vs.
-            {numeral(data.cost.lastYear).format('$0,0.00')}
+            R {numeral(data.cost.lastYear).format('0,0.00')}
             &nbsp;
             last year
           </Typography>
@@ -198,7 +198,7 @@ export const FinanceOverview = (props) => (
             Profit
           </Typography>
           <Typography variant="h5">
-            {numeral(data.profit.actualYear).format('$0,0.00')}
+            R {numeral(data.profit.actualYear).format('0,0.00')}
 
           </Typography>
           <Typography
@@ -206,7 +206,7 @@ export const FinanceOverview = (props) => (
             variant="body2"
           >
             vs.
-            {numeral(data.profit.lastYear).format('$0,0.00')}
+            R {numeral(data.profit.lastYear).format('0,0.00')}
             &nbsp;
             last year
           </Typography>

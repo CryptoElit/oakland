@@ -93,7 +93,7 @@ const InvoiceRow = (props) => {
       <TableCell>
         <Typography variant="body2">
           {invoice.currency}
-          {numeral(invoice.totalAmount).format('0,0.00')}
+          R {numeral(invoice.totalAmount).format('0,0.00')}
         </Typography>
       </TableCell>
       <TableCell>

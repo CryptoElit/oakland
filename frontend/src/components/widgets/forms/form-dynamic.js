@@ -1,6 +1,7 @@
 import React, { useState, Fragment } from "react";
 import { Autocomplete, Avatar, Box, Button, Chip, Grid, IconButton, TextField, Typography } from '@mui/material';
 import { Plus as PlusIcon } from '../../../icons/plus';
+import { de } from "date-fns/locale";
 
 const countries = [
     { text: 'Jersey', value: 'JE' },
@@ -17,12 +18,12 @@ const countries = [
 
 export const DynamicForm = () => {
   const [inputFields, setInputFields] = useState([
-    { firstName: '', lastName: '' }
+    { firstName: '', lastName: '', quantity: '', desc: ''}
   ]);
 
   const handleAddFields = () => {
     const values = [...inputFields];
-    values.push({ firstName: '', lastName: '' });
+    values.push({ firstName: '', lastName: '', quantity: '', desc: ''});
     setInputFields(values);
   };
 
@@ -36,8 +37,11 @@ export const DynamicForm = () => {
     const values = [...inputFields];
     if (event.target.name === "firstName") {
       values[index].firstName = event.target.value;
-    } else {
+    } else if (event.target.name === "firstName") {
       values[index].lastName = event.target.value;
+    } else
+    {
+      values[index].quantity = event.target.value;
     }
 
     setInputFields(values);
@@ -49,7 +53,7 @@ export const DynamicForm = () => {
     alert(JSON.stringify(inputFields, null, 2))
   };
 
-  const resetForm = e => setInputFields([{ firstName: '', lastName: '' }])
+  const resetForm = e => setInputFields([{ firstName: '', lastName: '', quantity: '' }])
 
   return (
     <>
@@ -60,6 +64,44 @@ export const DynamicForm = () => {
           {inputFields.map((inputField, index) => (
             <Fragment key={`${inputField}~${index}`}>
               <div className="form-group col-sm-6">
+              <Box
+            sx={{
+              alignItems: 'center',
+              display: 'flex',
+              mt: 3
+            }}
+          >
+              <Grid
+                container
+                spacing={3}
+              >
+              </Grid>
+              <Grid
+            item
+            sm={1}
+            xs={12}
+          >
+            <TextField
+              label="Quantity"
+              name="quantity"
+              value={inputField.quantity}
+                onChange={event => handleInputChange(index, event)}
+            />
+          </Grid>
+          <Grid
+            item
+            sm={6}
+            xs={12}
+          >
+            <TextField
+              fullWidth
+              label="Description"
+              name="desc"
+              value={inputField.desc}
+                onChange={event => handleInputChange(index, event)}
+            />
+          </Grid>
+          </Box>
               <Box
             sx={{
               alignItems: 'center',
@@ -110,61 +152,6 @@ export const DynamicForm = () => {
           container
           spacing={3}
         >
-          <Grid
-            item
-            sm={2}
-            xs={12}
-          >
-            <TextField
-              fullWidth
-              label="Case Type"
-              name="firstName"
-            />
-          </Grid>
-          <Grid
-            item
-            sm={2}
-            xs={12}
-          >
-            <TextField
-              fullWidth
-              label="Case Year"
-              name="lastName"
-            />
-          </Grid>
-          <Grid
-            item
-            sm={2}
-            xs={12}
-          >
-            <TextField
-              fullWidth
-              label="Case Number"
-              name="address"
-            />
-          </Grid>
-          <Grid
-            item
-            sm={2}
-            xs={12}
-          >
-            <TextField
-              fullWidth
-              label="Citation/File Number"
-              name="optionalAddress"
-            />
-          </Grid>
-          <Grid
-            item
-            sm={2}
-            xs={12}
-          >
-            <TextField
-              fullWidth
-              label="State"
-              name="state"
-            />
-          </Grid>
           <Grid
             item
             sm={2}

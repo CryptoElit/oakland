@@ -205,7 +205,7 @@ export const AnalyticsGeneralOverview = () => (
               sx={{ mt: 1 }}
               variant="h5"
             >
-              $41.2K
+              R41.2K
             </Typography>
           </div>
           <LineChart />

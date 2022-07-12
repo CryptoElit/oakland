@@ -109,7 +109,7 @@ export const JWTLogin = (props) => {
           <div>
             Use
             {' '}
-            <b>demo@devias.io</b>
+            <b>ian@oaklandmilk.co.za</b>
             {' '}
             and password
             {' '}

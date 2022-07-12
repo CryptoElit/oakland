@@ -108,13 +108,13 @@ export const AccountTeamSettings = () => (
                 </Avatar>
                 <div>
                   <Typography variant="subtitle2">
-                    Cao Yu
+                    Ian van Niekerk
                   </Typography>
                   <Typography
                     color="textSecondary"
                     variant="body2"
                   >
-                    cao.yu@devias.io
+                    ian@oaklandmilk.co.za
                   </Typography>
                 </div>
               </Box>
@@ -149,13 +149,13 @@ export const AccountTeamSettings = () => (
                 />
                 <div>
                   <Typography variant="subtitle2">
-                    Cao Yu
+                    Ian van Niekerk
                   </Typography>
                   <Typography
                     variant="body2"
                     color="textSecondary"
                   >
-                    cao.yu@devias.io
+                    ian@oaklandmilk.co.za
                   </Typography>
                 </div>
               </Box>

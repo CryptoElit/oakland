@@ -76,6 +76,25 @@ const getSections = (t) => [
     title: t('Management'),
     items: [
       {
+        title: t('Orders'),
+        icon: <ShoppingCartIcon fontSize="small" />,
+        path: '/dashboard/orders',
+        children: [
+          {
+            title: t('View All'),
+            path: '/dashboard/orders'
+          },
+          {
+            title: t('New Order'),
+            path: '/dashboard/orders/new'
+          },
+          {
+            title: t('Details'),
+            path: '/dashboard/orders/1'
+          }
+        ]
+      },
+      {
         title: t('Departments'),
         path: '/dashboard/customers',
         icon: <TruckIcon fontSize="small" />,
@@ -111,25 +130,7 @@ const getSections = (t) => [
         ]
       },
       */
-      {
-        title: t('Orders'),
-        icon: <ShoppingCartIcon fontSize="small" />,
-        path: '/dashboard/orders',
-        children: [
-          {
-            title: t('Create Order'),
-            path: '/dashboard/orders/new'
-          },
-          {
-            title: t('List'),
-            path: '/dashboard/orders'
-          },
-          {
-            title: t('Details'),
-            path: '/dashboard/orders/1'
-          }
-        ]
-      },
+
       {
         title: t('Invoices'),
         path: '/dashboard/invoices',

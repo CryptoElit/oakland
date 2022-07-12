@@ -21,7 +21,7 @@ const products = [
   {
     id: '5eff2512c6f8737d08325676',
     conversionRate: 93,
-    currency: '$',
+    currency: 'R',
     image: '/static/mock-images/products/product_1.png',
     name: 'Healthcare Erbology',
     profit: 53500,
@@ -30,7 +30,7 @@ const products = [
   {
     id: '5eff2516247f9a6fcca9f151',
     conversionRate: 76,
-    currency: '$',
+    currency: 'R',
     image: '/static/mock-images/products/product_2.png',
     name: 'Makeup Lancome Rouge',
     profit: 45763,
@@ -39,7 +39,7 @@ const products = [
   {
     id: '5eff251a3bb9ab7290640f18',
     conversionRate: 60,
-    currency: '$',
+    currency: 'R',
     name: 'Lounge Puff Fabric Slipper',
     profit: 28700,
     sales: 5300
@@ -47,7 +47,7 @@ const products = [
   {
     id: '5eff251e297fd17f0dc18a8b',
     conversionRate: 46,
-    currency: '$',
+    currency: 'R',
     image: '/static/mock-images/products/product_4.png',
     name: 'Skincare Necessaire',
     profit: 20400,
@@ -56,7 +56,7 @@ const products = [
   {
     id: '5eff2524ef813f061b3ea39f',
     conversionRate: 41,
-    currency: '$',
+    currency: 'R',
     image: '/static/mock-images/products/product_5.png',
     name: 'Skincare Soja CO',
     profit: 15200,
