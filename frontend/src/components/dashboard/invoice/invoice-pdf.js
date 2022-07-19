@@ -173,7 +173,7 @@ export const InvoicePDF = (props) => {
             Dairy Exchange (Pty) Ltd
           </Text>
           <Text style={styles.body2}>
-            Countdown Grey Lynn
+            Killarney Gardens
           </Text>
           <Text style={styles.body2}>
             6934656584231
