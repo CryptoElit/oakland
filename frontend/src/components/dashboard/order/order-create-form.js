@@ -17,6 +17,7 @@ import {
   Typography
 } from '@mui/material';
 import { FileDropzone } from '../../file-dropzone';
+import { DynamicForm } from '../../widgets/forms/form-dynamic';
 import { QuillEditor } from '../../quill-editor';
 
 const categoryOptions = [
@@ -102,7 +103,7 @@ export const OrderCreateForm = (props) => {
     <form
       onSubmit={formik.handleSubmit}
       {...props}>
-      <Card>
+            <Card sx={{ mt: 3 }}>
         <CardContent>
           <Grid
             container
@@ -114,168 +115,30 @@ export const OrderCreateForm = (props) => {
               xs={12}
             >
               <Typography variant="h6">
-                Basic details
+                Order Details
               </Typography>
             </Grid>
             <Grid
               item
-              md={8}
+              md={9}
               xs={12}
             >
-              <TextField
-                error={Boolean(formik.touched.name && formik.errors.name)}
-                fullWidth
-                helperText={formik.touched.name && formik.errors.name}
-                label="Product Name"
-                name="name"
-                onBlur={formik.handleBlur}
-                onChange={formik.handleChange}
-                value={formik.values.name}
-              />
-              <Typography
-                color="textSecondary"
-                sx={{
-                  mb: 2,
-                  mt: 3
-                }}
-                variant="subtitle2"
-              >
-                Description
-              </Typography>
-              <QuillEditor
-                onChange={(value) => {
-                  formik.setFieldValue('description', value);
-                }}
-                placeholder="Write something"
-                sx={{ height: 400 }}
-                value={formik.values.description}
-              />
-              {Boolean(formik.touched.description && formik.errors.description) && (
-                <Box sx={{ mt: 2 }}>
-                  <FormHelperText error>
-                    {formik.errors.description}
-                  </FormHelperText>
-                </Box>
-              )}
-            </Grid>
-          </Grid>
-        </CardContent>
-      </Card>
-      <Card sx={{ mt: 3 }}>
-        <CardContent>
-          <Grid
-            container
-            spacing={3}
-          >
-            <Grid
-              item
-              md={4}
-              xs={12}
-            >
-              <Typography variant="h6">
-                Images
-              </Typography>
-              <Typography
-                color="textSecondary"
-                variant="body2"
-                sx={{ mt: 1 }}
-              >
-                Images will appear in the store front of your website.
-              </Typography>
-            </Grid>
-            <Grid
-              item
-              md={8}
-              xs={12}
-            >
-              <FileDropzone
-                accept={{
-                  'image/*': []
-                }}
-                files={files}
-                onDrop={handleDrop}
-                onRemove={handleRemove}
-                onRemoveAll={handleRemoveAll}
-              />
-            </Grid>
-          </Grid>
-        </CardContent>
-      </Card>
-      <Card sx={{ mt: 3 }}>
-        <CardContent>
-          <Grid
-            container
-            spacing={3}
-          >
-            <Grid
-              item
-              md={4}
-              xs={12}
-            >
-              <Typography variant="h6">
-                Pricing
-              </Typography>
-            </Grid>
-            <Grid
-              item
-              md={8}
-              xs={12}
-            >
-              <TextField
-                error={Boolean(formik.touched.oldPrice && formik.errors.oldPrice)}
-                fullWidth
-                label="Old price"
-                name="oldPrice"
-                onBlur={formik.handleBlur}
-                onChange={formik.handleChange}
-                type="number"
-                value={formik.values.oldPrice}
-              />
-              <TextField
-                error={Boolean(formik.touched.newPrice && formik.errors.newPrice)}
-                fullWidth
-                label="New Price"
-                name="newPrice"
-                onBlur={formik.handleBlur}
-                onChange={formik.handleChange}
-                sx={{ mt: 2 }}
-                type="number"
-                value={formik.values.newPrice}
-              />
-              <Box sx={{ mt: 2 }}>
+              <Box>
                 <FormControlLabel
                   control={<Switch />}
-                  label="Keep selling when stock is empty"
+                  label="Petty Cash Order"
                 />
               </Box>
             </Grid>
-          </Grid>
-        </CardContent>
-      </Card>
-      <Card sx={{ mt: 3 }}>
-        <CardContent>
-          <Grid
-            container
-            spacing={3}
-          >
             <Grid
               item
-              md={4}
-              xs={12}
-            >
-              <Typography variant="h6">
-                Category
-              </Typography>
-            </Grid>
-            <Grid
-              item
-              md={8}
+              md={5}
               xs={12}
             >
               <TextField
                 error={Boolean(formik.touched.category && formik.errors.category)}
                 fullWidth
-                label="Category"
+                label="Select Supplier"
                 name="category"
                 onBlur={formik.handleBlur}
                 onChange={formik.handleChange}
@@ -291,32 +154,18 @@ export const OrderCreateForm = (props) => {
                   </MenuItem>
                 ))}
               </TextField>
-              <TextField
-                disabled
-                error={Boolean(formik.touched.barcode && formik.errors.barcode)}
-                fullWidth
-                label="Barcode"
-                name="barcode"
-                onBlur={formik.handleBlur}
-                onChange={formik.handleChange}
-                sx={{ mt: 2 }}
-                value={formik.values.barcode}
-              />
-              <TextField
-                disabled
-                error={Boolean(formik.touched.sku && formik.errors.sku)}
-                fullWidth
-                label="SKU"
-                name="sku"
-                onBlur={formik.handleBlur}
-                onChange={formik.handleChange}
-                sx={{ mt: 2 }}
-                value={formik.values.sku}
-              />
             </Grid>
           </Grid>
         </CardContent>
       </Card>
+      <Card sx={{ mt: 3 }}>
+        <CardContent>
+          <DynamicForm/>
+        </CardContent>
+      </Card>
+      
+     
+
       <Box
         sx={{
           display: 'flex',

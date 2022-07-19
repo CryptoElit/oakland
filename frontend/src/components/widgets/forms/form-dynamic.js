@@ -18,12 +18,12 @@ const countries = [
 
 export const DynamicForm = () => {
   const [inputFields, setInputFields] = useState([
-    { firstName: '', lastName: '', quantity: '', desc: ''}
+    { desc: '', quantity: '', price:'0'}
   ]);
 
   const handleAddFields = () => {
     const values = [...inputFields];
-    values.push({ firstName: '', lastName: '', quantity: '', desc: ''});
+    values.push({ desc: '', quantity: '', price:''});
     setInputFields(values);
   };
 
@@ -35,13 +35,13 @@ export const DynamicForm = () => {
 
   const handleInputChange = (index, event) => {
     const values = [...inputFields];
-    if (event.target.name === "firstName") {
-      values[index].firstName = event.target.value;
-    } else if (event.target.name === "firstName") {
-      values[index].lastName = event.target.value;
+    if (event.target.name === "desc") {
+      values[index].desc = event.target.value;
+    } else if (event.target.name === "quantity") {
+      values[index].quantity = event.target.value;
     } else
     {
-      values[index].quantity = event.target.value;
+      values[index].price = event.target.value;
     }
 
     setInputFields(values);
@@ -53,12 +53,14 @@ export const DynamicForm = () => {
     alert(JSON.stringify(inputFields, null, 2))
   };
 
-  const resetForm = e => setInputFields([{ firstName: '', lastName: '', quantity: '' }])
+  const resetForm = e => setInputFields([{ desc:'', quantity: '', price:'' }])
 
   return (
     <>
         <Box>
-      <h1>Dynamic Form Fields in React</h1>
+        <Typography variant="h6">
+                Item Details
+              </Typography>
       <form onSubmit={handleSubmit}>
         <div className="form-row">
           {inputFields.map((inputField, index) => (
@@ -66,8 +68,6 @@ export const DynamicForm = () => {
               <div className="form-group col-sm-6">
               <Box
             sx={{
-              alignItems: 'center',
-              display: 'flex',
               mt: 3
             }}
           >
@@ -75,96 +75,57 @@ export const DynamicForm = () => {
                 container
                 spacing={3}
               >
-              </Grid>
-              <Grid
-            item
-            sm={1}
-            xs={12}
-          >
-            <TextField
-              label="Quantity"
-              name="quantity"
-              value={inputField.quantity}
-                onChange={event => handleInputChange(index, event)}
-            />
-          </Grid>
+             
           <Grid
             item
-            sm={6}
+            sm={8}
             xs={12}
           >
             <TextField
-              fullWidth
+            fullWidth
               label="Description"
               name="desc"
               value={inputField.desc}
                 onChange={event => handleInputChange(index, event)}
             />
           </Grid>
-          </Box>
-              <Box
-            sx={{
-              alignItems: 'center',
-              display: 'flex',
-              mt: 3
-            }}
-          >
-            <TextField
-              fullWidth
-              label="First Name"
-              name="firstName"
-              value={inputField.firstName}
-                onChange={event => handleInputChange(index, event)}
-            />
-            <IconButton sx={{ ml: 2 }}>
-              <PlusIcon fontSize="small" 
-                
-              />
-
-            </IconButton>
-          </Box>
-
-                </div>
-                
-              <div className="form-group col-sm-4">
-                <Box
-            sx={{
-              alignItems: 'center',
-              display: 'flex',
-              mt: 3
-            }}
-          >
-            <TextField
-              fullWidth
-              label="Last Name"
-              name="lastName"
-              value={inputField.lastName}
-                onChange={event => handleInputChange(index, event)}
-            />
-            <IconButton sx={{ ml: 2 }}>
-              <PlusIcon fontSize="small" />
-            </IconButton>
-          </Box>
-
-              </div>
-              <Box sx={{ mt: 3 }}>
-        <Grid
-          container
-          spacing={3}
-        >
           <Grid
+            
             item
             sm={2}
             xs={12}
           >
             <TextField
               fullWidth
-              label="Zip"
-              name="zip"
+              label="Quantity"
+              name="quantity"
+              type="number"
+              value={inputField.quantity}
+                onChange={event => handleInputChange(index, event)}
             />
           </Grid>
-        </Grid>
-      </Box>
+          <Grid
+            
+            item
+            sm={2}
+            xs={12}
+          >
+            <TextField
+              fullWidth
+              label="Estimated Price"
+              name="price"
+              type="number"
+              value={inputField.price}
+                onChange={event => handleInputChange(index, event)}
+            />
+          </Grid>
+          </Grid>
+          </Box>
+            
+
+                </div>
+                
+      
 
               <div className="form-group col-sm-2">
                 <button

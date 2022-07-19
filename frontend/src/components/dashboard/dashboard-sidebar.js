@@ -199,11 +199,6 @@ const getSections = (t) => [
         ]
       },
       {
-        title: t('Analytics'),
-        path: '/dashboard/analytics',
-        icon: <ChartBarIcon fontSize="small" />
-      },
-      {
         title: t('Mail'),
         path: '/dashboard/mail',
         icon: <MailIcon fontSize="small" />
