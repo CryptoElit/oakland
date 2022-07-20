@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import NextLink from 'next/link';
 import Head from 'next/head';
-import { Box, Breadcrumbs, Container, Link, Typography } from '@mui/material';
+import { Box, Breadcrumbs, Container, Grid, Link, Typography } from '@mui/material';
 import { AuthGuard } from '../../../components/authentication/auth-guard';
 import { DashboardLayout } from '../../../components/dashboard/dashboard-layout';
 import { OrderCreateForm } from '../../../components/dashboard/order/order-create-form';
@@ -28,39 +28,30 @@ const OrderCreate = () => {
       >
         <Container maxWidth="md">
           <Box sx={{ mb: 3 }}>
-            <Typography variant="h4">
+            <Grid 
+              container
+              spacing={3}
+            >
+              <Grid item
+              md={10}
+              xs={12}
+              >
+              <Typography variant="h4">
               New Order
             </Typography>
-            <Breadcrumbs
-              separator="/"
-              sx={{ mt: 1 }}
-            >
-              <NextLink
-                href="/dashboard"
-                passHref
+            
+              </Grid>
+              <Grid item
+                md={1}
+              xs={12}
               >
-                <Link variant="subtitle2">
-                  Dashboard
-                </Link>
-              </NextLink>
-              <NextLink
-                href="/dashboard"
-                passHref
-              >
-                <Link
-                  color="primary"
-                  variant="subtitle2"
-                >
-                  Management
-                </Link>
-              </NextLink>
-              <Typography
-                color="textSecondary"
-                variant="subtitle2"
-              >
-                Orders
-              </Typography>
-            </Breadcrumbs>
+                <Typography variant="h4">
+              #000019
+            </Typography>
+              </Grid>
+
+            </Grid>
+            
           </Box>
           <OrderCreateForm />
         </Container>

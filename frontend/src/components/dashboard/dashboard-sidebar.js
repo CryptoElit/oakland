@@ -78,7 +78,9 @@ const getSections = (t) => [
       {
         title: t('Orders'),
         icon: <ShoppingCartIcon fontSize="small" />,
-        path: '/dashboard/orders',
+        path: '/dashboard/orders'
+        /*
+        ,
         children: [
           {
             title: t('View All'),
@@ -93,6 +95,7 @@ const getSections = (t) => [
             path: '/dashboard/orders/1'
           }
         ]
+        */
       },
       {
         title: t('Departments'),
@@ -198,21 +201,27 @@ const getSections = (t) => [
           }
         ]
       },
+      /*
       {
         title: t('Mail'),
         path: '/dashboard/mail',
         icon: <MailIcon fontSize="small" />
       },
+      */
+      /*
       {
         title: t('Chat'),
         path: '/dashboard/chat',
         icon: <ChatAlt2Icon fontSize="small" />
       },
+      */
+     /*
       {
         title: t('Account'),
         path: '/dashboard/account',
         icon: <UserCircleIcon fontSize="small" />
       }
+      */
     ]
   },
 ];

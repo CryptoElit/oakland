@@ -6,7 +6,7 @@ import { de } from "date-fns/locale";
 
 const suppliers = [
     { text: 'Midas (Pty) Ltd', value: 'JE' },
-    { text: 'Jordan', value: 'JO' },
+    { text: 'Electrical Supplier', value: 'JO' },
     { text: 'Kazakhstan', value: 'KZ' },
     { text: 'Kenya', value: 'KE' },
     { text: 'Kiribati', value: 'KI' },
@@ -15,6 +15,19 @@ const suppliers = [
     { text: 'Kuwait', value: 'KW' },
     { text: 'Kyrgyzstan', value: 'KG' },
     { text: 'Lao People\'S Democratic Republic', value: 'LA' }
+  ];
+
+  const items = [
+    { text : 'Screwdriver', value: 'SC'},
+    { text: 'Battery', value: 'BT' },
+    { text: 'Wrench', value: 'WR' },
+    { text: 'Power Cables', value: 'PC' },
+    { text: 'Hammer', value: 'HR' },
+    { text: 'Nails', value: 'NS' },
+    { text: 'Grinder', value: 'GR' },
+    { text: 'Gloves', value: 'GS' },
+    { text: 'Sanders', value: 'SD' },
+    { text: 'Blowers', value: 'BL' }
   ];
 
 export const DynamicForm = () => {
@@ -59,23 +72,24 @@ export const DynamicForm = () => {
         
       <form onSubmit={handleSubmit}>
         <div className="form-row">
-        <Box sx={{ my:3 }}>
-        <Grid
+        <Box sx={{ my:1 }}>
+        <Grid sx={{ mb: 3}}
           container
-            spacing={1}
+            spacing={5}
           >
    
           <Grid item
-          md={8}
+          md={9}
           xs={12}
           >
             <Typography
-          sx={{ mt: 1 }}
-          variant="h6"
+         
+          variant="h5"
         >
           Order Details
         </Typography>
           </Grid>
+          
           <Grid
               item
               md={3}
@@ -104,7 +118,7 @@ export const DynamicForm = () => {
 
             <Grid
             item
-            md={6}
+            md={9}
             xs={12}
           >
             <Autocomplete
@@ -120,6 +134,22 @@ export const DynamicForm = () => {
             />
           </Grid>
           </Grid>
+          <Grid sx={{my: 0}}
+            container
+            spacing={3}
+          >
+          <Grid
+            item
+            md={5}
+            xs={12}
+          >
+            <TextField 
+              fullWidth
+              label="Doc Nr"
+              name="doc-nr"
+            />
+          </Grid>
+          </Grid>
           <Box sx={{ my: 4 }}>
           <Grid
           container
@@ -127,12 +157,12 @@ export const DynamicForm = () => {
           >
 
           <Grid item
-          md={2}
+          md={3}
           xs={12}
           >
             <Typography
           sx={{ mt: 1 }}
-          variant="h6"
+          variant="h5"
         >
           Item Details
         </Typography>
@@ -147,26 +177,10 @@ export const DynamicForm = () => {
               mt: 3
             }}
           >
-
-
               <Grid
                 container
                 spacing={3}
               >
-             
-          <Grid
-            item
-            sm={8}
-            xs={12}
-          >
-            <TextField
-            fullWidth
-              label="Description"
-              name="desc"
-              value={inputField.desc}
-                onChange={event => handleInputChange(index, event)}
-            />
-          </Grid>
           <Grid
             
             item
@@ -181,7 +195,27 @@ export const DynamicForm = () => {
               value={inputField.quantity}
                 onChange={event => handleInputChange(index, event)}
             />
+          </Grid>   
+          <Grid
+            item
+            sm={8}
+            xs={12}
+          >
+            <Autocomplete
+              getOptionLabel={(option) => option.text}
+              options={items}
+              renderInput={(params) => (
+                <TextField {...params}
+            fullWidth
+              label="Description"
+              name="desc"
+              value={inputField.desc}
+                onChange={event => handleInputChange(index, event)}
+                />
+              )}
+            />
           </Grid>
+          
           <Grid
             
             item
@@ -209,7 +243,9 @@ export const DynamicForm = () => {
                   type="button"
                   onClick={() => handleRemoveFields(index)}
                 >
-                  <TrashIcon />
+                  <TrashIcon sx={{ mt : "5px", mr : "15px", color : 'red'}}
+          
+                  />
                 </Button>
 
           </Grid>
@@ -229,7 +265,7 @@ export const DynamicForm = () => {
                   variant="contained"
                   onClick={() => handleAddFields()}
                 >
-                  Add Item<PlusIcon />
+              <PlusIcon />Add Item
                 </Button>
         </div>
         </div>
