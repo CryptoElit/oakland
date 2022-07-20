@@ -16,7 +16,7 @@ const OrderCreate = () => {
     <>
       <Head>
         <title>
-          Dashboard: Order Create | Oakland
+          New Order | Oakland
         </title>
       </Head>
       <Box
@@ -29,7 +29,7 @@ const OrderCreate = () => {
         <Container maxWidth="md">
           <Box sx={{ mb: 3 }}>
             <Typography variant="h4">
-              Create a new order
+              New Order
             </Typography>
             <Breadcrumbs
               separator="/"

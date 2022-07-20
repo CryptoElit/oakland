@@ -103,7 +103,13 @@ export const OrderCreateForm = (props) => {
     <form
       onSubmit={formik.handleSubmit}
       {...props}>
-            <Card sx={{ mt: 3 }}>
+
+      <Card sx={{ mt: 3 }}>
+        <CardContent>
+          <DynamicForm/>
+        </CardContent>
+      </Card>
+      <Card sx={{ mt: 3 }}>
         <CardContent>
           <Grid
             container
@@ -115,55 +121,34 @@ export const OrderCreateForm = (props) => {
               xs={12}
             >
               <Typography variant="h6">
-                Order Details
+                Upload Quote
+              </Typography>
+              <Typography
+                color="textSecondary"
+                variant="body2"
+                sx={{ mt: 1 }}
+              >
+                If there has been a quote received from the supplier please upload it here.
               </Typography>
             </Grid>
             <Grid
               item
-              md={9}
+              md={8}
               xs={12}
             >
-              <Box>
-                <FormControlLabel
-                  control={<Switch />}
-                  label="Petty Cash Order"
-                />
-              </Box>
-            </Grid>
-            <Grid
-              item
-              md={5}
-              xs={12}
-            >
-              <TextField
-                error={Boolean(formik.touched.category && formik.errors.category)}
-                fullWidth
-                label="Select Supplier"
-                name="category"
-                onBlur={formik.handleBlur}
-                onChange={formik.handleChange}
-                select
-                value={formik.values.category}
-              >
-                {categoryOptions.map((option) => (
-                  <MenuItem
-                    key={option.value}
-                    value={option.value}
-                  >
-                    {option.label}
-                  </MenuItem>
-                ))}
-              </TextField>
+              <FileDropzone
+                accept={{
+                  'image/*': []
+                }}
+                files={files}
+                onDrop={handleDrop}
+                onRemove={handleRemove}
+                onRemoveAll={handleRemoveAll}
+              />
             </Grid>
           </Grid>
         </CardContent>
       </Card>
-      <Card sx={{ mt: 3 }}>
-        <CardContent>
-          <DynamicForm/>
-        </CardContent>
-      </Card>
-      
      
 
       <Box
