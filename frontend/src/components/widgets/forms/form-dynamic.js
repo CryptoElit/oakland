@@ -1,6 +1,7 @@
 import React, { useState, Fragment } from "react";
 import { Autocomplete, Avatar, Box, Button, Chip, FormControlLabel, Grid, IconButton, TextField, Typography, Switch } from '@mui/material';
 import { Plus as PlusIcon } from '../../../icons/plus';
+import { Trash as TrashIcon } from '../../../icons/trash';
 import { de } from "date-fns/locale";
 
 const suppliers = [
@@ -18,12 +19,11 @@ const suppliers = [
 
 export const DynamicForm = () => {
   const [inputFields, setInputFields] = useState([
-    { desc: '', quantity: '', price:'0', supply: ''}
+    { desc: '', quantity: '1', price:'0.00'}
   ]);
 
   const handleAddFields = () => {
-    const values = [...inputFields];
-    values.push({ desc: '', quantity: '', price:'', supply: ''});
+    const values = [...inputFields, { desc: '', quantity: '1', price:'0.00'}];
     setInputFields(values);
   };
 
@@ -35,14 +35,12 @@ export const DynamicForm = () => {
 
   const handleInputChange = (index, event) => {
     const values = [...inputFields];
-    if (event.target.name === "desc") {
-      values[index].desc = event.target.value;
-    } else if (event.target.name === "quantity") {
-      values[index].quantity = event.target.value;
-    } else
-    {
-      values[index].price = event.target.value;
-    }
+    console.log("==> old values", values)
+    console.log("==> old values[index]",values[index])
+    console.log("==> old event.target",event.target)
+    console.log("==> old event.target.name",event.target.name)
+    console.log("==> old event.target.value",event.target.value)
+    values[index][event.target.name] = event.target.value;
 
     setInputFields(values);
   };
@@ -50,7 +48,7 @@ export const DynamicForm = () => {
   const handleSubmit = e => {
     e.preventDefault();
     // handle form submission here
-    alert(JSON.stringify(inputFields, null, 2))
+    alert(JSON.strngify(iinputFields, null, 2))
   };
 
   const resetForm = e => setInputFields([{ desc:'', quantity: '', price:'', supply:'' }])
@@ -172,12 +170,12 @@ export const DynamicForm = () => {
           <Grid
             
             item
-            sm={2}
+            sm={1}
             xs={12}
           >
             <TextField
               fullWidth
-              label="Quantity"
+              label="Qty"
               name="quantity"
               type="number"
               value={inputField.quantity}
@@ -192,61 +190,49 @@ export const DynamicForm = () => {
           >
             <TextField
               fullWidth
-              label="Estimated Price"
+              label="Price"
               name="price"
               type="number"
               value={inputField.price}
                 onChange={event => handleInputChange(index, event)}
             />
           </Grid>
+          <Grid
+            
+            item
+            sm={1}
+            xs={12}
+          >
+           
+           <Button
+                  className="btn btn-link"
+                  type="button"
+                  onClick={() => handleRemoveFields(index)}
+                >
+                  <TrashIcon />
+                </Button>
+
+          </Grid>
           </Grid>
           </Box>
             
 
                 </div>
-                
+              
       
-
-              <div className="form-group col-sm-2">
-                <button
-                  className="btn btn-link"
-                  type="button"
-                  disabled={index === 0}
-                  onClick={() => handleRemoveFields(index)}
-                >
-                  -
-                </button>
-                <button
-                  className="btn btn-link"
-                  type="button"
-                  onClick={() => handleAddFields()}
-                >
-                  +
-                </button>
-              </div>
             </Fragment>
           ))}
+          <div style={{textAlign: "right", marginTop: '25px'}}>
+          <Button
+                  className="btn btn-link"
+                  type="button"
+                  variant="contained"
+                  onClick={() => handleAddFields()}
+                >
+                  Add Item<PlusIcon />
+                </Button>
         </div>
-        <div className="submit-button">
-          <button
-            className="btn btn-primary mr-2"
-            type="submit"
-            onSubmit={handleSubmit}
-          >
-            Save
-          </button>
-          <button
-            className="btn btn-secondary mr-2"
-            type="reset"
-            onClick={resetForm}
-          >
-            Reset Form
-          </button>
         </div>
-        <br/>
-        <pre>
-          {JSON.stringify(inputFields, null, 2)}
-        </pre>
       </form>
       </Box>
     </>

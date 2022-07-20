@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Head from 'next/head';
+import NextLink from 'next/link';
 import {
   Box,
   Button,
@@ -234,12 +235,18 @@ const OrderList = () => {
                 </Typography>
               </Grid>
               <Grid item>
-                <Button
-                  startIcon={<PlusIcon fontSize="small" />}
-                  variant="contained"
+                <NextLink
+                  href="/dashboard/orders/new"
+                  passHref
                 >
-                  Add
-                </Button>
+                  <Button
+                    component="a"
+                    startIcon={<PlusIcon fontSize="small" />}
+                    variant="contained"
+                  >
+                    Add
+                  </Button>
+                </NextLink>
               </Grid>
             </Grid>
             
