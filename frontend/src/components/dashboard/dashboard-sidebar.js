@@ -42,9 +42,18 @@ const getSections = (t) => [
       },
 
       {
-        title: t('Finance'),
-        path: '/dashboard/finance',
-        icon: <ChartPieIcon fontSize="small" />
+        title: t('Budgets'),
+        icon: <ChartPieIcon fontSize="small" />,
+        children: [
+          {
+            title: t('Assign Budgets'),
+            path: '/dashboard/customers'
+          },
+          {
+            title: t('Reports'),
+            path: '/dashboard/finance'
+          }
+        ]
       },
 /*      {
         title: t('Logistics'),
@@ -140,12 +149,8 @@ const getSections = (t) => [
         icon: <ReceiptTaxIcon fontSize="small" />,
         children: [
           {
-            title: t('List'),
+            title: t('View All'),
             path: '/dashboard/invoices'
-          },
-          {
-            title: t('Details'),
-            path: '/dashboard/invoices/1'
           }
         ]
       }
