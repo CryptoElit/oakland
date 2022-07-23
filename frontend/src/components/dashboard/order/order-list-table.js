@@ -82,7 +82,7 @@ export const OrderListTable = (props) => {
                   >
                     Total of
                     {' '}
-                    {numeral(order.totalAmount).format(`${order.currency}0,0.00`)}
+                    R {numeral(order.totalAmount).format(0,0.00)}
                   </Typography>
                 </Box>
               </TableCell>

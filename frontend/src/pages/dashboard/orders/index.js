@@ -18,7 +18,7 @@ import { AuthGuard } from '../../../components/authentication/auth-guard';
 import { DashboardLayout } from '../../../components/dashboard/dashboard-layout';
 import { OrderDrawer } from '../../../components/dashboard/order/order-drawer';
 import { OrderListTable } from '../../../components/dashboard/order/order-list-table';
-import { OrderOverview } from '../../../components/dashboard/order/order-overview';
+import { OrderOverview, OrdersOverview } from '../../../components/dashboard/order/order-overview';
 import { useMounted } from '../../../hooks/use-mounted';
 import { Plus as PlusIcon } from '../../../icons/plus';
 import { Search as SearchIcon } from '../../../icons/search';
@@ -222,6 +222,7 @@ const OrderList = () => {
           overflow: 'hidden'
         }}
       >
+      
         <OrderListInner open={drawer.isOpen}>
           <Box sx={{ px: 3 }}>
             <Grid

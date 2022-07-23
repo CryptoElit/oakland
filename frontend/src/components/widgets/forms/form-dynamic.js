@@ -1,5 +1,5 @@
 import React, { useState, Fragment } from "react";
-import { Autocomplete, Avatar, Box, Button, Chip, FormControlLabel, Grid, IconButton, TextField, Typography, Switch } from '@mui/material';
+import { Autocomplete, Avatar, Box, Button, Chip, Divider, FormControlLabel, Grid, IconButton, TextField, Typography, Select, Switch } from '@mui/material';
 import { Plus as PlusIcon } from '../../../icons/plus';
 import { Trash as TrashIcon } from '../../../icons/trash';
 import { de } from "date-fns/locale";
@@ -29,6 +29,7 @@ const suppliers = [
     { text: 'Sanders', value: 'SD' },
     { text: 'Blowers', value: 'BL' }
   ];
+
 
 export const DynamicForm = () => {
   const [inputFields, setInputFields] = useState([
@@ -65,6 +66,8 @@ export const DynamicForm = () => {
   };
 
   const resetForm = e => setInputFields([{ desc:'', quantity: '', price:'', supply:'' }])
+
+  
 
   return (
     <>
@@ -149,7 +152,12 @@ export const DynamicForm = () => {
               name="doc-nr"
             />
           </Grid>
+        
+           
+        
           </Grid>
+        
+          
           <Box sx={{ my: 4 }}>
           <Grid
           container
@@ -201,14 +209,24 @@ export const DynamicForm = () => {
             sm={8}
             xs={12}
           >
-            <Autocomplete
-              getOptionLabel={(option) => option.text}
-              options={items}
-              renderInput={(params) => (
-                <TextField {...params}
+         <Autocomplete
+        multiple
+        id="tags-filled"
+        options={items.map((option) => option.text)}
+        freeSolo
+        variant="filled"
+        placeholder="Description"
+        renderTags={(value, getTagProps) =>
+          value.map((option, index) => (
+            <Chip variant="outlined" label={option} {...getTagProps({ index })} />
+          ))
+        }
+        renderInput={(params) => (
+          <TextField
+            {...params}
             fullWidth
-              label="Description"
               name="desc"
+              label="Description"
               value={inputField.desc}
                 onChange={event => handleInputChange(index, event)}
                 />
