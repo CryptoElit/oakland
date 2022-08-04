@@ -3,6 +3,7 @@ import { format } from 'date-fns';
 import numeral from 'numeral';
 import {
   Box,
+  Checkbox,
   Table,
   TableBody,
   TableCell,
@@ -42,7 +43,13 @@ export const OrderListTable = (props) => {
               onClick={() => onOpenDrawer?.(order.id)}
               sx={{ cursor: 'pointer' }}
             >
-              <TableCell
+              <TableCell padding="checkbox">
+                <Checkbox />
+              </TableCell>
+              <TableCell>
+                
+              </TableCell>
+              <TableCell align="right"
                 sx={{
                   alignItems: 'center',
                   display: 'flex'
@@ -60,17 +67,12 @@ export const OrderListTable = (props) => {
                   }}
                 >
                   <Typography
-                    align="center"
-                    variant="subtitle2"
+                    color="textSecondary"
+                    variant="body2"
                   >
-                    {format(order.createdAt, 'LLL').toUpperCase()}
+                    {format(order.createdAt, 'dd MMM yyyy | HH:mm')}
                   </Typography>
-                  <Typography
-                    align="center"
-                    variant="h6"
-                  >
-                    {format(order.createdAt, 'd')}
-                  </Typography>
+                  
                 </Box>
                 <Box sx={{ ml: 2 }}>
                   <Typography variant="subtitle2">

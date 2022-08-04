@@ -245,7 +245,7 @@ const OrderList = () => {
                     startIcon={<PlusIcon fontSize="small" />}
                     variant="contained"
                   >
-                    Add
+                    New Order
                   </Button>
                 </NextLink>
               </Grid>

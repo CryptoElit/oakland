@@ -110,20 +110,6 @@ const getSections = (t) => [
         title: t('Departments'),
         path: '/dashboard/customers',
         icon: <TruckIcon fontSize="small" />,
-        children: [
-          {
-            title: t('List'),
-            path: '/dashboard/customers'
-          },
-          {
-            title: t('Details'),
-            path: '/dashboard/customers/1'
-          },
-          {
-            title: t('Budgets'),
-            path: '/dashboard/customers/1/edit'
-          }
-        ]
       },
       /*
       {
@@ -146,13 +132,7 @@ const getSections = (t) => [
       {
         title: t('Invoices'),
         path: '/dashboard/invoices',
-        icon: <ReceiptTaxIcon fontSize="small" />,
-        children: [
-          {
-            title: t('View All'),
-            path: '/dashboard/invoices'
-          }
-        ]
+        icon: <ReceiptTaxIcon fontSize="small" />
       }
     ]
   },
@@ -191,20 +171,6 @@ const getSections = (t) => [
         title: t('System Users'),
         path: '/dashboard/customers',
         icon: <UsersIcon fontSize="small" />,
-        children: [
-          {
-            title: t('List'),
-            path: '/dashboard/customers'
-          },
-          {
-            title: t('Details'),
-            path: '/dashboard/customers/1'
-          },
-          {
-            title: t('Edit'),
-            path: '/dashboard/customers/1/edit'
-          }
-        ]
       },
       /*
       {
