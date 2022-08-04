@@ -218,7 +218,7 @@ export const DynamicForm = () => {
         placeholder="Description"
         renderTags={(value, getTagProps) =>
           value.map((option, index) => (
-            <Chip variant="outlined" label={option} {...getTagProps({ index })} />
+            <Chip variant="outlined" key={index} label={option} {...getTagProps({ index })} />
           ))
         }
         renderInput={(params) => (
