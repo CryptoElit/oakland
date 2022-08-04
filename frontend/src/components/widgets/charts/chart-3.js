@@ -17,7 +17,7 @@ export const Chart3 = () => {
     fill: {
       opacity: 1
     },
-    labels: ['System Health'],
+    labels: ['Live Budget'],
     plotOptions: {
       radialBar: {
         dataLabels: {
@@ -42,7 +42,7 @@ export const Chart3 = () => {
     }
   };
 
-  const chartSeries = [83];
+  const chartSeries = [55];
 
   return (
     <Box

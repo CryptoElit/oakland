@@ -27,7 +27,7 @@ const Login = () => {
     <>
       <Head>
         <title>
-          Login | Material Kit Pro
+          Login | Oakland Dashboard
         </title>
       </Head>
       <Box
@@ -82,7 +82,7 @@ const Login = () => {
                 sx={{ mt: 2 }}
                 variant="body2"
               >
-                Sign in on the internal platform
+                If you want to please everyone, don't be a leader, sell ice cream.
               </Typography>
             </Box>
             <Box

@@ -16,7 +16,7 @@ const ProductCreate = () => {
     <>
       <Head>
         <title>
-          Dashboard: Product Create | Material Kit Pro
+          Dashboard: Product Create | Oakland
         </title>
       </Head>
       <Box

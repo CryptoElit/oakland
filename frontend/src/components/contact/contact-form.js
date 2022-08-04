@@ -128,8 +128,8 @@ export const ContactForm = () => {
             fullWidth
             required
           >
-            <MenuItem value={20000}>$20,000+</MenuItem>
-            <MenuItem value={50000}>$50,000+</MenuItem>
+            <MenuItem value={20000}>R20,000+</MenuItem>
+            <MenuItem value={50000}>R50,000+</MenuItem>
           </Select>
         </Grid>
         <Grid

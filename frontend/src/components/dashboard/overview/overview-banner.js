@@ -31,7 +31,7 @@ export const OverviewBanner = (props) => {
       >
         <img
           alt=""
-          src="/static/banner-illustration.png"
+          src="/static/milk-icon.png"
         />
       </Box>
       <div>
@@ -46,14 +46,14 @@ export const OverviewBanner = (props) => {
           sx={{ mt: 2 }}
           variant="h4"
         >
-          Welcome to Material Kit Pro v5!
+          You have 5 unopened Notifications!
         </Typography>
         <Typography
           color="inherit"
           sx={{ mt: 1 }}
           variant="subtitle2"
         >
-          Your dashboard has been improved! Explore new features like Notifications, Search, Jobs Platform and more.
+          Three notifications have been flagged as high priority.
         </Typography>
         <Box sx={{ mt: 2 }}>
           <Button
@@ -61,7 +61,7 @@ export const OverviewBanner = (props) => {
             onClick={onDismiss}
             variant="contained"
           >
-            Dismiss Banner
+            Dismiss
           </Button>
         </Box>
       </div>

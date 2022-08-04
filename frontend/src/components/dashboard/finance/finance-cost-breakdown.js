@@ -20,22 +20,22 @@ const data = {
     {
       color: '#FFB547',
       data: 14859,
-      label: 'Strategy'
+      label: 'Outright Repairs'
     },
     {
       color: '#7BC67E',
       data: 35690,
-      label: 'Outsourcing'
+      label: 'New Parts'
     },
     {
       color: '#7783DB',
       data: 45120,
-      label: 'Marketing'
+      label: 'Maintenance'
     },
     {
       color: '#9DA4DD',
       data: 25486,
-      label: 'Other'
+      label: 'Logistics'
     }
   ]
 };
@@ -126,7 +126,7 @@ export const FinanceCostBreakdown = (props) => {
                   color="textSecondary"
                   variant="body2"
                 >
-                  {numeral(item.data).format('$0,0.00')}
+                  R {numeral(item.data).format('0,0.00')}
                 </Typography>
               </TableCell>
             </TableRow>

@@ -109,7 +109,7 @@ const ProductList = () => {
     <>
       <Head>
         <title>
-          Dashboard: Product List | Material Kit Pro
+          Dashboard: Product List | Oakland
         </title>
       </Head>
       <Box

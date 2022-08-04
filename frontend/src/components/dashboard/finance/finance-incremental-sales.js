@@ -168,7 +168,7 @@ export const FinanceIncrementalSales = (props) => {
                   color="textSecondary"
                   variant="body2"
                 >
-                  {numeral(item.data).format('$0,0.00')}
+                  R {numeral(item.data).format('0,0.00')}
                 </Typography>
               </TableCell>
             </TableRow>

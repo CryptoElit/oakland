@@ -18,36 +18,36 @@ const transactions = [
   {
     id: 'd46800328cd510a668253b45',
     amount: 25000,
-    currency: 'usd',
+    currency: 'zar',
     date: new Date(),
-    sender: 'Devias',
+    sender: 'Milk Distribution Company (Pty) Ltd.',
     type: 'receive',
     status: 'on hold'
   },
   {
     id: 'b4b19b21656e44b487441c50',
     amount: 6843,
-    currency: 'usd',
+    currency: 'zar',
     date: subDays(new Date(), 1),
-    sender: 'Zimbru',
+    sender: 'Spiros Mega Mica',
     type: 'send',
     status: 'confirmed'
   },
   {
     id: '56c09ad91f6d44cb313397db',
     amount: 91823,
-    currency: 'usd',
+    currency: 'zar',
     date: subDays(new Date(), 1),
-    sender: 'Vertical Jelly',
+    sender: 'Electrical Solutions SA (Pty) Ltd.',
     type: 'send',
     status: 'failed'
   },
   {
     id: 'aaeb96c5a131a55d9623f44d',
     amount: 49550,
-    currency: 'usd',
+    currency: 'zar',
     date: subDays(new Date(), 3),
-    sender: 'Devias',
+    sender: 'Oakland Milk',
     type: 'receive',
     status: 'confirmed'
   }
@@ -139,7 +139,7 @@ export const OverviewLatestTransactions = (props) => (
                 >
                   {transaction.type === 'receive' ? '+' : '-'}
                   {' '}
-                  {numeral(transaction.amount).format('$0,0.00')}
+                 R {numeral(transaction.amount).format('0,0.00')}
                 </Typography>
                 <Typography
                   color="textSecondary"

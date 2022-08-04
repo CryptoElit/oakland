@@ -25,8 +25,6 @@ export const EmailForm = () => {
 			});
 	};
 
-
-
 	return (
 	<Box
 		sx={{

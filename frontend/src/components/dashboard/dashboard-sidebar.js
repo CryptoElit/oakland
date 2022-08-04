@@ -40,17 +40,22 @@ const getSections = (t) => [
         path: '/dashboard',
         icon: <HomeIcon fontSize="small" />
       },
+
       {
-        title: t('Analytics'),
-        path: '/dashboard/analytics',
-        icon: <ChartBarIcon fontSize="small" />
+        title: t('Budgets'),
+        icon: <ChartPieIcon fontSize="small" />,
+        children: [
+          {
+            title: t('Assign Budgets'),
+            path: '/dashboard/customers'
+          },
+          {
+            title: t('Reports'),
+            path: '/dashboard/finance'
+          }
+        ]
       },
-      {
-        title: t('Finance'),
-        path: '/dashboard/finance',
-        icon: <ChartPieIcon fontSize="small" />
-      },
-      {
+/*      {
         title: t('Logistics'),
         path: '/dashboard/logistics',
         icon: <TruckIcon fontSize="small" />,
@@ -69,35 +74,44 @@ const getSections = (t) => [
           size="small"
         />
       },
-      {
+    /*  {
         title: t('Account'),
         path: '/dashboard/account',
         icon: <UserCircleIcon fontSize="small" />
       }
-    ]
+  */ ]
   },
   {
     title: t('Management'),
     items: [
       {
-        title: t('Customers'),
-        path: '/dashboard/customers',
-        icon: <UsersIcon fontSize="small" />,
+        title: t('Orders'),
+        icon: <ShoppingCartIcon fontSize="small" />,
+        path: '/dashboard/orders'
+        /*
+        ,
         children: [
           {
-            title: t('List'),
-            path: '/dashboard/customers'
+            title: t('View All'),
+            path: '/dashboard/orders'
+          },
+          {
+            title: t('New Order'),
+            path: '/dashboard/orders/new'
           },
           {
             title: t('Details'),
-            path: '/dashboard/customers/1'
-          },
-          {
-            title: t('Edit'),
-            path: '/dashboard/customers/1/edit'
+            path: '/dashboard/orders/1'
           }
         ]
+        */
       },
+      {
+        title: t('Departments'),
+        path: '/dashboard/customers',
+        icon: <TruckIcon fontSize="small" />,
+      },
+      /*
       {
         title: t('Products'),
         path: '/dashboard/products',
@@ -113,43 +127,22 @@ const getSections = (t) => [
           }
         ]
       },
-      {
-        title: t('Orders'),
-        icon: <ShoppingCartIcon fontSize="small" />,
-        path: '/dashboard/orders',
-        children: [
-          {
-            title: t('List'),
-            path: '/dashboard/orders'
-          },
-          {
-            title: t('Details'),
-            path: '/dashboard/orders/1'
-          }
-        ]
-      },
+      */
+
       {
         title: t('Invoices'),
         path: '/dashboard/invoices',
-        icon: <ReceiptTaxIcon fontSize="small" />,
-        children: [
-          {
-            title: t('List'),
-            path: '/dashboard/invoices'
-          },
-          {
-            title: t('Details'),
-            path: '/dashboard/invoices/1'
-          }
-        ]
+        icon: <ReceiptTaxIcon fontSize="small" />
       }
     ]
   },
+
+/*
   {
     title: t('Platforms'),
     items: [
       {
-        title: t('Job Listings'),
+        title: t('Analytics'),
         path: '/dashboard/jobs',
         icon: <OfficeBuildingIcon fontSize="small" />,
         children: [
@@ -169,19 +162,37 @@ const getSections = (t) => [
       },
     ]
   },
+*/
+
   {
-    title: t('Apps'),
+    title: t('Admin'),
     items: [
+      {
+        title: t('System Users'),
+        path: '/dashboard/customers',
+        icon: <UsersIcon fontSize="small" />,
+      },
+      /*
       {
         title: t('Mail'),
         path: '/dashboard/mail',
         icon: <MailIcon fontSize="small" />
       },
+      */
+      /*
       {
         title: t('Chat'),
         path: '/dashboard/chat',
         icon: <ChatAlt2Icon fontSize="small" />
       },
+      */
+     /*
+      {
+        title: t('Account'),
+        path: '/dashboard/account',
+        icon: <UserCircleIcon fontSize="small" />
+      }
+      */
     ]
   },
 ];
@@ -272,15 +283,15 @@ export const DashboardSidebar = (props) => {
                     color="inherit"
                     variant="subtitle1"
                   >
-                    Acme Inc
+                    Oakland Milk
                   </Typography>
                   <Typography
                     color="neutral.400"
                     variant="body2"
                   >
-                    {t('Your tier')}
+                    {t('Your rank')}
                     {' '}
-                    : Premium
+                    : CEO
                   </Typography>
                 </div>
                 <SelectorIcon
@@ -312,41 +323,20 @@ export const DashboardSidebar = (props) => {
                 }}
                 {...section} />
             ))}
+            <Divider
+            sx={{
+              borderColor: '#2D3748'  // dark divider
+            }}
+          />
           </Box>
           <Divider
             sx={{
               borderColor: '#2D3748'  // dark divider
             }}
           />
-          <Box sx={{ p: 2 }}>
-            <Typography
-              color="neutral.100"
-              variant="subtitle2"
-            >
-              {t('Need Help?')}
-            </Typography>
-            <Typography
-              color="neutral.500"
-              variant="body2"
-            >
-              {t('Check our docs')}
-            </Typography>
-            <NextLink
-              href="/docs/welcome"
-              passHref
-            >
-              <Button
-                color="secondary"
-                component="a"
-                fullWidth
-                sx={{ mt: 2 }}
-                variant="contained"
-              >
-                {t('Documentation')}
-              </Button>
-            </NextLink>
-          </Box>
+          
         </Box>
+        
       </Scrollbar>
       <OrganizationPopover
         anchorEl={organizationsRef.current}

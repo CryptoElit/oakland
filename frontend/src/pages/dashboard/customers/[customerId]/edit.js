@@ -45,7 +45,7 @@ const CustomerEdit = () => {
     <>
       <Head>
         <title>
-          Dashboard: Customer Edit | Material Kit Pro
+          Dashboard: Customer Edit | Oakland
         </title>
       </Head>
       <Box

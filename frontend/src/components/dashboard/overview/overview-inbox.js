@@ -20,31 +20,31 @@ const messages = [
     content: 'Hello, we spoke earlier on the phone',
     date: subMinutes(new Date(), 2),
     senderAvatar: '/static/mock-images/avatars/avatar-alcides_antonio.png',
-    senderName: 'Alcides Antonio',
+    senderName: 'Heinz Gericke',
     unread: true
   },
   {
     id: 'de0eb1ac517aae1aa57c0b7e',
-    content: 'Is the job still available?',
+    content: 'What equipment do we need for the next job?',
     date: subMinutes(new Date(), 56),
     senderAvatar: '/static/mock-images/avatars/avatar-marcus_finn.png',
-    senderName: 'Marcus Finn',
+    senderName: 'Joseph Hart',
     unread: false
   },
   {
     id: '38e2b0942c90d0ad724e6f40',
-    content: 'What is a screening task? I’d like to',
+    content: 'Ek bennodig hulp by die fabriek ASAP!',
     date: subHours(subMinutes(new Date(), 23), 3),
     senderAvatar: '/static/mock-images/avatars/avatar-carson_darrin.png',
-    senderName: 'Carson Darrin',
+    senderName: 'Hugo van Niekerk',
     unread: false
   },
   {
     id: '467505f3356f25a69f4c4890',
-    content: 'Still waiting for feedback',
+    content: 'Ek het met die Hoof van Verkope by Clover vandag n vergedering gehad.',
     date: subHours(subMinutes(new Date(), 6), 8),
     senderAvatar: '/static/mock-images/avatars/avatar-fran_perez.png',
-    senderName: 'Fran Perez',
+    senderName: 'Michael Collins',
     unread: false
   },
   {
@@ -52,7 +52,7 @@ const messages = [
     content: 'Need more information about current campaigns',
     date: subHours(subMinutes(new Date(), 18), 10),
     senderAvatar: '/static/mock-images/avatars/avatar-jie_yan_song.png',
-    senderName: 'Jie Yan Song',
+    senderName: 'Henk van Zyl',
     unread: false
   }
 ];

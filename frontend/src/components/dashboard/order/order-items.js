@@ -54,7 +54,7 @@ export const OrderItems = (props) => {
                     {item.billingCycle}
                   </TableCell>
                   <TableCell>
-                    {numeral(item.unitAmount).format(`${item.currency}0,0.00`)}
+                    R {numeral(item.unitAmount).format(0,0.00)}
                   </TableCell>
                 </TableRow>
               ))}

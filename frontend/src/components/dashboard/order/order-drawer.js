@@ -116,19 +116,19 @@ const OrderPreview = (props) => {
         <PropertyListItem
           align={align}
           disableGutters
-          label="ID"
+          label="Order ID"
           value={order.id}
         />
         <PropertyListItem
           align={align}
           disableGutters
-          label="Number"
+          label="Doc Nr"
           value={order.number}
         />
         <PropertyListItem
           align={align}
           disableGutters
-          label="Customer"
+          label="Supplier"
         >
           <Typography
             color="primary"
@@ -216,7 +216,7 @@ const OrderPreview = (props) => {
                   {item.billingCycle}
                 </TableCell>
                 <TableCell>
-                  {numeral(item.unitAmount).format(`${item.currency}0,0.00`)}
+                  R {numeral(item.unitAmount).format(0,0.00)}
                 </TableCell>
               </TableRow>
             ))}

@@ -241,7 +241,7 @@ export const CustomerEditForm = (props) => {
                 gutterBottom
                 variant="subtitle1"
               >
-                Available to hire
+                Ready for work
               </Typography>
               <Typography
                 color="textSecondary"

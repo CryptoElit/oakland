@@ -256,7 +256,7 @@ export const AccountBillingSettings = (props) => {
           <TableBody>
             <TableRow>
               <TableCell>2 Jun 2021</TableCell>
-              <TableCell>$4.99</TableCell>
+              <TableCell>R4.99</TableCell>
               <TableCell align="right">
                 <Link
                   underline="always"
@@ -268,7 +268,7 @@ export const AccountBillingSettings = (props) => {
             </TableRow>
             <TableRow>
               <TableCell>2 May 2021</TableCell>
-              <TableCell>$4.99</TableCell>
+              <TableCell>R4.99</TableCell>
               <TableCell align="right">
                 <Link
                   underline="always"
@@ -280,7 +280,7 @@ export const AccountBillingSettings = (props) => {
             </TableRow>
             <TableRow>
               <TableCell>2 April 2021</TableCell>
-              <TableCell>$4.99</TableCell>
+              <TableCell>R4.99</TableCell>
               <TableCell align="right">
                 <Link
                   underline="always"
