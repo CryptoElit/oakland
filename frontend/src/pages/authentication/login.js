@@ -82,7 +82,7 @@ const Login = () => {
                 sx={{ mt: 2 }}
                 variant="body2"
               >
-                If you want to please everyone, don't be a leader, sell ice cream.
+                  {`If you want to please everyone, don't be a leader, sell ice cream.`}
               </Typography>
             </Box>
             <Box
